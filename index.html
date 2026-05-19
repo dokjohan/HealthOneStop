@@ -12,7 +12,7 @@
 <link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%231e3a8a'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Cpath d='M50,74 C50,74 18,56 18,34 C18,24 26,17 36,17 C42,17 47,21 50,27 C53,21 58,17 64,17 C74,17 82,24 82,34 C82,56 50,74 50,74Z' fill='%23ef4444'/%3E%3Cpolyline points='5,50 22,50 28,40 34,60 40,28 46,70 50,50 65,50 70,43 75,50 95,50' fill='none' stroke='white' stroke-width='4.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%231e3a8a'/%3E%3Cstop offset='100%25' stop-color='%232563eb'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='22' fill='url(%23g)'/%3E%3Cpath d='M50,74 C50,74 18,56 18,34 C18,24 26,17 36,17 C42,17 47,21 50,27 C53,21 58,17 64,17 C74,17 82,24 82,34 C82,56 50,74 50,74Z' fill='%23ef4444'/%3E%3Cpolyline points='5,50 22,50 28,40 34,60 40,28 46,70 50,50 65,50 70,43 75,50 95,50' fill='none' stroke='white' stroke-width='4.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-<!-- NO blocking scripts in head — QRCode loaded async at bottom of body -->
+<!-- NO blocking scripts in head â QRCode loaded async at bottom of body -->
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 body{
@@ -23,7 +23,7 @@ body{
   min-height:100vh;
   padding-bottom:calc(72px + env(safe-area-inset-bottom,0px));
 }
-/* ── HEADER ── */
+/* ââ HEADER ââ */
 .app-header{
   background:linear-gradient(135deg,#1e3a8a,#2563eb);
   color:white;
@@ -36,7 +36,7 @@ body{
 .app-header-icon{width:40px;height:40px;background:rgba(255,255,255,0.15);border-radius:12px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
 .app-header h1{font-size:17px;font-weight:700;}
 .app-header .tagline{font-size:10px;opacity:0.8;}
-/* ── TAB BAR — iOS-safe fixed bar ── */
+/* ââ TAB BAR â iOS-safe fixed bar ââ */
 .tab-bar{
   position:fixed;bottom:0;left:0;right:0;
   background:white;
@@ -66,13 +66,13 @@ body{
 .tab-btn .tl{font-size:9px;font-weight:500;}
 .tab-btn.active{color:#2563eb;}
 .tab-btn.active .ti{transform:scale(1.12);}
-/* ── SCREENS ── */
+/* ââ SCREENS ââ */
 .screen{display:none;padding:16px;}
 .screen.active{display:block;}
-/* ── CARDS ── */
+/* ââ CARDS ââ */
 .card{background:white;border-radius:16px;padding:18px;margin-bottom:16px;box-shadow:0 2px 12px rgba(0,0,0,0.06);}
 .card-title{font-size:15px;font-weight:700;color:#1e293b;margin-bottom:14px;display:flex;align-items:center;gap:6px;}
-/* ── FORMS ── */
+/* ââ FORMS ââ */
 .form-group{margin-bottom:14px;}
 .form-group label{display:block;font-size:12px;font-weight:600;color:#64748b;margin-bottom:5px;text-transform:uppercase;letter-spacing:0.3px;}
 .form-group input,.form-group select,.form-group textarea{
@@ -84,18 +84,18 @@ body{
 }
 .form-group input:focus,.form-group select:focus{border-color:#2563eb;}
 .section-label{font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;letter-spacing:0.5px;margin:18px 0 10px;}
-/* ── BUTTONS ── */
+/* ââ BUTTONS ââ */
 .btn{display:block;width:100%;padding:13px;border:none;border-radius:12px;font-size:14px;font-weight:700;font-family:'Poppins',sans-serif;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;transition:opacity 0.15s;}
 .btn:active{opacity:0.8;}
 .btn-primary{background:linear-gradient(135deg,#2563eb,#1d4ed8);color:white;}
 .btn-outline{background:white;color:#2563eb;border:1.5px solid #bfdbfe;}
 .btn-red{background:#dc2626;color:white;}
-/* ── TAGS ── */
+/* ââ TAGS ââ */
 .tag{display:inline-block;padding:4px 10px;border-radius:20px;font-size:12px;font-weight:500;margin:3px 3px 3px 0;}
 .tag-red{background:#fee2e2;color:#991b1b;}
 .tag-blue{background:#dbeafe;color:#1e40af;}
 .tag-green{background:#dcfce7;color:#166534;}
-/* ── HEALTH CARD ── */
+/* ââ HEALTH CARD ââ */
 .health-card{
   background:linear-gradient(135deg,#1e3a8a,#2563eb,#0ea5e9);
   border-radius:18px;padding:22px;color:white;
@@ -109,7 +109,7 @@ body{
 .card-row{display:flex;gap:18px;flex-wrap:wrap;}
 .card-field label{font-size:9px;text-transform:uppercase;opacity:0.7;display:block;}
 .card-field .val{font-size:13px;font-weight:600;}
-/* ── COVERAGE ── */
+/* ââ COVERAGE ââ */
 .aid-badge{display:inline-block;background:#dcfce7;color:#166534;padding:6px 14px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:12px;}
 .info-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:12px;}
 .info-box{background:#f8faff;border-radius:10px;padding:10px;}
@@ -124,7 +124,7 @@ body{
 .cov-full{background:#dcfce7;color:#166534;}
 .cov-part{background:#fef3c7;color:#92400e;}
 .cov-none{background:#fee2e2;color:#991b1b;}
-/* ── MED TRACKER ── */
+/* ââ MED TRACKER ââ */
 .med-track-item{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#f8faff;border-radius:10px;margin-bottom:8px;cursor:pointer;border:1.5px solid #e2e8f0;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
 .med-track-item.taken{background:#f0fdf4;border-color:#86efac;}
 .mt-check{font-size:20px;flex-shrink:0;}
@@ -132,10 +132,10 @@ body{
 .mt-status{font-size:11px;font-weight:700;padding:3px 8px;border-radius:10px;}
 .mt-status.done{background:#dcfce7;color:#166534;}
 .mt-status.todo{background:#f1f5f9;color:#64748b;}
-/* ── QR CODE ── */
+/* ââ QR CODE ââ */
 .qr-container{display:flex;flex-direction:column;align-items:center;padding:16px 0;}
 .qr-label{font-size:12px;color:#94a3b8;margin-top:10px;}
-/* ── FIND CARE / SERVICE BUTTONS ── */
+/* ââ FIND CARE / SERVICE BUTTONS ââ */
 .service-btn{display:flex;align-items:center;gap:12px;padding:13px;background:#f8faff;border:1.5px solid #e2e8f0;border-radius:12px;text-decoration:none;color:#1e293b;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
 .service-btn:active{background:#eff6ff;border-color:#bfdbfe;}
 .svc-icon{font-size:26px;flex-shrink:0;}
@@ -143,21 +143,21 @@ body{
 .svc-name{font-size:14px;font-weight:600;}
 .svc-sub{font-size:12px;color:#64748b;margin-top:1px;}
 .svc-arrow{color:#94a3b8;font-size:18px;}
-/* ── LOCATION ── */
+/* ââ LOCATION ââ */
 .location-banner{background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;padding:14px;display:flex;gap:12px;align-items:flex-start;margin-bottom:12px;}
 .loc-icon{font-size:26px;flex-shrink:0;}
 .loc-name{font-size:15px;font-weight:700;color:#166534;}
 .loc-sub{font-size:11px;color:#64748b;margin-top:2px;}
 .loc-status{font-size:11px;color:#166534;font-weight:600;margin-top:4px;}
 .loc-error-box{background:#fef2f2;border:1.5px solid #fca5a5;border-radius:10px;padding:13px;font-size:13px;color:#991b1b;line-height:1.6;}
-/* ── EMERGENCY ── */
+/* ââ EMERGENCY ââ */
 .emergency-item{display:flex;align-items:center;gap:12px;padding:12px;background:#fef2f2;border-radius:12px;margin-bottom:8px;}
 .em-icon{font-size:26px;flex-shrink:0;}
 .em-info{flex:1;}
 .em-name{font-size:13px;font-weight:600;color:#1e293b;}
 .em-num{font-size:16px;font-weight:700;color:#dc2626;}
 .em-call-btn{background:#dc2626;color:white;border:none;padding:9px 14px;border-radius:10px;font-size:13px;font-weight:700;font-family:'Poppins',sans-serif;cursor:pointer;text-decoration:none;touch-action:manipulation;flex-shrink:0;}
-/* ── AI CHAT ── */
+/* ââ AI CHAT ââ */
 .chat-disclaimer{background:#fef3c7;border:1.5px solid #fbbf24;border-radius:10px;padding:10px 13px;font-size:12px;color:#92400e;line-height:1.5;margin-bottom:12px;}
 .chat-chips-row{display:flex;gap:8px;overflow-x:auto;padding-bottom:4px;margin-bottom:12px;scrollbar-width:none;-webkit-overflow-scrolling:touch;}
 .chat-chips-row::-webkit-scrollbar{display:none;}
@@ -191,7 +191,7 @@ body{
 .chat-cam-btn{background:#f0fdf4;color:#16a34a;border:1.5px solid #86efac;}
 .chat-mic-btn{background:#f1f5f9;color:#64748b;border:1.5px solid #e2e8f0;}
 .chat-mic-btn.active{background:#eff6ff;color:#2563eb;border-color:#bfdbfe;}
-/* ── SCAN MODAL ── */
+/* ââ SCAN MODAL ââ */
 .modal-overlay{
   display:none;position:fixed;inset:0;
   background:rgba(15,23,42,0.55);
@@ -214,14 +214,14 @@ body{
 .ocr-field input{flex:1;border:none;background:none;font-size:14px;font-family:'Poppins',sans-serif;color:#1e293b;outline:none;font-weight:500;}
 .modal-close-btn{width:100%;margin-top:10px;padding:13px;background:#f1f5f9;border:none;border-radius:12px;font-size:14px;font-weight:600;font-family:'Poppins',sans-serif;cursor:pointer;touch-action:manipulation;color:#475569;}
 .ocr-preview{width:100%;border-radius:12px;margin-bottom:14px;max-height:200px;object-fit:cover;}
-/* ── MISC ── */
+/* ââ MISC ââ */
 .alert{padding:11px 14px;border:1.5px solid #86efac;border-radius:10px;background:#f0fdf4;color:#166534;font-size:13px;margin-bottom:12px;}
 .alert.error{border-color:#fca5a5;background:#fef2f2;color:#991b1b;}
 .no-data{text-align:center;padding:30px 0;color:#94a3b8;font-size:14px;}
 .spinner{display:inline-block;width:14px;height:14px;border:2px solid rgba(255,255,255,0.4);border-top-color:white;border-radius:50%;animation:spin 0.8s linear infinite;vertical-align:middle;margin-right:6px;}
 .spinner-dark{display:inline-block;width:18px;height:18px;border:2px solid #e2e8f0;border-top-color:#2563eb;border-radius:50%;animation:spin 0.8s linear infinite;vertical-align:middle;margin-right:8px;}
 @keyframes spin{to{transform:rotate(360deg);}}
-/* ── SEARCH RESULTS ── */
+/* ââ SEARCH RESULTS ââ */
 .result-card{background:#f8faff;border-radius:14px;padding:14px;margin-bottom:10px;border:1.5px solid #e2e8f0;}
 .result-name{font-size:14px;font-weight:700;color:#1e293b;margin-bottom:4px;}
 .result-dist{font-size:12px;color:#2563eb;font-weight:600;margin-bottom:3px;}
@@ -237,13 +237,13 @@ body{
 .radius-row{display:flex;align-items:center;gap:10px;margin-bottom:14px;padding:10px 12px;background:#f1f5f9;border-radius:10px;}
 .radius-row label{font-size:12px;color:#64748b;font-weight:600;white-space:nowrap;}
 .radius-row select{flex:1;border:1.5px solid #e2e8f0;border-radius:8px;padding:6px 8px;font-size:13px;font-family:'Poppins',sans-serif;background:white;color:#1e293b;}
-/* ── VOICE INPUT ── */
+/* ââ VOICE INPUT ââ */
 .input-row{display:flex;gap:8px;align-items:center;}
 .input-row input,.input-row select{flex:1;}
 .voice-btn{flex-shrink:0;width:42px;height:42px;background:#f1f5f9;border:1.5px solid #e2e8f0;border-radius:10px;font-size:18px;cursor:pointer;display:flex;align-items:center;justify-content:center;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
 .voice-btn.listening{background:#fee2e2;border-color:#fca5a5;animation:vbpulse 0.8s ease-in-out infinite;}
 @keyframes vbpulse{0%,100%{transform:scale(1);}50%{transform:scale(1.15);}}
-/* ── OCR PROGRESS ── */
+/* ââ OCR PROGRESS ââ */
 .ocr-progress-bar{background:#eff6ff;border-radius:8px;padding:10px 12px;margin-bottom:12px;font-size:13px;color:#1d4ed8;display:flex;align-items:center;gap:8px;}
 /* Profile Photo */
 .profile-photo-area{display:flex;flex-direction:column;align-items:center;margin-bottom:18px;}
@@ -265,7 +265,7 @@ body{
 /* Emergency photo */
 .em-photo-circle{width:80px;height:80px;border-radius:50%;border:3px solid #dc2626;overflow:hidden;flex-shrink:0;background:#fee2e2;display:flex;align-items:center;justify-content:center;font-size:32px;}
 .em-photo-circle img{width:100%;height:100%;object-fit:cover;}
-/* ── COVERAGE GUIDE ── */
+/* ââ COVERAGE GUIDE ââ */
 .cov-result-badge{display:inline-block;padding:3px 9px;border-radius:12px;font-size:11px;font-weight:700;margin-bottom:6px;}
 .cov-r-green{background:#dcfce7;color:#166534;}
 .cov-r-amber{background:#fef3c7;color:#92400e;}
@@ -274,7 +274,7 @@ body{
 .cov-table td{padding:9px 8px;border-bottom:1px solid #f1f5f9;vertical-align:middle;}
 .cov-table tr:last-child td{border:none;}
 .cov-guide-header{display:flex;align-items:center;justify-content:space-between;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;}
-/* ── MORE TAB ── */
+/* ââ MORE TAB ââ */
 .accordion-item{border:1.5px solid #e2e8f0;border-radius:12px;margin-bottom:8px;overflow:hidden;}
 .accordion-header{padding:13px 15px;font-size:14px;font-weight:600;cursor:pointer;display:flex;align-items:center;justify-content:space-between;background:white;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;}
 .accordion-header:active{background:#f8faff;}
@@ -307,9 +307,9 @@ body{
 </head>
 <body ontouchstart="">
 
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
 <!-- HEADER                                                      -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
 <div class="app-header">
   <div class="app-header-icon">
     <svg width="26" height="26" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -323,9 +323,9 @@ body{
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ -->
-<!-- SCREEN 1 — PROFILE                                          -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- SCREEN 1 â PROFILE                                          -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen active" id="screen-profile">
   <div id="profile-alert"></div>
   <div class="card">
@@ -333,13 +333,13 @@ body{
     <div class="profile-photo-area">
       <input type="file" id="photo-input" accept="image/*" style="position:fixed;left:-9999px;top:-9999px;opacity:0;width:1px;height:1px;" onchange="savePhoto(this)">
       <div class="profile-photo-circle" onclick="document.getElementById('photo-input').click()">
-        <div id="profile-photo-placeholder" class="profile-photo-placeholder">👤</div>
+        <div id="profile-photo-placeholder" class="profile-photo-placeholder">ð¤</div>
         <img id="profile-photo-img" src="" alt="Profile photo" style="display:none;">
       </div>
-      <div class="profile-photo-label" onclick="document.getElementById('photo-input').click()">📷 Tap to add photo</div>
+      <div class="profile-photo-label" onclick="document.getElementById('photo-input').click()">ð· Tap to add photo</div>
     </div>
-    <div class="card-title">👤 Personal Details</div>
-    <div class="form-group"><label>Full Name *</label><div class="input-row"><input type="text" id="p-name" placeholder="e.g. Johan Geldenhuys"><button class="voice-btn" id="v-p-name" ontouchstart="" onclick="startVoice('p-name')" title="Speak name">🎤</button></div></div>
+    <div class="card-title">ð¤ Personal Details</div>
+    <div class="form-group"><label>Full Name *</label><div class="input-row"><input type="text" id="p-name" placeholder="e.g. Johan Geldenhuys"><button class="voice-btn" id="v-p-name" ontouchstart="" onclick="startVoice('p-name')" title="Speak name">ð¤</button></div></div>
     <div class="form-group"><label>SA ID Number *</label><input type="text" id="p-said" placeholder="13-digit number" maxlength="13" inputmode="numeric"></div>
     <div class="form-group"><label>Date of Birth</label><input type="date" id="p-dob"></div>
     <div class="form-group"><label>Cell Number</label><input type="tel" id="p-phone" placeholder="+27 82 000 0000"></div>
@@ -348,11 +348,11 @@ body{
   </div>
 
   <div class="card">
-    <div class="card-title">🩺 Medical Aid</div>
+    <div class="card-title">ð©º Medical Aid</div>
     <div class="form-group">
       <label>Medical Aid Scheme</label>
       <select id="p-aid-scheme">
-        <option value="">— Select Scheme —</option>
+        <option value="">â Select Scheme â</option>
         <option>Discovery Health</option><option>Bonitas</option>
         <option>Momentum Health</option><option>Medshield</option>
         <option>GEMS</option><option>Bestmed</option>
@@ -363,24 +363,24 @@ body{
     </div>
     <div class="form-group"><label>Membership Number</label><input type="text" id="p-aid-num" placeholder="e.g. 12345678"></div>
     <div class="form-group"><label>Plan / Option</label><input type="text" id="p-aid-plan" placeholder="e.g. Comprehensive, Hospital Plan"></div>
-    <p style="font-size:12px;color:#64748b;line-height:1.6;">📷 Tap the camera button in the AI Chat tab to photograph your medical aid card or ID — the app will try to read the text automatically.</p>
+    <p style="font-size:12px;color:#64748b;line-height:1.6;">ð· Tap the camera button in the AI Chat tab to photograph your medical aid card or ID â the app will try to read the text automatically.</p>
   </div>
 
   <div class="card">
-    <div class="card-title">🚨 Medical Information</div>
+    <div class="card-title">ð¨ Medical Information</div>
     <div class="form-group">
       <label>Allergies</label>
       <div class="input-row">
         <input type="text" id="p-allergies" placeholder="e.g. Penicillin, Peanuts">
-        <button class="voice-btn" id="v-p-allergies" ontouchstart="" onclick="startVoice('p-allergies')" title="Speak">🎤</button>
+        <button class="voice-btn" id="v-p-allergies" ontouchstart="" onclick="startVoice('p-allergies')" title="Speak">ð¤</button>
       </div>
     </div>
     <div class="form-group">
       <label>Chronic Conditions <span style="font-size:11px;color:#94a3b8;font-weight:400;">(type to search)</span></label>
       <div style="position:relative;">
         <div class="input-row">
-          <input type="text" id="p-cond-input" placeholder="e.g. Hypertension, Diabetes…" autocomplete="off" oninput="searchConds(this.value)" onkeydown="condKeyDown(event)">
-          <button class="voice-btn" id="v-p-cond-input" ontouchstart="" onclick="startVoice('p-cond-input',addCond)" title="Speak condition">🎤</button>
+          <input type="text" id="p-cond-input" placeholder="e.g. Hypertension, Diabetesâ¦" autocomplete="off" oninput="searchConds(this.value)" onkeydown="condKeyDown(event)">
+          <button class="voice-btn" id="v-p-cond-input" ontouchstart="" onclick="startVoice('p-cond-input',addCond)" title="Speak condition">ð¤</button>
         </div>
         <div id="cond-suggestions" style="display:none;position:absolute;top:100%;left:0;right:0;background:white;border:1.5px solid #2563eb;border-top:none;border-radius:0 0 10px 10px;z-index:500;max-height:180px;overflow-y:auto;box-shadow:0 4px 12px rgba(0,0,0,0.1);"></div>
       </div>
@@ -388,11 +388,11 @@ body{
       <input type="hidden" id="p-conditions">
     </div>
     <div class="form-group">
-      <label>Current Medications <span style="font-size:11px;color:#94a3b8;font-weight:400;">(type to search — tap ✏️ to edit)</span></label>
+      <label>Current Medications <span style="font-size:11px;color:#94a3b8;font-weight:400;">(type to search â tap âï¸ to edit)</span></label>
       <div style="position:relative;">
         <div class="input-row">
-          <input type="text" id="p-meds-input" placeholder="Type medication name — suggestions appear…" autocomplete="off" oninput="searchMeds(this.value)" onkeydown="medKeyDown(event)">
-          <button class="voice-btn" id="v-p-meds-input" ontouchstart="" onclick="startVoice('p-meds-input',addMed)" title="Speak medication">🎤</button>
+          <input type="text" id="p-meds-input" placeholder="Type medication name â suggestions appearâ¦" autocomplete="off" oninput="searchMeds(this.value)" onkeydown="medKeyDown(event)">
+          <button class="voice-btn" id="v-p-meds-input" ontouchstart="" onclick="startVoice('p-meds-input',addMed)" title="Speak medication">ð¤</button>
         </div>
         <div id="med-suggestions" style="display:none;position:absolute;top:100%;left:0;right:0;background:white;border:1.5px solid #2563eb;border-top:none;border-radius:0 0 10px 10px;z-index:500;max-height:180px;overflow-y:auto;box-shadow:0 4px 12px rgba(0,0,0,0.1);"></div>
       </div>
@@ -412,124 +412,124 @@ body{
   </div>
 
   <div class="card">
-    <div class="card-title">👨‍👩‍👧 Emergency Contact</div>
+    <div class="card-title">ð¨âð©âð§ Emergency Contact</div>
     <div class="form-group"><label>Contact Name</label><input type="text" id="p-ec-name" placeholder="e.g. Mary Geldenhuys"></div>
     <div class="form-group"><label>Relationship</label><input type="text" id="p-ec-rel" placeholder="e.g. Spouse, Mother, Father"></div>
     <div class="form-group"><label>Contact Number</label><input type="tel" id="p-ec-num" placeholder="+27 82 000 0000"></div>
-    <button class="btn btn-primary" onclick="saveProfile()">💾 Save Profile</button>
+    <button class="btn btn-primary" onclick="saveProfile()">ð¾ Save Profile</button>
   </div>
 
   <div class="card" id="family-card">
-    <div class="card-title">👨‍👩‍👧 My Family / Dependants</div>
+    <div class="card-title">ð¨âð©âð§ My Family / Dependants</div>
     <p style="font-size:12px;color:#64748b;margin-bottom:12px;">Add children or dependants. Their emergency info is stored here for when they can't speak for themselves.</p>
     <div id="dependants-list"></div>
     <button class="btn btn-outline" onclick="openAddDependant()" style="margin-top:8px;">+ Add Child / Dependant</button>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ -->
-<!-- SCREEN 2 — MY CARD                                          -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- SCREEN 2 â MY CARD                                          -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="screen-card">
   <div id="card-content">
-    <div class="card"><div class="no-data">💳 Fill in your profile first,<br>then your health card appears here.</div></div>
+    <div class="card"><div class="no-data">ð³ Fill in your profile first,<br>then your health card appears here.</div></div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ -->
-<!-- SCREEN 3 — FIND CARE                                        -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- SCREEN 3 â FIND CARE                                        -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="screen-care">
   <div class="card">
-    <div class="card-title">📍 My Location</div>
+    <div class="card-title">ð My Location</div>
     <div id="location-status">
       <p style="color:#64748b;font-size:13px;margin-bottom:14px;line-height:1.6;">Tap below to detect your location. This updates the search links to show providers near you.</p>
-      <button class="btn btn-primary" id="detect-btn" onclick="detectLocation()">📡 Detect My Location</button>
-      <p style="font-size:11px;color:#94a3b8;margin-top:8px;text-align:center;">Your location is only used in this app — never sent anywhere.</p>
+      <button class="btn btn-primary" id="detect-btn" onclick="detectLocation()">ð¡ Detect My Location</button>
+      <p style="font-size:11px;color:#94a3b8;margin-top:8px;text-align:center;">Your location is only used in this app â never sent anywhere.</p>
     </div>
     <div id="location-result" style="display:none;">
       <div class="location-banner">
-        <div class="loc-icon">📍</div>
+        <div class="loc-icon">ð</div>
         <div>
-          <div class="loc-name" id="loc-display">Detecting…</div>
+          <div class="loc-name" id="loc-display">Detectingâ¦</div>
           <div class="loc-sub" id="loc-coords"></div>
-          <div class="loc-status">✅ Links updated — tap any button below</div>
+          <div class="loc-status">â Links updated â tap any button below</div>
         </div>
       </div>
-      <button class="btn btn-outline" id="update-btn" onclick="detectLocation()" style="font-size:13px;padding:10px;">🔄 Update Location</button>
+      <button class="btn btn-outline" id="update-btn" onclick="detectLocation()" style="font-size:13px;padding:10px;">ð Update Location</button>
     </div>
     <div id="location-error" style="display:none;margin-top:10px;"></div>
   </div>
 
-  <!-- Coverage Guide — populated by renderCoverageGuide() -->
+  <!-- Coverage Guide â populated by renderCoverageGuide() -->
   <div id="coverage-guide-wrap"></div>
 
   <div class="card">
-    <div class="card-title">👨‍⚕️ Doctors &amp; Hospitals</div>
-    <p style="font-size:12px;color:#64748b;margin-bottom:12px;">Tap any button — providers near you appear in the app first, then you can open in Maps.</p>
+    <div class="card-title">ð¨ââï¸ Doctors &amp; Hospitals</div>
+    <p style="font-size:12px;color:#64748b;margin-bottom:12px;">Tap any button â providers near you appear in the app first, then you can open in Maps.</p>
     <div style="display:flex;flex-direction:column;gap:10px;">
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('gp','General Practitioner (GP)','👨‍⚕️')"><div class="svc-icon">👨‍⚕️</div><div class="svc-text"><div class="svc-name">General Practitioner (GP)</div><div class="svc-sub">Family doctors near you</div></div><div class="svc-arrow">›</div></button>
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('hospital','Hospital / Clinic','🏥')"><div class="svc-icon">🏥</div><div class="svc-text"><div class="svc-name">Hospital / Clinic</div><div class="svc-sub">Hospitals and day clinics near you</div></div><div class="svc-arrow">›</div></button>
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('specialist','Specialist Doctor','🩺')"><div class="svc-icon">🩺</div><div class="svc-text"><div class="svc-name">Specialist Doctor</div><div class="svc-sub">Cardiologist, surgeon &amp; more</div></div><div class="svc-arrow">›</div></button>
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('pharmacy','Pharmacy','💊')"><div class="svc-icon">💊</div><div class="svc-text"><div class="svc-name">Pharmacy</div><div class="svc-sub">Clicks, Dis-Chem, independent</div></div><div class="svc-arrow">›</div></button>
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('occ','Occupational Health Doctor','🏭')"><div class="svc-icon">🏭</div><div class="svc-text"><div class="svc-name">Occupational Health Doctor</div><div class="svc-sub">Workplace health &amp; fitness certificates</div></div><div class="svc-arrow">›</div></button>
-      <a href="https://www.hpcsa.co.za/PBRegulation/Verification" target="_blank" class="service-btn"><div class="svc-icon">🔍</div><div class="svc-text"><div class="svc-name">HPCSA Doctor Verification</div><div class="svc-sub">Check a doctor's registration</div></div><div class="svc-arrow">›</div></a>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('gp','General Practitioner (GP)','ð¨ââï¸')"><div class="svc-icon">ð¨ââï¸</div><div class="svc-text"><div class="svc-name">General Practitioner (GP)</div><div class="svc-sub">Family doctors near you</div></div><div class="svc-arrow">âº</div></button>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('hospital','Hospital / Clinic','ð¥')"><div class="svc-icon">ð¥</div><div class="svc-text"><div class="svc-name">Hospital / Clinic</div><div class="svc-sub">Hospitals and day clinics near you</div></div><div class="svc-arrow">âº</div></button>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('specialist','Specialist Doctor','ð©º')"><div class="svc-icon">ð©º</div><div class="svc-text"><div class="svc-name">Specialist Doctor</div><div class="svc-sub">Cardiologist, surgeon &amp; more</div></div><div class="svc-arrow">âº</div></button>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('pharmacy','Pharmacy','ð')"><div class="svc-icon">ð</div><div class="svc-text"><div class="svc-name">Pharmacy</div><div class="svc-sub">Clicks, Dis-Chem, independent</div></div><div class="svc-arrow">âº</div></button>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('occ','Occupational Health Doctor','ð­')"><div class="svc-icon">ð­</div><div class="svc-text"><div class="svc-name">Occupational Health Doctor</div><div class="svc-sub">Workplace health &amp; fitness certificates</div></div><div class="svc-arrow">âº</div></button>
+      <a href="https://www.hpcsa.co.za/PBRegulation/Verification" target="_blank" class="service-btn"><div class="svc-icon">ð</div><div class="svc-text"><div class="svc-name">HPCSA Doctor Verification</div><div class="svc-sub">Check a doctor's registration</div></div><div class="svc-arrow">âº</div></a>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-title">🦺 Allied Health Providers</div>
+    <div class="card-title">ð¦º Allied Health Providers</div>
     <div style="display:flex;flex-direction:column;gap:10px;">
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('dentist','Dentist','🦷')"><div class="svc-icon">🦷</div><div class="svc-text"><div class="svc-name">Dentist</div><div class="svc-sub">Dental care &amp; oral health</div></div><div class="svc-arrow">›</div></button>
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('physio','Physiotherapist','🏃')"><div class="svc-icon">🏃</div><div class="svc-text"><div class="svc-name">Physiotherapist</div><div class="svc-sub">Physio, rehab &amp; sports injuries</div></div><div class="svc-arrow">›</div></button>
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('speech','Speech Therapist','🗣️')"><div class="svc-icon">🗣️</div><div class="svc-text"><div class="svc-name">Speech Therapist</div><div class="svc-sub">Speech, language &amp; swallowing</div></div><div class="svc-arrow">›</div></button>
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('ot','Occupational Therapist (OT)','🙌')"><div class="svc-icon">🙌</div><div class="svc-text"><div class="svc-name">Occupational Therapist (OT)</div><div class="svc-sub">Daily living &amp; rehabilitation</div></div><div class="svc-arrow">›</div></button>
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('optom','Optometrist','👁️')"><div class="svc-icon">👁️</div><div class="svc-text"><div class="svc-name">Optometrist</div><div class="svc-sub">Eye tests &amp; glasses</div></div><div class="svc-arrow">›</div></button>
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('dietician','Dietician / Nutritionist','🥗')"><div class="svc-icon">🥗</div><div class="svc-text"><div class="svc-name">Dietician / Nutritionist</div><div class="svc-sub">Dietary advice &amp; nutrition</div></div><div class="svc-arrow">›</div></button>
-      <button ontouchstart="" class="service-btn" onclick="searchNearby('psych','Psychologist / Counsellor','🧠')"><div class="svc-icon">🧠</div><div class="svc-text"><div class="svc-name">Psychologist / Counsellor</div><div class="svc-sub">Mental health support</div></div><div class="svc-arrow">›</div></button>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('dentist','Dentist','ð¦·')"><div class="svc-icon">ð¦·</div><div class="svc-text"><div class="svc-name">Dentist</div><div class="svc-sub">Dental care &amp; oral health</div></div><div class="svc-arrow">âº</div></button>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('physio','Physiotherapist','ð')"><div class="svc-icon">ð</div><div class="svc-text"><div class="svc-name">Physiotherapist</div><div class="svc-sub">Physio, rehab &amp; sports injuries</div></div><div class="svc-arrow">âº</div></button>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('speech','Speech Therapist','ð£ï¸')"><div class="svc-icon">ð£ï¸</div><div class="svc-text"><div class="svc-name">Speech Therapist</div><div class="svc-sub">Speech, language &amp; swallowing</div></div><div class="svc-arrow">âº</div></button>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('ot','Occupational Therapist (OT)','ð')"><div class="svc-icon">ð</div><div class="svc-text"><div class="svc-name">Occupational Therapist (OT)</div><div class="svc-sub">Daily living &amp; rehabilitation</div></div><div class="svc-arrow">âº</div></button>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('optom','Optometrist','ðï¸')"><div class="svc-icon">ðï¸</div><div class="svc-text"><div class="svc-name">Optometrist</div><div class="svc-sub">Eye tests &amp; glasses</div></div><div class="svc-arrow">âº</div></button>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('dietician','Dietician / Nutritionist','ð¥')"><div class="svc-icon">ð¥</div><div class="svc-text"><div class="svc-name">Dietician / Nutritionist</div><div class="svc-sub">Dietary advice &amp; nutrition</div></div><div class="svc-arrow">âº</div></button>
+      <button ontouchstart="" class="service-btn" onclick="searchNearby('psych','Psychologist / Counsellor','ð§ ')"><div class="svc-icon">ð§ </div><div class="svc-text"><div class="svc-name">Psychologist / Counsellor</div><div class="svc-sub">Mental health support</div></div><div class="svc-arrow">âº</div></button>
     </div>
   </div>
 
   <div class="card">
-    <div class="card-title">🧪 Get My Test Results</div>
+    <div class="card-title">ð§ª Get My Test Results</div>
     <p style="font-size:12px;color:#64748b;margin-bottom:12px;line-height:1.6;">Your doctor or lab will give you your login details or reference number.</p>
     <div style="display:flex;flex-direction:column;gap:10px;">
-      <a href="https://www.pathcare.co.za" target="_blank" class="service-btn"><div class="svc-icon">🔬</div><div class="svc-text"><div class="svc-name">PathCare</div><div class="svc-sub">Blood tests &amp; lab results online</div></div><div class="svc-arrow">›</div></a>
-      <a href="https://www.ampath.co.za" target="_blank" class="service-btn"><div class="svc-icon">🧬</div><div class="svc-text"><div class="svc-name">Lancet / Ampath</div><div class="svc-sub">View your lab results online</div></div><div class="svc-arrow">›</div></a>
-      <a href="https://www.scpradiology.co.za" target="_blank" class="service-btn"><div class="svc-icon">📡</div><div class="svc-text"><div class="svc-name">SCP Radiology</div><div class="svc-sub">X-ray, MRI &amp; scan reports</div></div><div class="svc-arrow">›</div></a>
-      <a href="https://www.mediclinic.co.za" target="_blank" class="service-btn"><div class="svc-icon">🏥</div><div class="svc-text"><div class="svc-name">Mediclinic</div><div class="svc-sub">Hospital patient results portal</div></div><div class="svc-arrow">›</div></a>
+      <a href="https://www.pathcare.co.za" target="_blank" class="service-btn"><div class="svc-icon">ð¬</div><div class="svc-text"><div class="svc-name">PathCare</div><div class="svc-sub">Blood tests &amp; lab results online</div></div><div class="svc-arrow">âº</div></a>
+      <a href="https://www.ampath.co.za" target="_blank" class="service-btn"><div class="svc-icon">ð§¬</div><div class="svc-text"><div class="svc-name">Lancet / Ampath</div><div class="svc-sub">View&ùour lab results online</div></div><div class="svc-arrow">âº</div></a>
+      <a href="https://www.scpradiology.co.za" target="_blank" class="service-btn"><div class="svc-icon">ð¡</div><div class="svc-text"><div class="svc-name">SCP Radiology</div><div class="svc-sub">X-ray, MRI &amp; scan reports</div></div><div class="svc-arrow">âº</div></a>
+      <a href="https://www.mediclinic.co.za" target="_blank" class="service-btn"><div class="svc-icon">ð¥</div><div class="svc-text"><div class="svc-name">Mediclinic</div><div class="svc-sub">Hospital patient results portal</div></div><div class="svc-arrow">âº</div></a>
     </div>
   </div>
 
   <div class="card" style="border-left:4px solid #dc2626;">
-    <div class="card-title" style="color:#dc2626;">🚨 Quick Emergency Call</div>
-    <div class="emergency-item"><div class="em-icon">🚑</div><div class="em-info"><div class="em-name">Ambulance / Emergency</div><div class="em-num">10177</div></div><a href="tel:10177" class="em-call-btn" onclick="handleEmergencyCall('10177',event)">📞 Call</a></div>
-    <div class="emergency-item"><div class="em-icon">☎️</div><div class="em-info"><div class="em-name">ER24</div><div class="em-num">084 124</div></div><a href="tel:084124" class="em-call-btn" onclick="handleEmergencyCall('084124',event)">📞 Call</a></div>
-    <div id="call-fallback" style="display:none;margin-top:10px;background:#fef3c7;border:1.5px solid #fbbf24;border-radius:10px;padding:11px;font-size:13px;color:#92400e;">⚠️ <strong>Can't auto-dial?</strong> Dial <span id="call-fallback-num" style="font-weight:700;font-size:15px;"></span> manually.</div>
+    <div class="card-title" style="color:#dc2626;">ð¨ Quick Emergency Call</div>
+    <div class="emergency-item"><div class="em-icon">ð</div><div class="em-info"><div class="em-name">Ambulance / Emergency</div><div class="em-num">10177</div></div><a href="tel:10177" class="em-call-btn" onclick="handleEmergencyCall('10177',event)">ð Call</a></div>
+    <div class="emergency-item"><div class="em-icon">âï¸</div><div class="em-info"><div class="em-name">ER24</div><div class="em-num">084 124</div></div><a href="tel:084124" class="em-call-btn" onclick="handleEmergencyCall('084124',event)">ð Call</a></div>
+    <div id="call-fallback" style="display:none;margin-top:10px;background:#fef3c7;border:1.5px solid #fbbf24;border-radius:10px;padding:11px;font-size:13px;color:#92400e;">â ï¸ <strong>Can't auto-dial?</strong> Dial <span id="call-fallback-num" style="font-weight:700;font-size:15px;"></span> manually.</div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ -->
-<!-- SCREEN 4 — AI CHAT                                          -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- SCREEN 4 â AI CHAT                                          -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="screen-chat">
-  <div class="chat-disclaimer">⚠️ <strong>Not medical advice.</strong> General health information only. Always consult a qualified healthcare professional for diagnosis and treatment.</div>
+  <div class="chat-disclaimer">â ï¸ <strong>Not medical advice.</strong> General health information only. Always consult a qualified healthcare professional for diagnosis and treatment.</div>
 
   <div class="chat-chips-row">
-    <button class="chat-chip" onclick="sendSuggestion('Cold and flu remedies')">🤧 Cold &amp; Flu</button>
-    <button class="chat-chip" onclick="sendSuggestion('I have a fever')">🌡️ Fever</button>
-    <button class="chat-chip" onclick="sendSuggestion('Headache remedies')">🤕 Headache</button>
-    <button class="chat-chip" onclick="sendSuggestion('Stomach pain and diarrhoea')">🤢 Stomach</button>
-    <button class="chat-chip" onclick="sendSuggestion('Blood pressure tips')">❤️ Blood Pressure</button>
-    <button class="chat-chip" onclick="sendSuggestion('Diabetes management')">💉 Diabetes</button>
-    <button class="chat-chip" onclick="sendSuggestion('Emergency warning signs')">🚨 Emergencies</button>
-    <button class="chat-chip" onclick="sendSuggestion('Mental health and stress')">🧠 Mental Health</button>
-    <button class="chat-chip" onclick="sendSuggestion('HIV and ARV treatment')">🎗️ HIV &amp; ARVs</button>
-    <button class="chat-chip" onclick="sendSuggestion('TB tuberculosis symptoms')">🫁 TB</button>
-    <button class="chat-chip" onclick="sendSuggestion('Medical aid coverage South Africa')">💚 Med Aid Cover</button>
-    <button class="chat-chip" onclick="sendSuggestion('Medication tips')">💊 Medication</button>
-    <button class="chat-chip" onclick="sendSuggestion('Sleep and fatigue')">😴 Fatigue</button>
-    <button class="chat-chip" onclick="sendSuggestion('Wound and cut care')">🩹 Wounds</button>
+    <button class="chat-chip" onclick="sendSuggestion('Cold and flu remedies')">ð¤§ Cold &amp; Flu</button>
+    <button class="chat-chip" onclick="sendSuggestion('I have a fever')">ð¡ï¸ Fever</button>
+    <button class="chat-chip" onclick="sendSuggestion('Headache remedies')">ð¤ Headache</button>
+    <button class="chat-chip" onclick="sendSuggestion('Stomach pain and diarrhoea')">ð¤¢ Stomach</button>
+    <button class="chat-chip" onclick="sendSuggestion('Blood pressure tips')">â¤ï¸ Blood Pressure</button>
+    <button class="chat-chip" onclick="sendSuggestion('Diabetes management')">ð Diabetes</button>
+    <button class="chat-chip" onclick="sendSuggestion('Emergency warning signs')">ð¨ Emergencies</button>
+    <button class="chat-chip" onclick="sendSuggestion('Mental health and stress')">ð§  Mental Health</button>
+    <button class="chat-chip" onclick="sendSuggestion('HIV and ARV treatment')">ðï¸ HIV &amp; ARVs</button>
+    <button class="chat-chip" onclick="sendSuggestion('TB tuberculosis symptoms')">ð« TB</button>
+    <button class="chat-chip" onclick="sendSuggestion('Medical aid coverage South Africa')">ð Med Aid Cover</button>
+    <button class="chat-chip" onclick="sendSuggestion('Medication tips')">ð Medication</button>
+    <button class="chat-chip" onclick="sendSuggestion('Sleep and fatigue')">ð´ Fatigue</button>
+    <button class="chat-chip" onclick="sendSuggestion('Wound and cut care')">ð©¹ Wounds</button>
   </div>
 
   <div id="chat-messages"></div>
@@ -540,183 +540,183 @@ body{
     onchange="scanCard(this)">
 
   <div class="chat-input-row">
-    <label for="cam-input" class="chat-cam-btn" title="Scan ID or medical aid card">📷</label>
-    <input type="text" id="chat-input" placeholder="Ask me anything…" onkeydown="chatKeyDown(event)">
-    <button class="chat-mic-btn" id="mic-btn" onclick="toggleVoice()" title="Voice guide">🎤</button>
-    <button class="chat-send-btn" onclick="sendChat()" title="Send">➤</button>
+    <label for="cam-input" class="chat-cam-btn" title="Scan ID or medical aid card">ð·</label>
+    <input type="text" id="chat-input" placeholder="Ask me anythingâ¦" onkeydown="chatKeyDown(event)">
+    <button class="chat-mic-btn" id="mic-btn" onclick="toggleVoice()" title="Voice guide">ð¤</button>
+    <button class="chat-send-btn" onclick="sendChat()" title="Send">â¤</button>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ -->
-<!-- SCREEN 5 — SOS / EMERGENCY                                  -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- SCREEN 5 â SOS / EMERGENCY                                  -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="screen-emergency">
   <div style="background:#fef2f2;border:2px solid #dc2626;border-radius:14px;padding:12px 14px;margin-bottom:14px;font-size:12px;color:#991b1b;line-height:1.6;font-weight:600;">
-    📱 Show this screen to paramedics or emergency responders — no password needed to scroll this screen
+    ð± Show this screen to paramedics or emergency responders â no password needed to scroll this screen
   </div>
   <div class="card" style="border-left:4px solid #dc2626;">
-    <div class="card-title" style="color:#dc2626;">🚨 My Emergency Info</div>
+    <div class="card-title" style="color:#dc2626;">ð¨ My Emergency Info</div>
     <div id="emergency-content"><div class="no-data">Save your profile to see your personal emergency info here.</div></div>
   </div>
   <div class="card" id="family-emergency-card" style="display:none;">
-    <div class="card-title">👨‍👩‍👧 Family Emergency Info</div>
+    <div class="card-title">ð¨âð©âð§ Family Emergency Info</div>
     <div id="family-emergency-content"></div>
   </div>
 
   <div class="card">
-    <div class="card-title">📞 SA Emergency Numbers</div>
-    <div class="emergency-item"><div class="em-icon">🚑</div><div class="em-info"><div class="em-name">Ambulance / Emergency</div><div class="em-num">10177</div></div><a href="tel:10177" class="em-call-btn" onclick="handleEmergencyCall('10177',event)">📞 Call</a></div>
-    <div class="emergency-item"><div class="em-icon">🚔</div><div class="em-info"><div class="em-name">Police</div><div class="em-num">10111</div></div><a href="tel:10111" class="em-call-btn" onclick="handleEmergencyCall('10111',event)">📞 Call</a></div>
-    <div class="emergency-item"><div class="em-icon">🔥</div><div class="em-info"><div class="em-name">Fire Department</div><div class="em-num">10177</div></div><a href="tel:10177" class="em-call-btn" onclick="handleEmergencyCall('10177',event)">📞 Call</a></div>
-    <div class="emergency-item"><div class="em-icon">☎️</div><div class="em-info"><div class="em-name">ER24</div><div class="em-num">084 124</div></div><a href="tel:084124" class="em-call-btn" onclick="handleEmergencyCall('084124',event)">📞 Call</a></div>
-    <div class="emergency-item"><div class="em-icon">🏥</div><div class="em-info"><div class="em-name">Netcare 911</div><div class="em-num">082 911</div></div><a href="tel:082911" class="em-call-btn" onclick="handleEmergencyCall('082911',event)">📞 Call</a></div>
-    <div class="emergency-item"><div class="em-icon">🧠</div><div class="em-info"><div class="em-name">SADAG Mental Health</div><div class="em-num">0800 456 789</div></div><a href="tel:0800456789" class="em-call-btn" onclick="handleEmergencyCall('0800456789',event)">📞 Call</a></div>
-    <div class="emergency-item"><div class="em-icon">🎗️</div><div class="em-info"><div class="em-name">TAC HIV Helpline</div><div class="em-num">0800 212 506</div></div><a href="tel:0800212506" class="em-call-btn" onclick="handleEmergencyCall('0800212506',event)">📞 Call</a></div>
-    <div class="emergency-item"><div class="em-icon">💙</div><div class="em-info"><div class="em-name">Suicide Crisis Line</div><div class="em-num">0800 567 567</div></div><a href="tel:0800567567" class="em-call-btn" onclick="handleEmergencyCall('0800567567',event)">📞 Call</a></div>
-    <div id="em-call-fallback" style="display:none;margin-top:10px;background:#fef3c7;border:1.5px solid #fbbf24;border-radius:10px;padding:11px;font-size:13px;color:#92400e;">⚠️ <strong>Can't auto-dial?</strong> Dial <span id="em-fallback-num" style="font-weight:700;font-size:15px;"></span> manually.</div>
+    <div class="card-title">ð SA Emergency Numbers</div>
+    <div class="emergency-item"><div class="em-icon">ð</div><div class="em-info"><div class="em-name">Ambulance / Emergency</div><div class="em-num">10177</div></div><a href="tel:10177" class="em-call-btn" onclick="handleEmergencyCall('10177',event)">ð Call</a></div>
+    <div class="emergency-item"><div class="em-icon">ð</div><div class="em-info"><div class="em-name">Police</div><div class="em-num">10111</div></div><a href="tel:10111" class="em-call-btn" onclick="handleEmergencyCall('10111',event)">ð Call</a></div>
+    <div class="emergency-item"><div class="em-icon">ð¥</div><div class="em-info"><div class="em-name">Fire Department</div><div class="em-num">10177</div></div><a href="tel:10177" class="em-call-btn" onclick="handleEmergencyCall('10177',event)">ð Call</a></div>
+    <div class="emergency-item"><div class="em-icon">âï¸</div><div class="em-info"><div class="em-name">ER24</div><div class="em-num">084 124</div></div><a href="tel:084124" class="em-call-btn" onclick="handleEmergencyCall('084124',event)">ð Call</a></div>
+    <div class="emergency-item"><div class="em-icon">ð¥</div><div class="em-info"><div class="em-name">Netcare 911</div><div class="em-num">082 911</div></div><a href="tel:082911" class="em-call-btn" onclick="handleEmergencyCall('082911',event)">ð Call</a></div>
+    <div class="emergency-item"><div class="em-icon">ð§ </div><div class="em-info"><div class="em-name">SADAG Mental Health</div><div class="em-num">0800 456 789</div></div><a href="tel:0800456789" class="em-call-btn" onclick="handleEmergencyCall('0800456789',event)">ð Call</a></div>
+    <div class="emergency-item"><div class="em-icon">ðï¸</div><div class="em-info"><div class="em-name">TAC HIV Helpline</div><div class="em-num">0800 212 506</div></div><a href="tel:0800212506" class="em-call-btn" onclick="handleEmergencyCall('0800212506',event)">ð Call</a></div>
+    <div class="emergency-item"><div class="em-icon">ð</div><div class="em-info"><div class="em-name">Suicide Crisis Line</div><div class="em-num">0800 567 567</div></div><a href="tel:0800567567" class="em-call-btn" onclick="handleEmergencyCall('0800567567',event)">ð Call</a></div>
+    <div id="em-call-fallback" style="display:none;margin-top:10px;background:#fef3c7;border:1.5px solid #fbbf24;border-radius:10px;padding:11px;font-size:13px;color:#92400e;">â ï¸ <strong>Can't auto-dial?</strong> Dial <span id="em-fallback-num" style="font-weight:700;font-size:15px;"></span> manually.</div>
   </div>
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ -->
-<!-- SCREEN 6 — MORE                                              -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- SCREEN 6 â MORE                                              -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
 <div class="screen" id="screen-more">
 
   <!-- BMI Calculator -->
   <div class="card">
-    <div class="card-title">⚖️ BMI Calculator</div>
+    <div class="card-title">Úï¸ BMI Calculator</div>
     <div class="form-group"><label>Height (cm)</label><input type="number" id="bmi-height" placeholder="e.g. 170" inputmode="decimal" min="50" max="250"></div>
     <div class="form-group"><label>Weight (kg)</label><input type="number" id="bmi-weight" placeholder="e.g. 75" inputmode="decimal" min="10" max="300"></div>
-    <button class="btn btn-primary" onclick="calculateBMI()">📊 Calculate BMI</button>
+    <button class="btn btn-primary" onclick="calculateBMI()">ð Calculate BMI</button>
     <div id="bmi-result"></div>
   </div>
 
   <!-- Blood Pressure Log -->
   <div class="card">
-    <div class="card-title">❤️ Blood Pressure Log</div>
+    <div class="card-title">â¤ï¸ Blood Pressure Log</div>
     <div class="form-group"><label>Systolic (top number)</label><input type="number" id="bp-systolic" placeholder="e.g. 120" inputmode="numeric" min="60" max="250"></div>
     <div class="form-group"><label>Diastolic (bottom number)</label><input type="number" id="bp-diastolic" placeholder="e.g. 80" inputmode="numeric" min="30" max="150"></div>
     <div class="form-group"><label>Date</label><input type="date" id="bp-date"></div>
-    <button class="btn btn-primary" onclick="saveBP()">💾 Save Reading</button>
+    <button class="btn btn-primary" onclick="saveBP()">ð¾ Save Reading</button>
     <div id="bp-alert"></div>
     <div id="bp-list" style="margin-top:12px;"></div>
   </div>
 
   <!-- Vaccination Record -->
   <div class="card">
-    <div class="card-title">💉 Vaccination Record</div>
+    <div class="card-title">ð Vaccination Record</div>
     <div class="form-group"><label>Vaccine Name</label><input type="text" id="vacc-name" placeholder="e.g. COVID-19, Flu, Tetanus"></div>
     <div class="form-group"><label>Date Given</label><input type="date" id="vacc-date-given"></div>
     <div class="form-group"><label>Next Due Date (optional)</label><input type="date" id="vacc-next-due"></div>
-    <button class="btn btn-primary" onclick="saveVaccine()">💾 Add Vaccine</button>
+    <button class="btn btn-primary" onclick="saveVaccine()">ð¾ Add Vaccine</button>
     <div id="vacc-alert"></div>
     <div id="vacc-list" style="margin-top:12px;"></div>
   </div>
 
   <!-- Health Info Accordions -->
   <div class="card">
-    <div class="card-title">📖 Health Conditions Guide</div>
-    <p style="font-size:12px;color:#64748b;margin-bottom:12px;line-height:1.6;">Plain-language info about common conditions. Visit your nearest clinic — this applies to all patients including those without medical aid.</p>
+    <div class="card-title">ð Health Conditions Guide</div>
+    <p style="font-size:12px;color:#64748b;margin-bottom:12px;line-height:1.6;">Plain-language info about common conditions. Visit your nearest clinic â this applies to all patients including those without medical aid.</p>
     <div class="accordion-item">
-      <div class="accordion-header" onclick="toggleAccordion(this)"><span>❤️ Hypertension (High Blood Pressure)</span><span>▼</span></div>
+      <div class="accordion-header" onclick="toggleAccordion(this)"><span>â¤ï¸ Hypertension (High Blood Pressure)</span><span>â¼</span></div>
       <div class="accordion-body">
-        <strong>What is it?</strong> High blood pressure means your heart works too hard to pump blood. You usually have NO symptoms — it is called the "silent killer."<br><br>
-        <strong>⚠️ Warning signs:</strong> Severe headache, blurred vision, chest pain, or a nosebleed that won't stop — go to emergency immediately.<br><br>
-        <strong>🏥 When to go to clinic:</strong> For your first diagnosis, for regular check-ups (at least every 3 months), and if you run out of medication. Never stop your tablets without asking your doctor.
+        <strong>What is it?</strong> High blood pressure means your heart works too hard to pump blood. You usually have NO symptoms â it is called the "silent killer."<br><br>
+        <strong>â ï¸ Warning signs:</strong> Severe headache, blurred vision, chest pain, or a nosebleed that won't stop â go to emergency immediately.<br><br>
+        <strong>ð¥ When to go to clinic:</strong> For your first diagnosis, for regular check-ups (at least every 3 months), and if you run out of medication. Never stop your tablets without asking your doctor.
       </div>
     </div>
     <div class="accordion-item">
-      <div class="accordion-header" onclick="toggleAccordion(this)"><span>🍬 Diabetes Type 2</span><span>▼</span></div>
+      <div class="accordion-header" onclick="toggleAccordion(this)"><span>ð¬ Diabetes Type 2</span><span>â¼</span></div>
       <div class="accordion-body">
         <strong>What is it?</strong> Your body cannot control blood sugar properly. Sugar builds up in your blood and slowly damages your body over years if not treated.<br><br>
-        <strong>⚠️ Warning signs:</strong> Very thirsty all the time, urinating a lot, blurred vision, slow-healing wounds, tingling in your feet or hands.<br><br>
-        <strong>🏥 When to go to clinic:</strong> If any wound won't heal, blood sugar is very low (shaking/sweating/confused), or very high (very thirsty, tired, blurred vision), or if you run out of medication.
+        <strong>â ï¸ Warning signs:</strong> Very thirsty all the time, urinating a lot, blurred vision, slow-healing wounds, tingling in your feet or hands.<br><br>
+        <strong>ð¥ When to go to clinic:</strong> If any wound won't heal, blood sugar is very low (shaking/sweating/confused), or very high (very thirsty, tired, blurred vision), or if you run out of medication.
       </div>
     </div>
     <div class="accordion-item">
-      <div class="accordion-header" onclick="toggleAccordion(this)"><span>💨 Asthma</span><span>▼</span></div>
+      <div class="accordion-header" onclick="toggleAccordion(this)"><span>ð¨ Asthma</span><span>â¼</span></div>
       <div class="accordion-body">
-        <strong>What is it?</strong> The tubes that carry air into your lungs become narrow and inflamed, making it hard to breathe — especially when exercising, in cold air, or around dust and smoke.<br><br>
-        <strong>⚠️ Warning signs:</strong> Wheezing (a whistling sound), tight chest, coughing at night, difficulty breathing.<br><br>
-        <strong>🏥 When to go to emergency:</strong> If your reliever inhaler (usually a blue pump) is not helping within 10 minutes — call 10177 or go to the nearest emergency room immediately.
+        <strong>What is it?</strong> The tubes that carry air into your lungs become narrow and inflamed, making it hard to breathe â especially when exercising, in cold air, or around dust and smoke.<br><br>
+        <strong>â ï¸ Warning signs:</strong> Wheezing (a whistling sound), tight chest, coughing at night, difficulty breathing.<br><br>
+        <strong>ð¥ When to go to emergency:</strong> If your reliever inhaler (usually a blue pump) is not helping within 10 minutes â call 10177 or go to the nearest emergency room immediately.
       </div>
     </div>
     <div class="accordion-item">
-      <div class="accordion-header" onclick="toggleAccordion(this)"><span>🎗️ HIV / ARTs</span><span>▼</span></div>
+      <div class="accordion-header" onclick="toggleAccordion(this)"><span>ðï¸ HIV / ARTs</span><span>â¼</span></div>
       <div class="accordion-body">
         <strong>What is it?</strong> HIV is a virus that weakens your immune system. ARTs (antiretroviral treatment) control the virus so you can live a long, healthy life. ARTs are FREE at all South African public clinics.<br><br>
-        <strong>⚠️ Warning signs to see a doctor:</strong> Rapid weight loss, persistent fever, mouth sores, night sweats, or a cough lasting more than 2 weeks (possible TB).<br><br>
-        <strong>🏥 When to go to clinic:</strong> Every 1–2 months for medication collection. Never miss doses — the medication stops working if skipped too often. If you feel unwell, go sooner.
+        <strong>â ï¸ Warning signs to see a doctor:</strong> Rapid weight loss, persistent fever, mouth sores, night sweats, or a cough lasting more than 2 weeks (possible TB).<br><br>
+        <strong>ð¥ When to go to clinic:</strong> Every 1â2 months for medication collection. Never miss doses â the medication stops working if skipped too often. If you feel unwell, go sooner.
       </div>
     </div>
     <div class="accordion-item">
-      <div class="accordion-header" onclick="toggleAccordion(this)"><span>🫁 Tuberculosis (TB)</span><span>▼</span></div>
+      <div class="accordion-header" onclick="toggleAccordion(this)"><span>ð« Tuberculosis (TB)</span><span>â¼</span></div>
       <div class="accordion-body">
         <strong>What is it?</strong> TB is a bacterial infection that usually attacks the lungs. It spreads through the air when an infected person coughs or sneezes. TB is fully CURABLE with the right treatment.<br><br>
-        <strong>⚠️ Warning signs:</strong> Cough lasting more than 2–3 weeks, coughing up blood, night sweats, unexplained weight loss, always feeling tired.<br><br>
-        <strong>🏥 When to go to clinic:</strong> Go immediately if you have any warning signs. TB testing is FREE. You MUST complete the full 6-month treatment course — stopping early creates drug-resistant TB which is much harder to treat.
+        <strong>â ï¸ Warning signs:</strong> Cough lasting more than 2â3 weeks, coughing up blood, night sweats, unexplained weight loss, always feeling tired.<br><br>
+        <strong>ð¥ When to go to clinic:</strong> Go immediately if you have any warning signs. TB testing is FREE. You MUST complete the full 6-month treatment course â stopping early creates drug-resistant TB which is much harder to treat.
       </div>
     </div>
   </div>
 
   <!-- Mental Health Check-in -->
   <div class="card">
-    <div class="card-title">🧠 Mental Health Check-in</div>
-    <p style="font-size:12px;color:#64748b;margin-bottom:14px;line-height:1.6;">Answer honestly — this is just for you. Rate each question from 1 (poor / not at all) to 5 (great / very much).</p>
+    <div class="card-title">ð§  Mental Health Check-in</div>
+    <p style="font-size:12px;color:#64748b;margin-bottom:14px;line-height:1.6;">Answer honestly â this is just for you. Rate each question from 1 (poor / not at all) to 5 (great / very much).</p>
     <div class="mh-question">
-      <span class="mh-q-text">😊 How is your mood today?</span>
+      <span class="mh-q-text">ð How is your mood today?</span>
       <select id="mh-1" style="width:70px;border:1.5px solid #e2e8f0;border-radius:8px;padding:6px;font-family:'Poppins',sans-serif;font-size:13px;"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select>
     </div>
     <div class="mh-question">
-      <span class="mh-q-text">😴 How well are you sleeping?</span>
+      <span class="mh-q-text">ð´ How well are you sleeping?</span>
       <select id="mh-2" style="width:70px;border:1.5px solid #e2e8f0;border-radius:8px;padding:6px;font-family:'Poppins',sans-serif;font-size:13px;"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select>
     </div>
     <div class="mh-question">
-      <span class="mh-q-text">😰 Do you feel anxious or worried?</span>
+      <span class="mh-q-text">ð° Do you feel anxious or worried?</span>
       <select id="mh-3" style="width:70px;border:1.5px solid #e2e8f0;border-radius:8px;padding:6px;font-family:'Poppins',sans-serif;font-size:13px;"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select>
     </div>
     <div class="mh-question">
-      <span class="mh-q-text">🤝 Do you feel supported by others?</span>
+      <span class="mh-q-text">ð¤ Do you feel supported by others?</span>
       <select id="mh-4" style="width:70px;border:1.5px solid #e2e8f0;border-radius:8px;padding:6px;font-family:'Poppins',sans-serif;font-size:13px;"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select>
     </div>
     <div class="mh-question">
-      <span class="mh-q-text">🌟 Do you feel hopeful about the future?</span>
+      <span class="mh-q-text">ð Do you feel hopeful about the future?</span>
       <select id="mh-5" style="width:70px;border:1.5px solid #e2e8f0;border-radius:8px;padding:6px;font-family:'Poppins',sans-serif;font-size:13px;"><option>1</option><option>2</option><option selected>3</option><option>4</option><option>5</option></select>
     </div>
-    <button class="btn btn-primary" style="margin-top:14px;" onclick="mentalHealthCheck()">✅ Check My Score</button>
+    <button class="btn btn-primary" style="margin-top:14px;" onclick="mentalHealthCheck()">â Check My Score</button>
     <div id="mh-result"></div>
     <div style="margin-top:14px;padding:12px 14px;background:#fef3c7;border:1.5px solid #fbbf24;border-radius:10px;font-size:13px;color:#92400e;line-height:1.6;">
-      💛 <strong>Need to talk?</strong> SADAG Mental Health Helpline: <a href="tel:0800567567" style="color:#92400e;font-weight:700;">0800 567 567</a> — free, 24 hours a day.
+      ð <strong>Need to talk?</strong> SADAG Mental Health Helpline: <a href="tel:0800567567" style="color:#92400e;font-weight:700;">0800 567 567</a> â free, 24 hours a day.
     </div>
   </div>
 
   <!-- My Health Records -->
   <div class="card">
-    <div class="card-title">📁 My Health Records</div>
+    <div class="card-title">ð My Health Records</div>
 
-    <div style="font-size:13px;font-weight:700;color:#1e3a8a;margin-bottom:10px;">🧪 Lab Results</div>
+    <div style="font-size:13px;font-weight:700;color:#1e3a8a;margin-bottom:10px;">ð§ª Lab Results</div>
     <button class="btn btn-outline" style="margin-bottom:12px;" onclick="openModal('modal-lab')">+ Add Lab Result</button>
     <div id="lab-list"></div>
 
     <div style="height:1px;background:#e2e8f0;margin:16px 0;"></div>
 
-    <div style="font-size:13px;font-weight:700;color:#1e3a8a;margin-bottom:10px;">📡 Radiology Reports</div>
+    <div style="font-size:13px;font-weight:700;color:#1e3a8a;margin-bottom:10px;">ð¡ Radiology Reports</div>
     <button class="btn btn-outline" style="margin-bottom:12px;" onclick="openModal('modal-radio')">+ Add Radiology Report</button>
     <div id="radio-list"></div>
   </div>
 
 </div>
 
-<!-- ══════════════════════════════════════════════════════════ -->
-<!-- TAB BAR — position:fixed, z-index:9999, safe-area          -->
-<!-- ══════════════════════════════════════════════════════════ -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
+<!-- TAB BAR â position:fixed, z-index:9999, safe-area          -->
+<!-- ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ -->
 <div class="tab-bar" id="main-tab-bar">
-  <button class="tab-btn active" data-tab="profile" onclick="switchTab('profile',this)" type="button"><span class="ti">👤</span><span class="tl">Profile</span></button>
-  <button class="tab-btn" data-tab="card" onclick="switchTab('card',this)" type="button"><span class="ti">💳</span><span class="tl">My Card</span></button>
-  <button class="tab-btn" data-tab="care" onclick="switchTab('care',this)" type="button"><span class="ti">🏥</span><span class="tl">Find Care</span></button>
-  <button class="tab-btn" data-tab="chat" onclick="switchTab('chat',this)" type="button"><span class="ti">💬</span><span class="tl">AI Chat</span></button>
-  <button class="tab-btn" data-tab="emergency" onclick="switchTab('emergency',this)" type="button"><span class="ti">🚨</span><span class="tl">SOS</span></button>
-  <button class="tab-btn" data-tab="more" onclick="switchTab('more',this)" type="button"><span class="ti">📋</span><span class="tl">More</span></button>
+  <button class="tab-btn active" data-tab="profile" onclick="switchTab('profile',this)" type="button"><span class="ti">ð¤</span><span class="tl">Profile</span></button>
+  <button class="tab-btn" data-tab="card" onclick="switchTab('card',this)" type="button"><span class="ti">ð³</span><span class="tl">My Card</span></button>
+  <button class="tab-btn" data-tab="care" onclick="switchTab('care',this)" type="button"><span class="ti">ð¥</span><span class="tl">Find Care</span></button>
+  <button class="tab-btn" data-tab="chat" onclick="switchTab('chat',this)" type="button"><span class="ti">ð¬</span><span class="tl">AI Chat</span></button>
+  <button class="tab-btn" data-tab="emergency" onclick="switchTab('emergency',this)" type="button"><span class="ti">ð¨</span><span class="tl">SOS</span></button>
+  <button class="tab-btn" data-tab="more" onclick="switchTab('more',this)" type="button"><span class="ti">ð</span><span class="tl">More</span></button>
 </div>
 
 <!-- SEARCH RESULTS MODAL -->
@@ -724,8 +724,8 @@ body{
   <div class="modal-sheet" style="max-height:92vh;">
     <div class="modal-handle"></div>
     <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px;">
-      <div class="modal-title" id="search-modal-title">Finding…</div>
-      <button ontouchstart="" onclick="closeModal('modal-search')" style="background:none;border:none;font-size:26px;color:#94a3b8;cursor:pointer;padding:4px 0 4px 12px;touch-action:manipulation;">✕</button>
+      <div class="modal-title" id="search-modal-title">Findingâ¦</div>
+      <button ontouchstart="" onclick="closeModal('modal-search')" style="background:none;border:none;font-size:26px;color:#94a3b8;cursor:pointer;padding:4px 0 4px 12px;touch-action:manipulation;">â</button>
     </div>
     <div id="search-modal-body"></div>
   </div>
@@ -735,7 +735,7 @@ body{
 <div class="modal-overlay" id="modal-scan" onclick="if(event.target===this)closeModal('modal-scan')">
   <div class="modal-sheet">
     <div class="modal-handle"></div>
-    <div class="modal-title">📷 Scan Your Card</div>
+    <div class="modal-title">ð· Scan Your Card</div>
     <div id="scan-body"></div>
   </div>
 </div>
@@ -744,12 +744,12 @@ body{
 <div class="modal-overlay" id="modal-dependant" onclick="if(event.target===this)closeModal('modal-dependant')">
   <div class="modal-sheet">
     <div class="modal-handle"></div>
-    <div class="modal-title" id="dep-modal-title">👶 Add Dependant</div>
+    <div class="modal-title" id="dep-modal-title">ð¶ Add Dependant</div>
     <input type="hidden" id="dep-edit-id">
     <div class="form-group"><label>Full Name *</label><input type="text" id="dep-name" placeholder="e.g. Emma Geldenhuys"></div>
     <div class="form-group"><label>Sex</label>
       <select id="dep-sex">
-        <option value="">— Select —</option>
+        <option value="">â Select â</option>
         <option>Boy</option><option>Girl</option><option>Other</option>
       </select>
     </div>
@@ -771,10 +771,10 @@ body{
       <label>Road to Health Booklet Photos</label>
       <p style="font-size:11px;color:#94a3b8;margin-bottom:8px;">Photograph the weight/immunisation pages from the green booklet.</p>
       <input type="file" id="booklet-input" accept="image/*" style="position:fixed;left:-9999px;top:-9999px;opacity:0;width:1px;height:1px;" onchange="addBookletPhoto(this)">
-      <button class="btn btn-outline" style="margin-bottom:8px;" onclick="document.getElementById('booklet-input').click()">📷 Add Booklet Photo</button>
+      <button class="btn btn-outline" style="margin-bottom:8px;" onclick="document.getElementById('booklet-input').click()">ð· Add Booklet Photo</button>
       <div class="booklet-photos" id="dep-booklet-photos"></div>
     </div>
-    <button class="btn btn-primary" style="margin-top:6px;" onclick="saveDependant()">💾 Save</button>
+    <button class="btn btn-primary" style="margin-top:6px;" onclick="saveDependant()">ð¾ Save</button>
     <button class="modal-close-btn" onclick="closeModal('modal-dependant')">Cancel</button>
   </div>
 </div>
@@ -783,7 +783,7 @@ body{
 <div class="modal-overlay" id="modal-lab" onclick="if(event.target===this)closeModal('modal-lab')">
   <div class="modal-sheet">
     <div class="modal-handle"></div>
-    <div class="modal-title">🧪 Add Lab Result</div>
+    <div class="modal-title">ð§ª Add Lab Result</div>
     <div class="form-group"><label>Date</label><input type="date" id="lab-date"></div>
     <div class="form-group"><label>Laboratory</label>
       <select id="lab-provider" style="width:100%;padding:11px 13px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:14px;font-family:'Poppins',sans-serif;color:#1e293b;background:white;outline:none;">
@@ -791,9 +791,9 @@ body{
       </select>
     </div>
     <div class="form-group"><label>Test Name *</label><input type="text" id="lab-test" placeholder="e.g. Full Blood Count, HbA1c, Cholesterol"></div>
-    <div class="form-group"><label>Results / Notes</label><textarea id="lab-notes" rows="3" style="width:100%;padding:11px 13px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:14px;font-family:'Poppins',sans-serif;color:#1e293b;background:white;outline:none;resize:vertical;" placeholder="e.g. HbA1c: 7.2% — good control. Follow up in 3 months."></textarea></div>
+    <div class="form-group"><label>Results / Notes</label><textarea id="lab-notes" rows="3" style="width:100%;padding:11px 13px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:14px;font-family:'Poppins',sans-serif;color:#1e293b;background:white;outline:none;resize:vertical;" placeholder="e.g. HbA1c: 7.2% â good control. Follow up in 3 months."></textarea></div>
     <div class="form-group"><label>Photo of Report (optional)</label><input type="file" id="lab-photo" accept="image/*" capture="environment" style="font-size:13px;font-family:'Poppins',sans-serif;width:100%;"></div>
-    <button class="btn btn-primary" style="margin-top:6px;" onclick="saveLabResult()">💾 Save</button>
+    <button class="btn btn-primary" style="margin-top:6px;" onclick="saveLabResult()">ð¾ Save</button>
     <button class="modal-close-btn" onclick="closeModal('modal-lab')">Cancel</button>
   </div>
 </div>
@@ -802,7 +802,7 @@ body{
 <div class="modal-overlay" id="modal-radio" onclick="if(event.target===this)closeModal('modal-radio')">
   <div class="modal-sheet">
     <div class="modal-handle"></div>
-    <div class="modal-title">📡 Add Radiology Report</div>
+    <div class="modal-title">ð¡ Add Radiology Report</div>
     <div class="form-group"><label>Date</label><input type="date" id="radio-date"></div>
     <div class="form-group"><label>Provider / Facility</label><input type="text" id="radio-provider" placeholder="e.g. SCP Radiology, Mediclinic, Netcare"></div>
     <div class="form-group"><label>Type of Scan</label>
@@ -810,15 +810,15 @@ body{
         <option>X-ray</option><option>CT Scan</option><option>MRI</option><option>Ultrasound</option><option>Other</option>
       </select>
     </div>
-    <div class="form-group"><label>Findings / Notes</label><textarea id="radio-notes" rows="3" style="width:100%;padding:11px 13px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:14px;font-family:'Poppins',sans-serif;color:#1e293b;background:white;outline:none;resize:vertical;" placeholder="e.g. Chest X-ray — no consolidation, mild hyperinflation."></textarea></div>
+    <div class="form-group"><label>Findings / Notes</label><textarea id="radio-notes" rows="3" style="width:100%;padding:11px 13px;border:1.5px solid #e2e8f0;border-radius:10px;font-size:14px;font-family:'Poppins',sans-serif;color:#1e293b;background:white;outline:none;resize:vertical;" placeholder="e.g. Chest X-ray â no consolidation, mild hyperinflation."></textarea></div>
     <div class="form-group"><label>Photo of Report (optional)</label><input type="file" id="radio-photo" accept="image/*" capture="environment" style="font-size:13px;font-family:'Poppins',sans-serif;width:100%;"></div>
-    <button class="btn btn-primary" style="margin-top:6px;" onclick="saveRadiology()">💾 Save</button>
+    <button class="btn btn-primary" style="margin-top:6px;" onclick="saveRadiology()">ð¾ Save</button>
     <button class="modal-close-btn" onclick="closeModal('modal-radio')">Cancel</button>
   </div>
 </div>
 
 <script>
-// ─── Safe Storage ──────────────────────────────────────────────────
+// âââ Safe Storage ââââââââââââââââââââââââââââââââââââââââââââââââââ
 const Store = (() => {
   let _m={},_ok=false;
   try{localStorage.setItem('_t','1');localStorage.removeItem('_t');_ok=true;}catch(e){}
@@ -829,7 +829,7 @@ const Store = (() => {
   };
 })();
 
-// ─── Tab Navigation ────────────────────────────────────────────────
+// âââ Tab Navigation ââââââââââââââââââââââââââââââââââââââââââââââââ
 window.switchTab=function(name,btn){
   try{
     document.querySelectorAll('.screen').forEach(function(s){s.classList.remove('active');});
@@ -846,7 +846,7 @@ window.switchTab=function(name,btn){
   }catch(e){}
 };
 
-// ─── Profile Save / Load ────────────────────────────────────────────
+// âââ Profile Save / Load ââââââââââââââââââââââââââââââââââââââââââââ
 function saveProfile(){
   const profile={
     name:     document.getElementById('p-name').value.trim(),
@@ -866,9 +866,9 @@ function saveProfile(){
     ecRel:    document.getElementById('p-ec-rel').value.trim(),
     ecNum:    document.getElementById('p-ec-num').value.trim(),
   };
-  if(!profile.name){showAlert('profile-alert','⚠️ Please enter your full name.','error');return;}
+  if(!profile.name){showAlert('profile-alert','â ï¸ Please enter your full name.','error');return;}
   Store.set('hos_profile',JSON.stringify(profile));
-  showAlert('profile-alert','✅ Profile saved successfully!');
+  showAlert('profile-alert','â Profile saved successfully!');
   refreshHeader();
 }
 function loadProfile(){
@@ -903,11 +903,11 @@ function refreshHeader(){
   if(p.name) document.getElementById('header-sub').textContent='Hi '+p.name.split(' ')[0]+'! How can I help?';
 }
 
-// ─── Health Card ────────────────────────────────────────────────────
+// âââ Health Card ââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function renderHealthCard(){
   const raw=Store.get('hos_profile');
   const container=document.getElementById('card-content');
-  if(!raw){container.innerHTML='<div class="card"><div class="no-data">💳 Fill in your profile first.</div></div>';return;}
+  if(!raw){container.innerHTML='<div class="card"><div class="no-data">ð³ Fill in your profile first.</div></div>';return;}
   const p=JSON.parse(raw);
   const dobFmt=p.dob?new Date(p.dob).toLocaleDateString('en-ZA'):'Not set';
   const allergyHtml=p.allergies?p.allergies.split(',').map(a=>'<span class="tag tag-red">'+a.trim()+'</span>').join(''):'<span style="color:#94a3b8;font-size:13px">None recorded</span>';
@@ -923,14 +923,14 @@ function renderHealthCard(){
       const taken2=taken.includes(m);
       const safeM=m.replace(/'/g,"\\'");
       return '<div class="med-track-item '+(taken2?'taken':'')+'" onclick="toggleMedTaken(\''+safeM+'\')">'
-        +'<div class="mt-check">'+(taken2?'✅':'⬜')+'</div>'
+        +'<div class="mt-check">'+(taken2?'â':'â¬')+'</div>'
         +'<div class="mt-name">'+m+'</div>'
         +'<div class="mt-status '+(taken2?'done':'todo')+'">'+(taken2?'Taken today':'Not yet')+'</div>'
         +'</div>';
     }).join('');
-    trackerHtml='<div class="card"><div class="card-title">💊 Today\'s Medication Tracker</div>'
+    trackerHtml='<div class="card"><div class="card-title">ð Today\'s Medication Tracker</div>'
       +'<p style="font-size:13px;color:#64748b;margin-bottom:14px;">Tap each medication to mark as taken. Resets daily at midnight.</p>'
-      +'<div style="background:#eff6ff;border-radius:10px;padding:10px 14px;margin-bottom:12px;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">📋</span><span style="font-size:14px;font-weight:600;color:#1e40af;">'+taken.length+' of '+medList.length+' taken today</span></div>'
+      +'<div style="background:#eff6ff;border-radius:10px;padding:10px 14px;margin-bottom:12px;display:flex;align-items:center;gap:10px;"><span style="font-size:22px;">ð</span><span style="font-size:14px;font-weight:600;color:#1e40af;">'+taken.length+' of '+medList.length+' taken today</span></div>'
       +rows+'</div>';
   }
 
@@ -939,12 +939,12 @@ function renderHealthCard(){
   if(p.aidScheme&&p.aidScheme!=='None / Uninsured'){
     const data=getMedAidCoverage(p.aidScheme,p.aidPlan);
     const rows=data.map(r=>'<div class="coverage-row"><div class="cov-icon">'+r.icon+'</div><div class="cov-label"><strong>'+r.service+'</strong>'+r.detail+'</div><div class="cov-badge '+r.level+'">'+r.label+'</div></div>').join('');
-    coverageHtml='<div class="card"><div class="card-title">💚 Medical Aid Coverage</div>'
-      +'<div class="aid-badge">✅ '+p.aidScheme+(p.aidPlan?' — '+p.aidPlan:'')+'</div>'
-      +'<div class="info-grid"><div class="info-box"><div class="lbl">Membership No.</div><div class="val">'+(p.aidNum||'—')+'</div></div><div class="info-box"><div class="lbl">Plan / Option</div><div class="val">'+(p.aidPlan||'—')+'</div></div></div>'
+    coverageHtml='<div class="card"><div class="card-title">ð Medical Aid Coverage</div>'
+      +'<div class="aid-badge">â '+p.aidScheme+(p.aidPlan?' â '+p.aidPlan:'')+'</div>'
+      +'<div class="info-grid"><div class="info-box"><div class="lbl">Membership No.</div><div class="val">'+(p.aidNum||'â')+'</div></div><div class="info-box"><div class="lbl">Plan / Option</div><div class="val">'+(p.aidPlan||'â')+'</div></div></div>'
       +'<p style="font-size:12px;color:#64748b;margin-bottom:12px;line-height:1.5;">General guide only. Log in to your scheme\'s app for exact benefits.</p>'
       +rows
-      +'<a href="'+getSchemeWebsite(p.aidScheme)+'" target="_blank" class="btn btn-outline" style="margin-top:14px;font-size:13px;padding:11px;display:block;text-align:center;text-decoration:none;">🔍 View My '+p.aidScheme+' Benefits</a>'
+      +'<a href="'+getSchemeWebsite(p.aidScheme)+'" target="_blank" class="btn btn-outline" style="margin-top:14px;font-size:13px;padding:11px;display:block;text-align:center;text-decoration:none;">ð View My '+p.aidScheme+' Benefits</a>'
       +'</div>';
   }
 
@@ -955,26 +955,26 @@ function renderHealthCard(){
 
   container.innerHTML=
     '<div class="health-card">'
-      +photoOnCard
-      +'<div class="card-chip">💳</div>'
-      +'<div class="card-name">'+(p.name||'—')+'</div>'
-      +'<div class="card-id">SA ID: '+(p.said||'—')+'</div>'
+      +fotoOnCard
+      +'<div class="card-chip">ð³</div>'
+      +'<div class="card-name">'+(p.name||'â')+'</div>'
+      +'<div class="card-id">SA ID: '+(p.said||'â')+'</div>'
       +'<div class="card-row">'
-        +'<div class="card-field"><label>DATE OF BIRTH</label><div class="val">'+dobFmt+'</div></div>'
+        +'<div class="card-field"><label>DATE OF BIRTH</label><div class="val">'+dobFmt+ '</div></div>'
         +'<div class="card-field"><label>BLOOD TYPE</label><div class="val">'+(p.blood||'?')+'</div></div>'
         +(p.aidScheme?'<div class="card-field"><label>MEDICAL AID</label><div class="val">'+p.aidScheme+'</div></div>':'')
       +'</div>'
     +'</div>'
     +trackerHtml
     +coverageHtml
-    +'<div class="card"><div class="card-title">🚨 Medical Alerts</div>'
+    +'<div class="card"><div class="card-title">ð¨ Medical Alerts</div>'
       +'<div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;letter-spacing:0.5px;margin:0 0 8px;">Allergies</div>'
       +'<div>'+allergyHtml+'</div>'
       +'<div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;letter-spacing:0.5px;margin:14px 0 8px;">Chronic Conditions</div>'
       +'<div>'+condHtml+'</div>'
       +(p.meds?'<div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;letter-spacing:0.5px;margin:14px 0 8px;">Medications</div><p style="font-size:13px;color:#444;">'+p.meds+'</p>':'')
     +'</div>'
-    +'<div class="card"><div class="card-title">📱 My QR Code</div>'
+    +'<div class="card"><div class="card-title">ð± My QR Code</div>'
       +'<p style="font-size:13px;color:#64748b;margin-bottom:12px;">Healthcare providers can scan this for your key medical info.</p>'
       +'<div class="qr-container"><div id="qrcode"></div><div class="qr-label">Scan to view patient info</div></div>'
     +'</div>';
@@ -994,34 +994,34 @@ function toggleMedTaken(med){
   renderHealthCard();
 }
 
-// ─── Medical Aid Coverage Data ─────────────────────────────────────
+// âââ Medical Aid Coverage Data âââââââââââââââââââââââââââââââââââââ
 function getMedAidCoverage(scheme,plan){
   const pl=(plan||'').toLowerCase();
   const isHospOnly=pl.includes('hospital')||pl.includes('keycare')||pl.includes('core')||pl.includes('primary');
   const isComp=pl.includes('comprehen')||pl.includes('exec')||pl.includes('priority')||pl.includes('plus');
   const base=[
-    {icon:'🏥',service:'Emergency Treatment',detail:'All schemes must cover life-threatening emergencies at any hospital',level:'cov-full',label:'Full Cover'},
-    {icon:'💊',service:'Chronic Medication (PMB conditions)',detail:'270 prescribed minimum benefit conditions — covered by law at all schemes',level:'cov-full',label:'Full Cover'},
-    {icon:'🚑',service:'Ambulance / Emergency Transport',detail:'Emergency evacuation to nearest appropriate facility',level:'cov-full',label:'Full Cover'},
+    {icon:'ð¥',service:'Emergency Treatment',detail:'All schemes must cover life-threatening emergencies at any hospital',level:'cov-full',label:'Full Cover'},
+    {icon:'ð',service:'Chronic Medication (PMB conditions)',detail:'270 prescribed minimum benefit conditions â covered by law at all schemes',level:'cov-full',label:'Full Cover'},
+    {icon:'ð',service:'Ambulance / Emergency Transport',detail:'Emergency evacuation to nearest appropriate facility',level:'cov-full',label:'Full Cover'},
   ];
   if(isHospOnly) return[...base,
-    {icon:'👨‍⚕️',service:'GP Visits',detail:'Not included on hospital plan — pay from your pocket',level:'cov-none',label:'Not Covered'},
-    {icon:'🩺',service:'Specialist Visits',detail:'Only if admitted to hospital',level:'cov-part',label:'In-hospital only'},
-    {icon:'🦷',service:'Dentist',detail:'Not included on hospital plan',level:'cov-none',label:'Not Covered'},
-    {icon:'💊',service:'Day-to-day Medication',detail:'Not included — use savings account or pay cash',level:'cov-none',label:'Not Covered'},
+    {icon:'ð¨ââï¸',service:'GP Visits',detail:'Not included on hospital plan â pay from your pocket',level:'cov-none',label:'Not Covered'},
+    {icon:'ð©º',service:'Specialist Visits',detail:'Only if admitted to hospital',level:'cov-part',label:'In-hospital only'},
+    {icon:'ð¦·',service:'Dentist',detail:'Not included on hospital plan',level:'cov-none',label:'Not Covered'},
+    {icon:'ð',service:'Day-to-day Medication',detail:'Not included â use savings account or pay cash',level:'cov-none',label:'Not Covered'},
   ];
   if(isComp) return[...base,
-    {icon:'👨‍⚕️',service:'GP Visits',detail:'Fully covered at designated service providers',level:'cov-full',label:'Full Cover'},
-    {icon:'🩺',service:'Specialist Visits',detail:'Covered with GP referral at network specialists',level:'cov-full',label:'Full Cover'},
-    {icon:'🦷',service:'Dentist',detail:'Covered up to annual dental limit',level:'cov-part',label:'Annual Limit'},
-    {icon:'👁️',service:'Optometrist',detail:'Eye test and frames — annual benefit',level:'cov-part',label:'Annual Limit'},
-    {icon:'💊',service:'Day-to-day Medication',detail:'Covered from medical savings account (MSA)',level:'cov-part',label:'Via MSA'},
+    {icon:'ð¨ââï¸',service:'GP Visits',detail:'Fully covered at designated service providers',level:'cov-full',label:'Full Cover'},
+    {icon:'ð©º',service:'Specialist Visits',detail:'Covered with GP referral at network specialists',level:'cov-full',label:'Full Cover'},
+    {icon:'ð¦·',service:'Dentist',detail:'Covered up to annual dental limit',level:'cov-part',label:'Annual Limit'},
+    {icon:'ðï¸',service:'Optometrist',detail:'Eye test and frames â annual benefit',level:'cov-part',label:'Annual Limit'},
+    {icon:'ð',service:'Day-to-day Medication',detail:'Covered from medical savings account (MSA)',level:'cov-part',label:'Via MSA'},
   ];
   return[...base,
-    {icon:'👨‍⚕️',service:'GP Visits',detail:'Covered at network GPs — co-payment may apply',level:'cov-part',label:'Network Only'},
-    {icon:'🩺',service:'Specialist Visits',detail:'Requires GP referral — network specialists preferred',level:'cov-part',label:'With Referral'},
-    {icon:'🦷',service:'Dentist',detail:'Basic dentistry — check your annual limit',level:'cov-part',label:'Partial'},
-    {icon:'💊',service:'Day-to-day Medication',detail:'Via savings account or self-payment gap',level:'cov-part',label:'Partial'},
+    {icon:'ð¨ââï¸',service:'GP Visits',detail:'Covered at network GPs â co-payment may apply',level:'cov-part',label:'Network Only'},
+    {icon:'ð©º',service:'Specialist Visits',detail:'Requires GP referral â network specialists preferred',level:'cov-part',label:'With Referral'},
+    {icon:'ð¦·',service:'Dentist',detail:'Basic dentistry â check your annual limit',level:'cov-part',label:'Partial'},
+    {icon:'ð',service:'Day-to-day Medication',detail:'Via savings account or self-payment gap',level:'cov-part',label:'Partial'},
   ];
 }
 function getSchemeWebsite(scheme){
@@ -1029,7 +1029,7 @@ function getSchemeWebsite(scheme){
   return s[scheme]||'https://www.medicalaidcomparison.co.za';
 }
 
-// ─── Emergency Screen ──────────────────────────────────────────────
+// âââ Emergency Screen ââââââââââââââââââââââââââââââââââââââââââââââ
 function renderEmergency(){
   const raw=Store.get('hos_profile');
   const c=document.getElementById('emergency-content');
@@ -1040,12 +1040,12 @@ function renderEmergency(){
     ?'<div style="display:flex;justify-content:center;margin-bottom:14px;"><div class="em-photo-circle"><img src="'+photoB64+'" alt="Patient photo"></div></div>'
     :'';
   c.innerHTML=photoHtml
-    +'<div class="info-grid"><div class="info-box"><div class="lbl">Patient Name</div><div class="val">'+(p.name||'—')+'</div></div><div class="info-box"><div class="lbl">Blood Type</div><div class="val" style="color:#dc2626;font-size:18px;">'+(p.blood||'?')+'</div></div></div>'
-    +'<div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;margin:10px 0 6px;">🚫 Allergies</div>'
+    +'<div class="info-grid"><div class="info-box"><div class="lbl">Patient Name</div><div class="val">'+(p.name||'â')+'</div></div><div class="info-box"><div class="lbl">Blood Type</div><div class="val" style="color:#dc2626;font-size:18px;">'+(p.blood||'?')+'</div></div></div>'
+    +'<div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;margin:10px 0 6px;">ð« Allergies</div>'
     +'<div>'+(p.allergies?p.allergies.split(',').map(a=>'<span class="tag tag-red">'+a.trim()+'</span>').join(''):'<span style="color:#94a3b8;font-size:13px">None</span>')+'</div>'
-    +'<div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;margin:14px 0 6px;">💊 Medications</div>'
+    +'<div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;margin:14px 0 6px;">ð Medications</div>'
     +'<p style="font-size:13px;color:#444;">'+(p.meds||'None recorded')+'</p>'
-    +(p.ecName?'<div class="emergency-item" style="margin-top:12px;"><div class="em-icon">👤</div><div class="em-info"><div class="em-name">'+p.ecName+(p.ecRel?' ('+p.ecRel+')':'')+'</div><div class="em-num">'+(p.ecNum||'No number')+'</div></div>'+(p.ecNum?'<a href="tel:'+p.ecNum.replace(/\s/g,'')+'" class="em-call-btn" onclick="handleEmergencyCall(\''+p.ecNum.replace(/\s/g,'')+'\',event)">📞 Call</a>':'')+'</div>':'');
+    +(p.ecName?'<div class="emergency-item" style="margin-top:12px;"><div class="em-icon">ð¤</div><div class="em-info"><div class="em-name">'+p.ecName+(p.ecRel?' ('+p.ecRel+')':'')+'</div><div class="em-num">'+(p.ecNum||'No number')+'</div></div>'+(p.ecNum?'<a href="tel:'+p.ecNum.replace(/\s/g,'')+'" class="em-call-btn" onclick="handleEmergencyCall(\''+p.ecNum.replace(/\s/g,'')+'\',event)">ð Call</a>':'')+'</div>':'');
 
   // Family emergency section
   const famRaw=Store.get('hos_family');
@@ -1057,17 +1057,17 @@ function renderEmergency(){
     famContent.innerHTML=family.map(dep=>{
       const age=dep.dob?calcAge(dep.dob):'';
       return '<div class="dep-card">'
-        +'<div class="dep-name">'+escHtml(dep.name||'—')+(dep.sex?' ('+dep.sex+')':'')+(age?' · Age '+age:'')+'</div>'
-        +'<div class="dep-detail">🩸 Blood: '+(dep.blood||'?')+(dep.allergies?' · 🚫 Allergies: '+escHtml(dep.allergies):'')+'</div>'
-        +(dep.conditions?'<div class="dep-detail">🏥 Conditions: '+escHtml(dep.conditions)+'</div>':'')
-        +(dep.meds?'<div class="dep-detail">💊 Meds: '+escHtml(dep.meds)+'</div>':'')
-        +(dep.birthComplications?'<div class="dep-detail">🏥 Birth: '+escHtml(dep.birthComplications)+'</div>':'')
+        +'<div class="dep-name">'+escHtml(dep.name||'â')+(dep.sex?' ('+dep.sex+')':'')+(age?' Â· Age '+age:'')+'</div>'
+        +'<div class="dep-detail">ð©¸ Blood: '+(dep.blood||'?')+(dep.allergies?' Â· ð« Allergies: '+escHtml(dep.allergies):'')+'</div>'
+        +(dep.conditions?'<div class="dep-detail">ð¥ Conditions: '+escHtml(dep.conditions)+'</div>':'')
+        +(dep.meds?'<div class="dep-detail">ð Meds: '+escHtml(dep.meds)+'</div>':'')
+        +(dep.birthComplications?'<div class="dep-detail">ð¥ Birth: '+escHtml(dep.birthComplications)+'</div>':'')
         +'</div>';
     }).join('');
   } else if(famCard){famCard.style.display='none';}
 }
 
-// ─── Emergency Call Handler ────────────────────────────────────────
+// âââ Emergency Call Handler ââââââââââââââââââââââââââââââââââââââââ
 function handleEmergencyCall(number,event){
   const isDesktop=!/Mobi|Android|iPhone|iPad/i.test(navigator.userAgent);
   if(isDesktop){
@@ -1078,7 +1078,7 @@ function handleEmergencyCall(number,event){
   }
 }
 
-// ─── Location ──────────────────────────────────────────────────────
+// âââ Location ââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function detectLocation(){
   const statusEl=document.getElementById('location-status');
   const resultEl=document.getElementById('location-result');
@@ -1086,12 +1086,12 @@ function detectLocation(){
   const detectBtn=document.getElementById('detect-btn');
   const updateBtn=document.getElementById('update-btn');
   errorEl.style.display='none';errorEl.innerHTML='';
-  if(detectBtn){detectBtn.innerHTML='<span class="spinner"></span>Detecting…';detectBtn.disabled=true;}
-  if(updateBtn){updateBtn.innerHTML='<span class="spinner"></span>Updating…';updateBtn.disabled=true;}
+  if(detectBtn){detectBtn.innerHTML='<span class="spinner"></span>Detectingâ¦';detectBtn.disabled=true;}
+  if(updateBtn){updateBtn.innerHTML='<span class="spinner"></span>Updatingâ¦';updateBtn.disabled=true;}
   if(!navigator.geolocation){
-    errorEl.innerHTML='<div class="loc-error-box">⚠️ Location not supported by your browser. Open in Safari or Chrome on your phone.</div>';
+    errorEl.innerHTML='<div class="loc-error-box">â ï¸ Location not supported by your browser. Open in Safari or Chrome on your phone.</div>';
     errorEl.style.display='block';
-    if(detectBtn){detectBtn.innerHTML='📡 Detect My Location';detectBtn.disabled=false;}
+    if(detectBtn){detectBtn.innerHTML='ð¡ Detect My Location';detectBtn.disabled=false;}
     return;
   }
   navigator.geolocation.getCurrentPosition(
@@ -1101,7 +1101,7 @@ function detectLocation(){
       window._userLat=parseFloat(lat);
       window._userLon=parseFloat(lon);
       document.getElementById('loc-coords').textContent=lat+', '+lon;
-      document.getElementById('loc-display').textContent='Finding your address…';
+      document.getElementById('loc-display').textContent='Finding your addressâ¦';
       updateNearbyLinks(lat,lon,'');
       let locationName='';
       try{
@@ -1113,21 +1113,21 @@ function detectLocation(){
         const province=addr.state||'';
         locationName=[suburb||city,province].filter(Boolean).join(', ')||city||'';
         document.getElementById('loc-display').textContent=[suburb,city,province].filter(Boolean).join(', ')||'Location found';
-        document.getElementById('loc-coords').textContent=(addr.country?addr.country+' · ':'')+lat+', '+lon;
+        document.getElementById('loc-coords').textContent=(addr.country?addr.country+' Â· ':'')+lat+', '+lon;
         updateNearbyLinks(lat,lon,locationName);
         const raw=Store.get('hos_profile');
         if(raw){const p=JSON.parse(raw);p.lastLat=lat;p.lastLon=lon;p.lastLocName=locationName;Store.set('hos_profile',JSON.stringify(p));}
       }catch(e){document.getElementById('loc-display').textContent='Location detected';}
       statusEl.style.display='none';resultEl.style.display='block';
-      if(detectBtn){detectBtn.innerHTML='📡 Detect My Location';detectBtn.disabled=false;}
-      if(updateBtn){updateBtn.innerHTML='🔄 Update Location';updateBtn.disabled=false;}
+      if(detectBtn){detectBtn.innerHTML='ð¡ Detect My Location';detectBtn.disabled=false;}
+      if(updateBtn){updateBtn.innerHTML='ð Update Location';updateBtn.disabled=false;}
     },
     err=>{
-      const msg=err.code===1?'⚠️ Location permission denied.\n\nTo fix: go to Settings → Safari → Location → Allow.':err.code===2?'⚠️ Location unavailable. Make sure GPS or Wi-Fi is on.':'⚠️ Location timed out. Try again.';
+      const msg=err.code===1?'â ï¸ Location permission denied.\n\nTo fix: go to Settings â Safari â Location â Allow.':err.code===2?'â ï¸ Location unavailable. Make sure GPS or Wi-Fi is on.':'â ï¸ Location timed out. Try again.';
       errorEl.innerHTML='<div class="loc-error-box">'+msg.replace(/\n/g,'<br>')+'</div>';
       errorEl.style.display='block';
-      if(detectBtn){detectBtn.innerHTML='📡 Try Again';detectBtn.disabled=false;}
-      if(updateBtn){updateBtn.innerHTML='🔄 Try Again';updateBtn.disabled=false;}
+      if(detectBtn){detectBtn.innerHTML='ð¡ Try Again';detectBtn.disabled=false;}
+      if(updateBtn){updateBtn.innerHTML='ð Try Again';updateBtn.disabled=false;}
     },
     {enableHighAccuracy:true,timeout:15000}
   );
@@ -1139,18 +1139,18 @@ function updateNearbyLinks(lat,lon,locationName){
   const searches={'link-gp':'GP+doctor','link-hospital':'hospital+clinic','link-specialist':'specialist+doctor','link-pharmacy':'pharmacy','link-dentist':'dentist','link-physio':'physiotherapist','link-speech':'speech+therapist','link-ot':'occupational+therapist','link-optom':'optometrist','link-dietician':'dietician','link-psych':'psychologist'};
   for(const[id,q]of Object.entries(searches)){const el=document.getElementById(id);if(el)el.href=base+q+near+loc;}
   const note=document.getElementById('nearby-note');
-  if(note){note.style.color='#166534';note.textContent=locationName?'✅ Searching near '+locationName+' — tap any button.':'✅ Location detected — tap any button.';}
+  if(note){note.style.color='#166534';note.textContent=locationName?'â Searching near '+locationName+' â tap any button.':'â Location detected â tap any button.';}
 }
 
-// ─── Find Care: In-App Provider Search ────────────────────────────
-// ─── Google Maps Provider Search ──────────────────────────────────
+// âââ Find Care: In-App Provider Search ââââââââââââââââââââââââââââ
+// âââ Google Maps Provider Search ââââââââââââââââââââââââââââââââââ
 function openGoogleMaps(query){
   if(window._userLat&&window._userLon){
     // Use exact GPS coordinates for most accurate nearby results
     const url='https://www.google.com/maps/search/'+encodeURIComponent(query)+'/@'+window._userLat+','+window._userLon+',13z';
     window.open(url,'_blank');
   } else {
-    // No location yet — use "near me" fallback and prompt user
+    // No location yet â use "near me" fallback and prompt user
     const url='https://www.google.com/maps/search/'+encodeURIComponent(query+' near me');
     window.open(url,'_blank');
     // Also show a tip
@@ -1158,19 +1158,19 @@ function openGoogleMaps(query){
     if(el){
       const tip=document.createElement('div');
       tip.style.cssText='margin-top:10px;padding:10px 12px;background:#fef3c7;border:1.5px solid #f59e0b;border-radius:10px;font-size:12px;color:#92400e;';
-      tip.innerHTML='💡 <strong>Tip:</strong> Tap "Detect My Location" above first — results will be more accurate.';
+      tip.innerHTML='ð¡ <strong>Tip:</strong> Tap "Detect My Location" above first â results will be more accurate.';
       el.appendChild(tip);
       setTimeout(()=>tip.remove(),6000);
     }
   }
 }
 
-// ─── Medical Aid Coverage Database ────────────────────────────────
+// âââ Medical Aid Coverage Database ââââââââââââââââââââââââââââââââ
 const COV_DB={
   'Discovery Health':{
     _default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
     'keycare':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'check',optom:'check',physio:'check',psych:'check',ot:'check',speech:'check',dietician:'check'},
-    'essential':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'check'},
+    'essential':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'partial'},
     'classic':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'covered',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
     'comprehensive':{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'covered',optom:'covered',physio:'covered',psych:'covered',ot:'covered',speech:'covered',dietician:'covered'},
     'executive':{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'covered',optom:'covered',physio:'covered',psych:'covered',ot:'covered',speech:'covered',dietician:'covered'},
@@ -1178,14 +1178,14 @@ const COV_DB={
   'Bonitas':{
     _default:{gp:'partial',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
     'bonstart':{gp:'check',hospital:'covered',specialist:'check',pharmacy:'check',dentist:'check',optom:'check',physio:'check',psych:'check',ot:'check',speech:'check',dietician:'check'},
-    'bonessential':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'check'},
+    'bonessential':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'partial'},
     'bonsave':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
-    'bonfit':{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'covered',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
+    'bonfit':{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'tcovered',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
   },
   'Momentum Health':{
     _default:{gp:'partial',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
-    'ingwe':{gp:'check',hospital:'covered',specialist:'check',pharmacy:'check',dentist:'check',optom:'check',physio:'check',psych:'check',ot:'check',speech:'check',dietician:'check'},
-    'custom':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'check'},
+    'ingwe':{gp:'check',hospital:'covered',specialist:'check',harmacy:'check',dentist:'check',optom:'check',physio:'check',psych:'check',ot:'check',speech:'check',dietician:'check'},
+    'custom':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'partial'},
     'extender':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
     'summit':{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'covered',optom:'covered',physio:'covered',psych:'covered',ot:'covered',speech:'covered',dietician:'covered'},
   },
@@ -1194,11 +1194,11 @@ const COV_DB={
   'Fedhealth':{_default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'}},
   'Bestmed':{_default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'}},
   'Profmed':{_default:{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'covered',psych:'covered',ot:'partial',speech:'partial',dietician:'partial'}},
-  'Sizwe':{_default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'}},
+  'Sizzes':{_default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'}},
   'Keyhealth':{_default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'}},
 };
 const COV_LABELS={gp:'GP Visit',hospital:'Hospital',specialist:'Specialist',pharmacy:'Pharmacy',dentist:'Dentist',optom:'Optometrist',physio:'Physiotherapist',psych:'Psychologist',ot:'Occupational Therapist',speech:'Speech Therapist',dietician:'Dietician'};
-const COV_ICONS={gp:'👨‍⚕️',hospital:'🏥',specialist:'🩺',pharmacy:'💊',dentist:'🦷',optom:'👁️',physio:'🏃',psych:'🧠',ot:'🙌',speech:'🗣️',dietician:'🥗'};
+const COV_ICONS={gp:'ð¨ââï¸',hospital:'ð¥',specialist:'ð©º',pharmacy:'ð',dentist:'ð¦·',optom:'ðï¸',physio:'ð',psych:'ð§ ',ot:'ð',speech:'ð£ï¸',dietician:'ð¥'};
 
 function getCovStatus(scheme,plan,type){
   if(!scheme||scheme==='None / Uninsured')return null;
@@ -1213,8 +1213,8 @@ function getCovStatus(scheme,plan,type){
 
 function covBadgeHtml(status){
   if(!status)return'';
-  if(status==='covered')return'<span class="cov-result-badge cov-r-green">✓ Likely covered</span>';
-  return'<span class="cov-result-badge cov-r-amber">⚠️ Check benefits</span>';
+  if(status==='covered')return'<span class="cov-result-badge cov-r-green">â Likely covered</span>';
+  return'<span class="cov-result-badge cov-r-amber">â ï¸ Check benefits</span>';
 }
 
 function renderCoverageGuide(){
@@ -1225,37 +1225,37 @@ function renderCoverageGuide(){
   const scheme=p.aidScheme||'';
   const plan=p.aidPlan||'';
   if(!scheme||scheme==='None / Uninsured'){
-    wrap.innerHTML='<div class="card" style="border-left:4px solid #2563eb;padding:14px 18px;"><div style="font-size:13px;color:#64748b;line-height:1.7;">🛡️ <strong>Coverage guide:</strong> Save your medical aid scheme in <strong>Profile</strong> to see which providers are likely covered by your plan.</div></div>';
+    wrap.innerHTML='<div class="card" style="border-left:4px solid #2563eb;padding:14px 18px;"><div style="font-size:13px;color:#64748b;line-height:1.7;">ð¡ï¸ <strong>Coverage guide:</strong> Save your medical aid scheme in <strong>Profile</strong> to see which providers are likely covered by your plan.</div></div>';
     return;
   }
   const types=['gp','specialist','hospital','pharmacy','dentist','optom','physio','psych','dietician'];
   const rows=types.map(t=>{
     const st=getCovStatus(scheme,plan,t);
-    let badge='<span class="cov-result-badge" style="background:#f1f5f9;color:#64748b;">— Unknown</span>';
-    if(st==='covered')badge='<span class="cov-result-badge cov-r-green">✓ Covered</span>';
-    else if(st==='partial'||st==='check')badge='<span class="cov-result-badge cov-r-amber">⚠️ Check benefits</span>';
+    let badge='<span class="cov-result-badge" style="background:#f1f5f9;color:#64748b;">â Unknown</span>';
+    if(st==='covered')badge='<span class="cov-result-badge cov-r-green">â Covered</span>';
+    else if(st==='partial'||st==='check')badge='<span class="cov-result-badge cov-r-amber">â ï¸ Check benefits</span>';
     return'<tr><td>'+COV_ICONS[t]+' '+COV_LABELS[t]+'</td><td>'+badge+'</td></tr>';
   }).join('');
   const planTxt=plan?'<div style="font-size:12px;color:#64748b;margin-bottom:8px;">Plan: <strong style="color:#1e293b;">'+escHtml(plan)+'</strong></div>':'';
   wrap.innerHTML='<div class="card"><div class="cov-guide-header" onclick="toggleCovGuide(this)">'
-    +'<div class="card-title" style="margin-bottom:0;">🛡️ Coverage Guide</div>'
-    +'<span style="font-size:11px;color:#2563eb;font-weight:600;">Show ▼</span>'
+    +'<div class="card-title" style="margin-bottom:0;">ð¡ï¸ Coverage Guide</div>'
+    +'<span style="font-size:11px;color:#2563eb;font-weight:600;">Show â¼</span>'
     +'</div>'
     +'<div id="cov-guide-body" style="display:none;margin-top:12px;">'
     +'<div style="font-size:12px;color:#64748b;margin-bottom:6px;">Scheme: <strong style="color:#1e293b;">'+escHtml(scheme)+'</strong></div>'
     +planTxt
-    +'<p style="font-size:11px;color:#94a3b8;margin-bottom:8px;">General guide — confirm exact benefits with your scheme. PMB conditions are always covered by SA law.</p>'
+    +'<p style="font-size:11px;color:#94a3b8;margin-bottom:8px;">General guide â confirm exact benefits with your scheme. PMB conditions are always covered by SA law.</p>'
     +'<table class="cov-table"><thead><tr><th>Provider Type</th><th>Typical Cover</th></tr></thead><tbody>'+rows+'</tbody></table>'
     +'<div style="margin-top:14px;background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:10px;padding:11px 13px;font-size:12px;color:#1e40af;line-height:1.7;">'
-    +'ℹ️ <strong>PMB (Prescribed Minimum Benefits):</strong> By South African law, ALL medical aids MUST fully cover 270 serious conditions including emergencies, regardless of your plan. If your scheme refuses to cover a PMB condition, you can dispute it with the Council for Medical Schemes <strong>(0861 123 267)</strong>.'
+    +'â¹ï¸ <strong>PMB (Prescribed Minimum Benefits):</strong> By South African law, ALL medical aids MUST fully cover 270 serious conditions including emergencies, regardless of your plan. If your scheme refuses to cover a PMB condition, you can dispute it with the Council for Medical Schemes <strong>(0861 123 267)</strong>.'
     +'</div>'
     +'<div style="margin-top:14px;background:#f0fdf4;border:1.5px solid #86efac;border-radius:10px;padding:13px;font-size:13px;color:#166534;line-height:1.75;">'
-    +'<strong>🛡️ What is Gap Cover?</strong><br>'
+    +'<strong>ð¡ï¸ What is Gap Cover?</strong><br>'
     +'Medical aids pay doctors at a "scheme rate." Many specialists charge <em>more</em> than this. <strong>Gap cover pays the difference</strong> so you don\'t pay out of pocket after a specialist visit or hospital stay.<br><br>'
     +'<strong>Who needs it?</strong> Especially useful if you are on a hospital plan, or if you regularly see specialists.<br><br>'
-    +'<strong>SA Gap Cover Providers:</strong> Zestlife · Turnberry · Sirago · Guardrisk<br><br>'
+    +'<strong>SA Gap Cover Providers:</strong> Zestlife Â· Turnberry Â· Sirago Â· Guardrisk<br><br>'
     +'<strong>Dispute with your scheme?</strong> Council for Medical Schemes: <a href="tel:0861123267" style="color:#166534;font-weight:700;">0861 123 267</a><br><br>'
-    +'ℹ️ <em>Gap cover is separate from your medical aid — you pay a small additional monthly premium directly to the gap cover provider.</em>'
+    +'â¹ï¸ <em>Gap cover is separate from your medical aid â you pay a small additional monthly premium directly to the gap cover provider.</em>'
     +'</div>'
     +'</div></div>';
 }
@@ -1266,10 +1266,10 @@ function toggleCovGuide(el){
   if(!body)return;
   const open=body.style.display!=='none';
   body.style.display=open?'none':'block';
-  if(toggle)toggle.textContent=open?'Show ▼':'Hide ▲';
+  if(toggle)toggle.textContent=open?'Show â¼':'Hide â²';
 }
 
-// Broad OSM queries — cast a wide net for SA where tagging is inconsistent
+// Broad OSM queries â cast a wide net for SA where tagging is inconsistent
 const CARE_QUERIES={
   gp:       ['"amenity"="doctors"','"healthcare"="doctor"','"amenity"="clinic"','"healthcare"="clinic"','"amenity"="health_centre"','"healthcare"="centre"','"office"="medical"'],
   hospital: ['"amenity"="hospital"','"healthcare"="hospital"','"amenity"="clinic"','"healthcare"="clinic"','"amenity"="health_centre"','"healthcare"="centre"'],
@@ -1304,10 +1304,10 @@ function searchNearby(type,label,icon){
   const body=document.getElementById('search-modal-body');
   const gmTerm=GMAPS_TERMS[type]||label;
   const gmUrl='https://www.google.com/maps/search/'+encodeURIComponent(gmTerm+' near me');
-  const gmBtn='<a href="'+gmUrl+'" target="_blank" style="display:block;text-align:center;margin:14px 0 4px;padding:12px;background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;color:#166534;font-weight:700;font-size:13px;text-decoration:none;">🗺️ Not finding what you need? Search Google Maps →</a>';
+  const gmBtn='<a href="'+gmUrl+'" target="_blank" style="display:block;text-align:center;margin:14px 0 4px;padding:12px;background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;color:#166534;font-weight:700;font-size:13px;text-decoration:none;">ðºï¸ Not finding what you need? Search Google Maps â</a>';
 
-  if(!window._userLat||!window._userLon){
-    body.innerHTML='<div class="no-loc-box">📍 <strong>Location not detected yet.</strong><br><br>Go to Find Care and tap <b>"Detect My Location"</b> first, then search again.</div>'+gmBtn;
+  if(&window._userLat||!window._userLon){
+    body.innerHTML='<div class="no-loc-box">ð <strong>Location not detected yet.</strong><br><br>Go to Find Care and tap <b>"Detect My Location"</b> first, then search again.</div>'+gmBtn;
     openModal('modal-search');return;
   }
 
@@ -1315,12 +1315,12 @@ function searchNearby(type,label,icon){
   const selEl=document.getElementById('search-radius');
   const radius=selEl?parseInt(selEl.value)||30000:30000;
 
-  body.innerHTML='<div class="search-loading"><span class="spinner-dark"></span>Searching within '+(radius/1000)+'km…<br><small style="color:#94a3b8;font-size:11px;margin-top:6px;display:block;">Using OpenStreetMap data</small></div>';
+  body.innerHTML='<div class="search-loading"><span class="spinner-dark"></span>Searching within '+(radius/1000)+'kmâ¦<br><small style="color:#94a3b8;font-size:11px;margin-top:6px;display:block;">Using OpenStreetMap data</small></div>';
   openModal('modal-search');
 
   const queries=CARE_QUERIES[type]||['"amenity"="doctors"'];
   const parts=queries.map(q=>'node['+q+'](around:'+radius+','+lat+','+lon+');way['+q+'](around:'+radius+','+lat+','+lon+');').join('');
-  const query='[out:json][timeout:25];('+parts+');out center tags;';
+  const query='[out:json][timeout:25];('+parts+');out center tags';
   const url='https://overpass-api.de/api/interpreter?data='+encodeURIComponent(query);
 
   fetch(url)
@@ -1361,10 +1361,10 @@ function searchNearby(type,label,icon){
 
       if(!results.length){
         body.innerHTML=radSel
-          +'<div class="search-empty">😔 <strong>No results found</strong> in OpenStreetMap within '+(radius/1000)+'km.<br><br>'
-          +'OpenStreetMap data is sometimes incomplete in South Africa — many providers haven\'t been added yet.<br><br>'
+          +'<div class="search-empty">ð <strong>No results found</strong> in OpenStreetMap within '+(radius/1000)+'km.<br><br>'
+          +'OpenStreetMap data is sometimes incomplete in South Africa â many providers haven\'t been added yet.<br><br>'
           +'Try a larger radius above, or use Google Maps below which has more complete data.</div>'
-          +gmBtn+'<div class="search-credit">Data © OpenStreetMap contributors</div>';
+          +gmBtn+'<div class="search-credit">Data Â© OpenStreetMap contributors</div>';
         return;
       }
 
@@ -1378,27 +1378,27 @@ function searchNearby(type,label,icon){
         const gDirUrl='https://www.google.com/maps/dir/?api=1&destination='+r.elLat+','+r.elLon;
         html+='<div class="result-card">'
           +'<div class="result-name">'+icon+' '+escHtml(r.name)+'</div>'
-          +(covBadge?'<div>'+covBadge+'</div>':'')
-          +'<div class="result-dist">📍 '+distStr+' away</div>'
+          +(covBadge?'<div>'+covBadge+'</div>'':'')
+          +'<div class="result-dist">ð '+distStr+' away</div>'
           +(r.addr?'<div class="result-addr">'+escHtml(r.addr)+'</div>':'')
-          +(r.hours?'<div class="result-addr">🕐 '+escHtml(r.hours)+'</div>':'')
+          +(r.hours?'<div class="result-addr">ð '+escHtml(r.hours)+'</div>':'')
           +'<div class="result-actions">'
-          +(r.phone?'<a href="tel:'+r.phone.replace(/[\s\-()]/g,'')+'" class="result-actions btn-call">📞 Call</a>':'')
-          +'<a href="'+appleUrl+'" target="_blank" class="result-actions btn-dir">🍎 Maps</a>'
-          +'<a href="'+gDirUrl+'" target="_blank" class="result-actions btn-dir" style="background:#fef9c3;color:#713f12;">📍 Google</a>'
+          +(r.phone?'<a href="tel:'+r.phone.replace(/[\s\-()]/g,'')+'" class="result-actions btn-call">ð Call</a>':'')
+          +'<a href="'+appleUrl+'" target="_blank" class="result-actions btn-dir">ð Maps</a>'
+          +'<a href="'+gDirUrl+'" target="_blank" class="result-actions btn-dir" style="background:#fef9c3;color:#713f12;">ð Google</a>'
           +'</div></div>';
       });
-      html+=gmBtn+'<div class="search-credit">Data © OpenStreetMap contributors</div>';
+      html+=gmBtn+'<div class="search-credit">Data Â© OpenStreetMap contributors</div>';
       body.innerHTML=html;
     })
     .catch(()=>{
-      body.innerHTML='<div class="search-empty">⚠️ <strong>Search timed out.</strong><br><br>OpenStreetMap may be slow. Try again in a moment.</div>'+gmBtn;
+      body.innerHTML='<div class="search-empty">â ï¸ <strong>Search timed out.</strong><br><br>OpenStreetMap may be slow. Try again in a moment.</div>'+gmBtn;
     });
 }
 
 function escHtml(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 
-// ─── Alert Helper ──────────────────────────────────────────────────
+// âââ Alert Helper ââââââââââââââââââââââââââââââââââââââââââââââââââ
 function showAlert(id,msg,type='success'){
   const el=document.getElementById(id);
   if(!el)return;
@@ -1406,7 +1406,7 @@ function showAlert(id,msg,type='success'){
   setTimeout(()=>{el.innerHTML='';},3500);
 }
 
-// ─── Medication Autocomplete ───────────────────────────────────────
+// âââ Medication Autocomplete âââââââââââââââââââââââââââââââââââââââ
 const MED_LIST=['Metformin','Metformin 500mg','Metformin 850mg','Metformin 1000mg','Lisinopril','Lisinopril 5mg','Lisinopril 10mg','Lisinopril 20mg','Amlodipine','Amlodipine 5mg','Amlodipine 10mg','Atorvastatin','Atorvastatin 10mg','Atorvastatin 20mg','Atorvastatin 40mg','Simvastatin','Rosuvastatin','Losartan','Losartan 50mg','Losartan 100mg','Aspirin','Aspirin 75mg','Aspirin 150mg','Omeprazole','Omeprazole 20mg','Pantoprazole','Esomeprazole','Hydrochlorothiazide','Furosemide','Spironolactone','Bisoprolol','Atenolol','Carvedilol','Metoprolol','Warfarin','Clopidogrel','Apixaban','Rivaroxaban','Levothyroxine','Prednisone','Prednisolone','Amoxicillin','Augmentin','Ciprofloxacin','Doxycycline','Azithromycin','Co-trimoxazole','Metronidazole','Paracetamol','Panado','Ibuprofen','Diclofenac','Naproxen','Tramadol','Insulin Glargine','Insulin Aspart','Glibenclamide','Gliclazide','Sitagliptin','Salbutamol','Beclomethasone','Fluticasone','Budesonide','Cetirizine','Loratadine','Fexofenadine','Fluoxetine','Sertraline','Escitalopram','Amitriptyline','Venlafaxine','Tenofovir','Emtricitabine','Efavirenz','Lamivudine','Dolutegravir','Ferrous Sulphate','Folic Acid','Vitamin B12','Vitamin D','Calcium','Multivitamin','Zinc'];
 let medItems=[],medTimer=null;
 function searchMeds(val){
@@ -1417,7 +1417,7 @@ function searchMeds(val){
     const lower=val.toLowerCase();
     const matches=MED_LIST.filter(m=>m.toLowerCase().includes(lower)).slice(0,8);
     if(!matches.length){box.style.display='none';return;}
-    box.innerHTML=matches.map(m=>'<div onclick="addMed(\''+m.replace(/'/g,"\\'")+'\''+')" style="padding:11px 14px;font-size:13px;border-bottom:1px solid #f3f4f6;cursor:pointer;">💊 '+m+'</div>').join('');
+    box.innerHTML=matches.map(m=>'<div onclick="addMed(\''+m.replace(/'/g,"\\'")+'\''+')" style="padding:11px 14px;font-size:13px;border-bottom:1px solid #f3f4f6;cursor:pointer;">ð '+m+'</div>').join('');
     box.style.display='block';
   },200);
 }
@@ -1436,15 +1436,15 @@ function renderMedTags(){
   const c=document.getElementById('meds-tags');
   c.innerHTML=medItems.map(m=>{
     const s=m.replace(/'/g,"\\'");
-    return '<span style="display:inline-flex;align-items:center;gap:4px;background:#dbeafe;color:#1e40af;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:500;">💊 '+m
-      +'<span ontouchstart="" onclick="editMed(\''+s+'\')" style="cursor:pointer;font-size:12px;opacity:0.7;line-height:1;padding:1px 2px;" title="Edit">✏️</span>'
-      +'<span ontouchstart="" onclick="removeMed(\''+s+'\')" style="cursor:pointer;font-size:14px;opacity:0.6;line-height:1;" title="Remove">✕</span></span>';
+    return '<span style="display:inline-flex;align-items:center;gap:4px;background:#dbeafe;color:#1e40af;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:500;">ð '+m
+      +'<span ontouchstart="" onclick="editMed(\''+s+'\')" style="cursor:pointer;font-size:12px;opacity:0.7;line-height:1;padding:1px 2px;" title="Edit">âï¸</span>'
+      +'<span ontouchstart="" onclick="removeMed(\''+s+'\')" style="cursor:pointer;font-size:14px;opacity:0.6;line-height:1;" title="Remove">â</span></span>';
   }).join('');
   document.getElementById('p-meds').value=medItems.join(', ');
 }
 function medKeyDown(e){if(e.key==='Enter'){e.preventDefault();const v=document.getElementById('p-meds-input').value.trim();if(v)addMed(v);}}
 
-// ─── Conditions Autocomplete ───────────────────────────────────────
+// âââ Conditions Autocomplete âââââââââââââââââââââââââââââââââââââââ
 const COND_LIST=['Hypertension','Type 2 Diabetes','Type 1 Diabetes','Asthma','COPD','HIV (on ARVs)','Tuberculosis (TB)','Epilepsy','Depression','Anxiety Disorder','Bipolar Disorder','Schizophrenia','Hypothyroidism','Hyperthyroidism','Rheumatoid Arthritis','Osteoarthritis','Heart Failure','Coronary Artery Disease','Atrial Fibrillation','Chronic Kidney Disease','Liver Disease','Stroke (previous)','Migraine','Irritable Bowel Syndrome','Crohn\'s Disease','Ulcerative Colitis','Acid Reflux (GERD)','Peptic Ulcer','Anaemia','Sickle Cell Anaemia','Gout','Osteoporosis','Sleep Apnoea','Multiple Sclerosis','Parkinson\'s Disease','Alzheimer\'s Disease','Breast Cancer','Prostate Cancer','Cervical Cancer','Psoriasis','Eczema','Lupus (SLE)','Glaucoma','Obesity','High Cholesterol','Pregnancy','Chronic Back Pain','Fibromyalgia'];
 let condItems=[],condTimer=null;
 function searchConds(val){
@@ -1455,7 +1455,7 @@ function searchConds(val){
     const lower=val.toLowerCase();
     const matches=COND_LIST.filter(c=>c.toLowerCase().includes(lower)).slice(0,8);
     if(!matches.length){box.style.display='none';return;}
-    box.innerHTML=matches.map(c=>'<div ontouchstart="" onclick="addCond(\''+c.replace(/'/g,"\\'")+'\''+')" style="padding:11px 14px;font-size:13px;border-bottom:1px solid #f3f4f6;cursor:pointer;">🏥 '+c+'</div>').join('');
+    box.innerHTML=matches.map(c=>'<div ontouchstart="" onclick="addCond(\''+c.replace(/'/g,"\\'")+'\''+')" style="padding:11px 14px;font-size:13px;border-bottom:1px solid #f3f4f6;cursor:pointer;">ð¥ '+c+'</div>').join('');
     box.style.display='block';
   },150);
 }
@@ -1473,9 +1473,9 @@ function renderCondTags(){
   const c=document.getElementById('cond-tags');if(!c)return;
   c.innerHTML=condItems.map(m=>{
     const s=m.replace(/'/g,"\\'");
-    return '<span style="display:inline-flex;align-items:center;gap:4px;background:#fef3c7;color:#92400e;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:500;">🏥 '+m
-      +'<span ontouchstart="" onclick="editCond(\''+s+'\')" style="cursor:pointer;font-size:12px;opacity:0.7;line-height:1;padding:1px 2px;">✏️</span>'
-      +'<span ontouchstart="" onclick="removeCond(\''+s+'\')" style="cursor:pointer;font-size:14px;opacity:0.6;line-height:1;">✕</span></span>';
+    return '<span style="display:inline-flex;align-items:center;gap:4px;background:#fef3c7;color:#92400e;padding:5px 10px;border-radius:20px;font-size:12px;font-weight:500;">ð¥ '+m
+      +'<span ontouchstart="" onclick="editCond(\''+s+'\')" style="cursor:pointer;font-size:12px;opacity:0.7;line-height:1;padding:1px 2px;">âï¸</span>'
+      +'<span ontouchstart="" onclick="removeCond(\''+s+'\')" style="cursor:pointer;font-size:14px;opacity:0.6;line-height:1;">â</span></span>';
   }).join('');
   document.getElementById('p-conditions').value=condItems.join(', ');
 }
@@ -1485,54 +1485,54 @@ document.addEventListener('click',e=>{
   if(!e.target.closest('#p-meds-input')&&!e.target.closest('#med-suggestions'))document.getElementById('med-suggestions').style.display='none';
 });
 
-// ─── Voice Input ───────────────────────────────────────────────────
+// âââ Voice Input âââââââââââââââââââââââââââââââââââââââââââââââââââ
 let _voiceRec=null;
 function startVoice(fieldId,callback){
   const field=document.getElementById(fieldId);
   const btn=document.getElementById('v-'+fieldId);
   // Stop any running session
-  if(_voiceRec){try{_voiceRec.stop();}catch(e){}  _voiceRec=null;if(btn){btn.textContent='🎤';btn.classList.remove('listening');}return;}
+  if(_voiceRec){try{_voiceRec.stop();}catch(e){}  _voiceRec=null;if(btn){btn.textContent='ð¤';btn.classList.remove('listening');}return;}
   if(!('webkitSpeechRecognition' in window)&&!('SpeechRecognition' in window)){
-    addChatBubble('ai','🎤 Voice input works when the app is opened in Safari via a web address (not a local file).\n\nFor now, use your iPhone keyboard\'s built-in dictation:\n1. Tap the text field\n2. Tap the 🎤 key on your keyboard (bottom-left)\n3. Speak — your phone types it for you');
+    addChatBubble('ai','ð¤ Voice input works when the app is opened in Safari via a web address (not a local file).\n\nFor now, use your iPhone keyboard\'s built-in dictation:\n1. Tap the text field\n2. Tap the ð¤ key on your keyboard (bottom-left)\n3. Speak â your phone types it for you');
     switchTab('chat',document.querySelector('[data-tab="chat"]'));return;
   }
   const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
   _voiceRec=new SR();
   _voiceRec.lang='en-ZA';_voiceRec.continuous=false;_voiceRec.interimResults=false;
-  if(btn){btn.classList.add('listening');btn.textContent='🔴';}
+  if(btn){btn.classList.add('listening');btn.textContent='ð´';}
   _voiceRec.onresult=e=>{
     const text=e.results[0][0].transcript.trim();
     if(callback){callback(text);}else if(field){field.value=(field.value?field.value+' ':'')+text;field.dispatchEvent(new Event('input'));}
-    _voiceRec=null;if(btn){btn.textContent='🎤';btn.classList.remove('listening');}
+    _voiceRec=null;if(btn){btn.textContent='ð¤';btn.classList.remove('listening');}
   };
-  _voiceRec.onerror=()=>{_voiceRec=null;if(btn){btn.textContent='🎤';btn.classList.remove('listening');}};
-  _voiceRec.onend=()=>{_voiceRec=null;if(btn){btn.textContent='🎤';btn.classList.remove('listening');}};
+  _voiceRec.onerror=()=>{_voiceRec=null;if(btn){btn.textContent='ð¤';btn.classList.remove('listening');}};
+  _voiceRec.onend=()=>{_voiceRec=null;if(btn){btn.textContent='ð¤';btn.classList.remove('listening');}};
   _voiceRec.start();
 }
 document.addEventListener('click',e=>{if(!e.target.closest('#p-meds-input')&&!e.target.closest('#med-suggestions'))document.getElementById('med-suggestions').style.display='none';});
 
-// ─── AI CHAT ───────────────────────────────────────────────────────
+// âââ AI CHAT âââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 const AI_RULES=[
-  {kw:['hello','hi ','hey ','good morning','good day','hallo','howzit','goeie','sawubona'],r:'👋 Welcome to Health One Stop!\n\nI can help with:\n• 🤧 Cold, flu, fever, headaches\n• ❤️ Blood pressure & diabetes\n• 💊 Medication tips\n• 🎗️ HIV & ARVs, TB\n• 🧠 Mental health\n• 💚 Medical aid coverage\n• 🚨 Emergency warning signs\n\nTap a topic above or type your question.'},
-  {kw:['cold','flu','runny','sniff','blocked nose','congestion','cough','sore throat'],r:'🤧 Cold & Flu\n\nHome remedies:\n• Rest and plenty of fluids — rooibos tea with honey and lemon\n• Paracetamol (Panado) for fever & aches — 1g every 6 hours\n• Nasal saline spray or steam inhalation\n• Vitamin C and Zinc tablets speed recovery\n• Throat lozenges or warm saltwater gargles\n\nSee a doctor if:\n• Fever above 38.5°C for more than 2 days\n• Chest pain or difficulty breathing\n• Symptoms getting worse after 7 days'},
-  {kw:['fever','temperature','temp','chills','sweating','burning up'],r:'🌡️ Fever\n\nFever = 38°C or higher.\n\nWhat to do:\n• Paracetamol 1g every 6 hours for adults\n• Remove heavy clothing and blankets\n• Drink cool water regularly\n• Cool facecloth on forehead (not ice)\n\n🚨 Go to emergency immediately if:\n• Temperature above 40°C\n• Fever with stiff neck, skin rash, or confusion\n• Any fever in a child under 3 months\n• Fever lasting more than 3 days without improvement'},
-  {kw:['headache','head pain','migraine','head hurt','head sore'],r:'🤕 Headache\n\nFor tension headaches:\n• Drink water first — dehydration is the most common cause\n• Rest in a quiet, dark room\n• Paracetamol or Ibuprofen as directed\n• Cold or warm compress on forehead or neck\n\n🚨 Emergency immediately if:\n• Sudden severe "worst of your life" headache\n• After a head injury\n• With stiff neck, fever, or skin rash\n• With face drooping, arm weakness, or slurred speech (stroke signs)'},
-  {kw:['stomach','tummy','nausea','vomit','diarrhoea','diarrhea','loose stool','cramp','belly'],r:'🤢 Stomach Problems\n\nFor nausea, vomiting, or diarrhoea:\n• Drink small sips of fluid often to avoid dehydration\n• Oral Rehydration Solution (ORS) — buy at any pharmacy\n• Bland foods once eating: dry toast, bananas, rice\n• Buscopan for cramps; Imodium for diarrhoea (not if blood in stool)\n\nSee a doctor if:\n• Blood in stool or vomit\n• Severe pain that does not ease\n• Symptoms for more than 48 hours\n• Signs of dehydration: dark urine, dizziness, dry mouth'},
-  {kw:['blood pressure','hypertension','bp','high bp'],r:'❤️ Blood Pressure\n\nHigh BP has NO symptoms — "the silent killer."\n\nManage it by:\n• Taking medication EVERY day — never stop without your doctor\n• Reducing salt — avoid processed food and fast food\n• Walking at least 30 minutes daily\n• Stopping smoking and limiting alcohol\n• Free BP check at your pharmacy regularly\n\nNormal: below 120/80 | High: above 140/90\n\n🚨 Chest pain + severe headache + shortness of breath → call 10177 immediately.'},
-  {kw:['diabetes','blood sugar','glucose','sugar level','metformin','insulin'],r:'💉 Diabetes\n\nFor Type 2 Diabetes:\n• Take medication every day as prescribed — never skip\n• Eat regular small meals; avoid sugar, white bread, cool drinks\n• Walk 30 minutes daily — it directly lowers blood sugar\n• Check feet daily for cuts (diabetics heal slowly)\n• Eye test every year\n\nLow blood sugar: shaking, sweating, dizziness, confusion\n→ Eat something sweet immediately, then a proper meal.\n\nHigh blood sugar: thirst, frequent urination, tiredness, blurred vision → contact your doctor.'},
-  {kw:['emergency','heart attack','stroke','chest pain','not breathing','unconscious','faint','collapse'],r:'🚨 Emergency Warning Signs\n\nCall 10177 or ER24 (084 124) immediately:\n\n❤️ Heart attack: chest pain/pressure, left arm or jaw pain, sweating, nausea\n\n🧠 Stroke — FAST test:\n• Face drooping on one side\n• Arm weakness — can\'t raise both arms\n• Speech slurred or confused\n• Time — call 10177 NOW, every minute counts\n\n→ Tap the SOS tab for all emergency numbers.'},
-  {kw:['medical aid','scheme','cover','covered','discovery','bonitas','momentum','gems','benefit','insurance'],r:'💚 Medical Aid Coverage\n\nKey things all SA patients should know:\n• All schemes MUST by law cover 270 serious conditions (PMBs — Prescribed Minimum Benefits)\n• Emergency treatment at ANY hospital must always be covered\n• Network providers cost less — check your scheme\'s list\n• Always see a GP before a specialist to avoid co-payments\n\nTap the "My Card" tab to see your personal coverage summary after saving your profile.\n\nFor your exact benefits, log in to your scheme\'s app or website.'},
-  {kw:['wound','cut','bleeding','injury','burn','bleed'],r:'🩹 Wounds & Injuries\n\n1. Wash hands first\n2. Rinse wound under clean water for 1 minute\n3. Press firmly with clean cloth to stop bleeding\n4. Cover with sterile dressing\n\nSee a doctor if: deep wound, won\'t stop bleeding in 15 min, signs of infection (red/swollen/pus), animal bite, or no tetanus in 5 years.\n\n🔥 Burns: Run cool water for 10–20 min. Never use ice, butter, or toothpaste.'},
-  {kw:['allerg','rash','itch','hive','reaction','anaphylax','swelling'],r:'🌿 Allergies & Reactions\n\nMild allergies (sneezing, itchy eyes):\n• Cetirizine (Zyrtec) or Loratadine (Clarityne) — 1 tablet daily, no prescription\n\nSkin rash or itching:\n• Hydrocortisone 1% cream for small areas\n• Cool water compress to reduce itching\n\n🚨 Severe reaction (anaphylaxis) — call 10177:\n• Throat or tongue swelling\n• Difficulty breathing\n• Dizziness or collapse'},
-  {kw:['hiv','arv','antiretroviral','art','aids','positive','viral load'],r:'🎗️ HIV & ARVs\n\n• Take your ARVs every day at the SAME time — essential\n• Missing doses causes resistance — the medication stops working\n• ARVs are FREE at all public clinics in South Africa\n• Undetectable viral load = you cannot pass HIV to others (U=U)\n• Get tested for TB every year — HIV and TB often occur together\n\nSupport:\n• TAC: 0800 212 506 (free)\n• Visit your nearest public clinic or CHC every 6 months'},
-  {kw:['tb','tuberculosis','cough blood'],r:'🫁 Tuberculosis (TB)\n\nWarning signs:\n• Cough lasting more than 2–3 weeks\n• Coughing up blood\n• Night sweats; unexplained weight loss; fatigue\n\n→ Go to your nearest clinic immediately — TB testing is FREE.\n→ TB is CURABLE with the correct 6-month medication course.\n→ Never stop early — this creates drug-resistant TB.\n→ Tell close contacts to get tested.'},
-  {kw:['mental health','depression','anxiety','stress','sad','worry','panic','suicide','lonely'],r:'🧠 Mental Health\n\nYou are not alone.\n\nFor stress and anxiety:\n• Deep breathing: inhale 4 counts, hold 4, exhale 6\n• Regular exercise significantly reduces anxiety and depression\n• Talk to someone you trust\n• Reduce caffeine and alcohol\n\nFree SA helplines:\n• SADAG: 0800 456 789\n• Lifeline SA: 0861 322 322\n• Suicide Crisis Line: 0800 567 567\n\nIf you feel like harming yourself, please call 0800 567 567 or go to your nearest emergency room. You are valued.'},
-  {kw:['sleep','insomnia','tired','fatigue','exhausted','no energy'],r:'😴 Sleep & Fatigue\n\nTips for better sleep:\n• Keep a regular bedtime — even on weekends\n• No screens for 1 hour before bed\n• Keep room cool, dark, and quiet\n• Avoid caffeine after 2pm\n\nFatigue can be caused by:\n• Iron deficiency (anaemia) — very common in women\n• Underactive thyroid (hypothyroidism)\n• Diabetes or blood sugar problems\n• Depression or anxiety\n• Sleep apnoea\n\nIf constantly exhausted despite good sleep, see your doctor — a simple blood test checks most causes.'},
-  {kw:['medication','medicine','tablet','pill','prescription','dosage','drug'],r:'💊 Medication Tips\n\n• Take exactly as prescribed — never change doses yourself\n• Never skip, especially for BP, diabetes, HIV, and TB medication\n• Finish full antibiotic courses even if you feel better\n• Store in a cool, dry place — not in the bathroom\n• Tell your doctor ALL medications including vitamins and supplements\n• Never share prescription medication\n• If you miss a dose, take it as soon as you remember — unless it\'s almost time for the next dose'},
-  {kw:['covid','coronavirus','covid-19'],r:'🦠 COVID-19\n\nSymptoms: fever, cough, sore throat, body aches, loss of taste/smell, fatigue.\n\nAt home:\n• Rest and plenty of fluids\n• Paracetamol for fever and aches\n• Keep windows open for fresh air\n• Monitor oxygen — below 94% on a pulse oximeter, seek help\n\n🚨 Emergency if: difficulty breathing, oxygen below 94%, chest pain, confusion, or blue lips.'},
-  {kw:['thank','thanks','dankie','baie dankie','asante','ngiyabonga'],r:'😊 You are very welcome!\n\nRemember, I provide general health information only. For a proper diagnosis and treatment, please always see your doctor or nearest clinic.\n\nStay healthy! 💙'},
+  {kw:['hello','hi ','hey ','good morning','good day','hallo','howzit','goeie','sawubona'],r:'ð Welcome to Health One Stop!\n\nI can help with:\nâ¢ ð¤§ Cold, flu, fever, headaches\nâ¢ â¤ï¸ Blood pressure & diabetes\nâ¢ ð Medication tips\nâ¢ ðï¸ HIV & ARVs, TB\nâ¢ ð§  Mental health\nâ¢ ð Medical aid coverage\nâ¢ ð¨ Emergency warning signs\n\nTap a topic above or type your question.'},
+  {kw:['cold','flu','runny','sniff','blocked nose','congestion','cough','sore throat'],r:'ð¤§ Cold & Flu\n\nHome remedies:\nâ¢ Rest and plenty of fluids â rooibos tea with honey and lemon\nâ¢ Paracetamol (Panado) for fever & aches â 1g every 6 hours\nâ¢ Nasal saline spray or steam inhalation\nâ¢ Vitamin C and Zinc tablets speed recovery\nâ¢ Throat lozenges or warm saltwater gargles\n\nSee a doctor if:\nâ¢ Fever above 38.5Â°C for more than 2 days\nâ¢ Chest pain or difficulty breathing\nâ¢ Symptoms getting worse after 7 days'},
+  {kw:['fever','temperature','temp','chills','sweating','burning up'],r:'ð¡ï¸ Fever\n\nFever = 38Â°C or higher.\n\nWhat to do:\nâ¢ Paracetamol 1g every 6 hours for adults\nâ¢ Remove heavy clothing and blankets\nâ¢ Drink cool water regularly\nâ¢ Cool facecloth on forehead (not ice)\n\nð¨ Go to emergency immediately if:\nâ¢ Temperature above 40Â°C\nâ¢ Fever with stiff neck, skin rash, or confusion\nâ¢ Any fever in a child under 3 months\nâ¢ Fever lasting more than 3 days without improvement'},
+  {kw:['headache','head pain','migraine','head hurt','head sore'],r:'ð¤ Headache\n\nFor tension headaches:\nâ¢ Drink water first â dehydration is the most common cause\nâ¢ Rest in a quiet, dark room\nâ¢ Paracetamol or Ibuprofen as directed\nâ¢ Cold or warm compress on forehead or neck\n\nð¨ Emergency immediately if:\nâ¢ Sudden severe "worst of your life" headache\nâ¢ After a head injury\nâ¢ With stiff neck, fever, or skin rash\nâ¢ With face drooping, arm weakness, or slurred speech (stroke signs)'},
+  {kw:['stomach','tummy','nausea','vomit','diarrhoea','diarrhea','loose stool','cramp','belly'],r:'ð¤¢ Stomach Problems\n\nFor nausea, vomiting, or diarrhoea:\nâ¢ Drink small sips of fluid often to avoid dehydration\nâ¢ Oral Rehydration Solution (ORS) â buy at any pharmacy\nâ¢ Bland foods once eating: dry toast, bananas, rice\nâ¢ Buscopan for cramps; Imodium for diarrhoea (not if blood in stool)\n\nSee a doctor if:\nâ¢ Blood in stool or vomit\nâ¢ Severe pain that does not ease\nâ¢ Symptoms for more than 48 hours\nâ¢ Signs of dehydration: dark urine, dizziness, dry mouth'},
+  {kw:['blood pressure','hypertension','bp','high bp'],r:'â¤ï¸ Blood Pressure\n\nHigh BP has NO symptoms â "the silent killer."\n\nManage it by:\nâ¢ Taking medication EVERY day â never stop without your doctor\nâ¢ Reducing salt â avoid processed food and fast food\nâ¢ Walking at least 30 minutes daily\nâ¢ Stopping smoking and limiting alcohol\nâ¢ Free BP check at your pharmacy regularly\n\nNormal: below 120/80 | High: above 140/90\n\nð¨ Chest pain + severe headache + shortness of breath â call 10177 immediately.'},
+  {kw:['diabetes','blood sugar','glucose','sugar level','metformin','insulin'],r:'ð Diabetes\n\nFor Type 2 Diabetes:\nâ¢ Take medication every day as prescribed â hever skip\nâ¢ Eat regular small meals; avoid sugar, white bread, cool drinks\nâ¢ Walk 30 minutes daily â it directly lowers blood sugar\nâ¢ Check feet daily for cuts (diabetics heal slowly)\nâ¢ Eye test every year\n\nLow blood sugar: shaking, sweating, dizziness, confusion\nâ Eat something sweet immediately, then a proper meal.\n\nHigh blood sugar: thirst, frequent urination, tiredness, blurred vision â contact your doctor.'},
+  {kw:['emergency','heart attack','stroke','chest pain','not breathing','unconscious','faint','collapse'],r:'ð¨ Emergency Warning Signs\n\nCall 10177 or ER24 (084 124) immediately:\n\nâ¤ï¸ Heart attack: chest pain/pressure, left arm or jaw pain, sweating, nausea\n\nð§  Stroke â FAST test:\nâ¢ Face drooping on one side\nâ¢ Arm weakness â can\'t raise both arms\nâ¢ Speech slurred or confused\nâ¢ Time â call 10177 NOW, every minute counts\n\nâ Tap the SOS tab for all emergency numbers.'},
+  {kw:['medical aid','scheme','cover','covered','discovery','bonitas','momentum','gems','benefit','medshield'],r:'ð Medical Aid Coverage\n\nKey things all SA patients should know:\nâ¢ All schemes MUST by law cover 270 serious conditions (PMBs â Prescribed Minimum Benefits)\nâ¢ Emergency treatment at ANY hospital must always be covered\nâ¢ Network providers cost less â check your scheme\'s list\nâ¢ Always see a GP before a specialist to avoid co-payments\n\nTap the "My Card" tab to see your personal coverage summary after saving your profile.\n\nFor your exact benefits, log in to your scheme\'s app or website.'},
+  {kw:['wound','cut','bleeding','injury','burn','bleed'],r:'ð©¹ Wounds & Injuries\n\n1. Wash hands first\n2. Rinse wound under clean water for 1 minute\n3. Press firmly with clean cloth to stop bleeding\n4. Cover with sterile dressing\n\nSee a doctor if: deep wound, won\'t stop bleeding in 15 min, signs of infection (red/swollen/pus), animal bite, or no tetanus in 5 years.\n\nð¥ Burns: Run cool water for 10â20 min. Never use ice, butter, or toothpaste.'},
+  {kw:['allerg','rash','itch','hive','reaction','anaphylax','swelling'],r:'ð¿ Allergies & Reactions\n\nMild allergies (sneezing, itchy eyes):\nâ¢ Cetirizine (Zyrtec) or Loratadine (Clarityne) â 1 tablet daily, no prescription\n\nSkin rash or itching:\nâ¢ Hydrocortisone 1% cream for small areas\nâ¢ Cool water compress to reduce itching\n\nð¨ Severe reaction (anaphylaxis) â call 10177:\nâ¢ Throat or tongue swelling\nâ¢ Difficulty breathing\nâ¢ Dizziness or collapse'},
+  {kw:['hiv','arv','antiretroviral','art','aids','positive','viral load'],r:'ðï¸ HIV & ARVs\n\nâ¢ Take your ARVs every day at the SAME time â essential\nâ¢ Missing doses causes resistance â the medication stops working\nâ¢ ARVs are FREE at all public clinics in South Africa\nâ¢ Undetectable viral load = you cannot pass HIV to others (U=U)\nâ¢ Get tested for TB every year â HIV and TB often occur together\n\nSupport:\nâ¢ TAC: 0800 212 506 (free)\nâ¢ Visit your nearest public clinic or CHC every 6 months'},
+  {kw:['tb','tuberculosis','cough blood'],r:'ð« Tuberculosis (TB)\n\nWarning signs:\nâ¢ Cough lasting more than 2â3 weeks\nâ¢ Coughing up blood\nâ¢ Night sweats; unexplained weight loss; fatigue\n\nâ Go to your nearest clinic immediately â TB testing is FREE.\nâ TB is CURABLE with the correct 6-month medication course.\nâ Never stop early â this creates drug-resistant TB.\nâ Tell close contacts to get tested.'},
+  {kw:['mental health','depression','anxiety','stress','sad','worry','panic','suicide','lonely'],r:'ð§  Mental Health\n\nYou are not alone.\n\nFor stress and anxiety:\nâ¢ Deep breathing: inhale 4 counts, hold 4, exhale 6\nâ¢ Regular exercise significantly reduces anxiety and depression\nâ¢ Talk to someone you trust\nâ¢ Reduce caffeine and alcohol\n\nFree SA helplines:\nâ¢ SADAG: 0800 456 789\nâ¢ Lifeline SA: 0861 322 322\nâ¢ Suicide Crisis Line: 0800 567 567\n\nIf you feel like harming yourself, please call 0800 567 567 or go to your nearest emergency room. You are valued.'},
+  {kw:['sleep','insomnia','tired','fatigue','exhausted','no energy'],r:'ð´ Sleep & Fatigue\n\nTips for better sleep:\nâ¢ Keep a regular bedtime â even on weekends\nâ¢ No screens for 1 hour before bed\nâ¢ Keep room cool, dark, and quiet\nâ¢ Avoid caffeine after 2pm\n\nFatigue can be caused by:\nâ¢ Iron deficiency (anaemia) â very common in women\nâ¢ Underactive thyroid (hypothyroidism)\nâ¢ Diabetes or blood sugar problems\nâ¢ Depression or anxiety\nâ¢ Sleep apnoea\n\nIf constantly exhausted despite good sleep, see your doctor â a simple blood test checks most causes.'},
+  {kw:['medication','medicine','tablet','pill','prescription','dosage','drug'],r:'ð Medication Tips\n\nâ¢ Take exactly as prescribed â never change doses yourself\nâ¢ Never skip, especially for BP, diabetes, HIV, and TB medication\nâ¢ Finish full antibiotic courses even if you feel better\nâ¢ Store in a cool, dry place â not in the bathroom\nâ¢ Tell your doctor ALL medications including vitamins and supplements\nâ¢ Never share prescription medication\nâ¢ If you miss a dose, take it as soon as you remember â unless it\'s almost time for the next dose'},
+  {kw:['covid','coronavirus','covid-19'],r:'ð¦  COVID-19\n\nSymptoms: fever, cough, sore throat, body aches, loss of taste/smell, fatigue.\n\nAt home:\nâ¢ Rest and plenty of fluids\nâ¢ Paracetamol for fever and aches\nâ¢ Keep windows open for fresh air\nâ¢ Monitor oxygen â below 94% on a pulse oximeter, seek help\n\nð¨ Emergency if: difficulty breathing, oxygen below 94%, chest pain, confusion, or blue lips.'},
+  {kw:['thank','thanks','dankie','baie dankie','asante','ngiyabonga'],r:'ð You are very welcome!\n\nRemember, I provide general health information only. For a proper diagnosis and treatment, please always see your doctor or nearest clinic.\n\nStay healthy! ð'},
 ];
-const AI_DEFAULT='I don\'t have specific information on that. For reliable advice:\n\n• Visit your nearest clinic or GP\n• Call your scheme\'s nurse line (number on your membership card)\n• Ask your pharmacist — consultations are often free\n\nYou can ask me about: cold & flu, fever, headache, stomach problems, blood pressure, diabetes, HIV & ARVs, TB, mental health, medication, medical aid coverage, or sleep & fatigue.';
+const AI_DEFAULT='I don\'t have specific information on that. For reliable advice:\n\nâ¢ Visit your nearest clinic or GP\nâ¢ Call your scheme\'s nurse line (number on your membership card)\nâ¢ Ask your pharmacist â consultations are often free\n\nYou can ask me about: cold & flu, fever, headache, stomach problems, blood pressure, diabetes, HIV & ARVs, TB, mental health, medication, medical aid coverage, or sleep & fatigue.';
 
 function processChat(input){
   const lower=input.toLowerCase();
@@ -1557,7 +1557,7 @@ function sendChat(){
 
   const typing=document.createElement('div');
   typing.className='chat-typing';
-  typing.textContent='…';
+  typing.textContent='â¦';
   messages.appendChild(typing);
   messages.scrollTop=messages.scrollHeight;
 
@@ -1572,7 +1572,7 @@ function sendChat(){
 }
 function chatKeyDown(e){if(e.key==='Enter'){e.preventDefault();sendChat();}}
 
-// ─── Voice Guide ───────────────────────────────────────────────────
+// âââ Voice Guide âââââââââââââââââââââââââââââââââââââââââââââââââââ
 function toggleVoice(){
   document.getElementById('chat-input').focus();
   document.getElementById('mic-btn').classList.add('active');
@@ -1584,7 +1584,7 @@ function toggleVoice(){
     try{
       const r=new SR();
       r.lang='en-ZA';r.continuous=false;r.interimResults=false;
-      r.onstart=()=>addChatBubble('ai','🎤 Listening… speak now.');
+      r.onstart=()=>addChatBubble('ai','ð¤ Listeningâ¦ speak now.');
       r.onresult=e=>{if(e.results&&e.results[0]){const t=e.results[0][0].transcript;document.getElementById('chat-input').value=t;sendChat();}};
       r.onerror=()=>showVoiceGuide();
       r.start();return;
@@ -1593,7 +1593,7 @@ function toggleVoice(){
   showVoiceGuide();
 }
 function showVoiceGuide(){
-  addChatBubble('ai','🎤 How to use voice on your iPhone:\n\n1️⃣ Your keyboard is now open below\n2️⃣ Find the 🎤 microphone key on the keyboard (bottom row, near the space bar)\n3️⃣ Tap and hold the 🎤 key — speak your question\n4️⃣ Your words appear in the text box automatically\n5️⃣ Then tap ➤ to send\n\nNo mic key? Go to Settings → General → Keyboard → Enable Dictation.');
+  addChatBubble('ai','ð¤ How to use voice on your iPhone:\n\n1ï¸â£ Your keyboard is now open below\n2ï¸â£ Find the ð¤ microphone key on the keyboard (bottom row, near the space bar)\n3ï¸â£ Tap and hold the ð¤ key â speak your question\n4ï¸â£ Your words appear in the text box automatically\n5ï¸â£ Then tap â¤ to send\n\nNo mic key? Go to Settings â General â Keyboard â Enable Dictation.');
 }
 function addChatBubble(who,text){
   const messages=document.getElementById('chat-messages');
@@ -1604,7 +1604,7 @@ function addChatBubble(who,text){
   messages.scrollTop=messages.scrollHeight;
 }
 
-// ─── Camera / Card Scan with OCR ──────────────────────────────────
+// âââ Camera / Card Scan with OCR ââââââââââââââââââââââââââââââââââ
 async function scanCard(input){
   const file=input.files&&input.files[0];
   input.value='';
@@ -1614,19 +1614,19 @@ async function scanCard(input){
   const body=document.getElementById('scan-body');
   const formHtml=
     '<div id="ocr-status" class="ocr-progress-bar" style="display:none;"></div>'
-    +'<p style="font-size:13px;color:#475569;margin-bottom:14px;line-height:1.6;">📋 <b>Check the fields below.</b> The app tries to read the card automatically — correct anything wrong.</p>'
-    +'<div class="ocr-field"><label>Full Name</label><div class="input-row"><input id="ocr-name" type="text" placeholder="e.g. Johan Geldenhuys"><button class="voice-btn" ontouchstart="" onclick="startVoice(\'ocr-name\')" title="Speak">🎤</button></div></div>'
+    +'<p style="font-size:13px;color:#475569;margin-bottom:14px;line-height:1.6;">ð <b>Check the fields below.</b> The app tries to read the card automatically â correct anything wrong.</p>'
+    +'<div class="ocr-field"><label>Full Name</label><div class="input-row"><input id="ocr-name" type="text" placeholder="e.g. Johan Geldenhuys"><button class="voice-btn" ontouchstart="" onclick="startVoice(\'ocr-name\')" title="Speak">ð¤</button></div></div>'
     +'<div class="ocr-field"><label>SA ID Number</label><input id="ocr-said" type="text" placeholder="13-digit number" inputmode="numeric" maxlength="13"></div>'
-    +'<div class="ocr-field"><label>Medical Aid</label><input id="ocr-scheme" type="text" placeholder="e.g. Discovery, Bonitas…"></div>'
+    +'<div class="ocr-field"><label>Medical Aid</label><input id="ocr-scheme" type="text" placeholder="e.g. Discovery, Bonitasâ¦"></div>'
     +'<div class="ocr-field"><label>Membership No.</label><input id="ocr-aidnum" type="text" placeholder="Membership number"></div>'
-    +'<div class="ocr-field"><label>Plan / Option</label><input id="ocr-plan" type="text" placeholder="e.g. Comprehensive, Hospital…"></div>'
-    +'<button class="btn btn-primary" style="margin-top:14px;" onclick="confirmCardEntry()">💾 Save to Profile</button>'
+    +'<div class="ocr-field"><label>Plan / Option</label><input id="ocr-plan" type="text" placeholder="e.g. Comprehensive, Hospitalâ¦"></div>'
+    +'<button class="btn btn-primary" style="margin-top:14px;" onclick="confirmCardEntry()">ð¾ Save to Profile</button>'
     +'<button class="modal-close-btn" onclick="closeModal(\'modal-scan\')">Cancel</button>';
   body.innerHTML=(imageUrl?'<img src="'+imageUrl+'" class="ocr-preview" alt="Card photo">':'')+formHtml;
   openModal('modal-scan');
   if(imageUrl){
     const st=document.getElementById('ocr-status');
-    if(st){st.style.display='flex';st.innerHTML='<span class="spinner-dark"></span> Reading card text… please wait';}
+    if(st){st.style.display='flex';st.innerHTML='<span class="spinner-dark"></span> Reading card textâ¦ please wait';}
     const text=await runOCR(imageUrl);
     if(text){
       const parsed=parseCardText(text);
@@ -1634,9 +1634,9 @@ async function scanCard(input){
       if(parsed.said&&!document.getElementById('ocr-said').value)document.getElementById('ocr-said').value=parsed.said;
       if(parsed.aidScheme&&!document.getElementById('ocr-scheme').value)document.getElementById('ocr-scheme').value=parsed.aidScheme;
       if(parsed.aidNum&&!document.getElementById('ocr-aidnum').value)document.getElementById('ocr-aidnum').value=parsed.aidNum;
-      if(st){st.innerHTML=Object.keys(parsed).length?'✅ Fields filled from card — please check and correct.':'ℹ️ Could not read text clearly — please fill in manually.';}
+      if(st){st.innerHTML=Object.keys(parsed).length?'â Fields filled from card â please check and correct.':'â¹ï¸ Could not read text clearly â please fill in manually.';}
     }else{
-      if(st){st.innerHTML='ℹ️ Auto-read unavailable — please fill in the fields manually.';}
+      if(st){st.innerHTML='â¹ï¸ Auto-read unavailable â please fill in the fields manually.';}
     }
   }
 }
@@ -1654,7 +1654,7 @@ async function runOCR(imageData){
     const worker=await Tesseract.createWorker('eng',1,{logger:m=>{
       if(m.status==='recognizing text'){
         const st=document.getElementById('ocr-status');
-        if(st)st.innerHTML='<span class="spinner-dark"></span> Reading… '+Math.round(m.progress*100)+'%';
+        if(st)st.innerHTML='<span class="spinner-dark"></span> Readingâ¦ '+Math.round(m.progress*100)+'%';
       }
     }});
     const result=await worker.recognize(imageData);
@@ -1693,17 +1693,17 @@ function confirmCardEntry(){
   Store.set('hos_profile',JSON.stringify(p));
   closeModal('modal-scan');
   if(saved.length){
-    addChatBubble('ai','📷 Card saved! Updated: '+saved.join(', ')+'. Tap "My Card" to see your health card.');
+    addChatBubble('ai','ð· Card saved! Updated: '+saved.join(', ')+'. Tap "My Card" to see your health card.');
     // Sync to profile form fields
     loadProfile();
   }else{
-    addChatBubble('ai','No details entered. Tap 📷 to try again.');
+    addChatBubble('ai','No details entered. Tap ð· to try again.');
   }
 }
 function openModal(id){document.getElementById(id).classList.add('open');}
 function closeModal(id){document.getElementById(id).classList.remove('open');}
 
-// ─── Profile Photo ─────────────────────────────────────────────────
+// âââ Profile Photo âââââââââââââââââââââââââââââââââââââââââââââââââ
 function savePhoto(input){
   const file=input&&input.files&&input.files[0];
   if(!file)return;
@@ -1713,7 +1713,7 @@ function savePhoto(input){
     try{
       Store.set('hos_photo',b64);
     }catch(err){
-      alert('⚠️ Photo too large to save. Try a smaller or lower-quality photo.');
+      alert('â ï¸ Photo too large to save. Try a smaller or lower-quality photo.');
       return;
     }
     loadPhoto();
@@ -1730,7 +1730,7 @@ function loadPhoto(){
   }
 }
 
-// ─── Family / Dependants ───────────────────────────────────────────
+// âââ Family / Dependants âââââââââââââââââââââââââââââââââââââââââââ
 let _depBookletPhotos=[];
 
 function calcAge(dob){
@@ -1748,7 +1748,7 @@ function calcAge(dob){
 function openAddDependant(id){
   _depBookletPhotos=[];
   document.getElementById('dep-edit-id').value=id||'';
-  document.getElementById('dep-modal-title').textContent=id?'✏️ Edit Dependant':'👶 Add Dependant';
+  document.getElementById('dep-modal-title').textContent=id?'âï¸ Edit Dependant':'ð¶ Add Dependant';
   // Clear fields
   ['dep-name','dep-dob','dep-allergies','dep-conditions','dep-meds','dep-aidnum'].forEach(fid=>{document.getElementById(fid).value='';});
   ['dep-birth','dep-notes'].forEach(fid=>{document.getElementById(fid).value='';});
@@ -1802,7 +1802,7 @@ function saveDependant(){
   try{
     Store.set('hos_family',JSON.stringify(fam));
   }catch(e){
-    alert('⚠️ Could not save — storage may be full. Try removing some booklet photos.');
+    alert('â ï¸ Could not save â storage may be full. Try removing some booklet photos.');
     return;
   }
   closeModal('modal-dependant');
@@ -1824,13 +1824,13 @@ function renderDependants(){
   list.innerHTML=fam.map(dep=>{
     const age=dep.dob?calcAge(dep.dob):'';
     return '<div class="dep-card">'
-      +'<div class="dep-name">'+escHtml(dep.name||'—')+(dep.sex?' ('+dep.sex+')':'')+(age?' · Age '+age:'')+'</div>'
-      +'<div class="dep-detail">🩸 Blood: '+(dep.blood||'?')+(dep.allergies?' · 🚫 Allergies: '+escHtml(dep.allergies):'')+'</div>'
-      +(dep.conditions?'<div class="dep-detail">🏥 '+escHtml(dep.conditions)+'</div>':'')
+      +'<div class="dep-name">'+escHtml(dep.name||'â')+(dep.sex?' ('+dep.sex+')':'')+(age?' Â· Age '+age:'')+'</div>'
+      +'<div class="dep-detail">ð©¸ Blood: '+(dep.blood||'?')+(dep.allergies?' Â· ð« Allergies: '+escHtml(dep.allergies):'')+'</div>'
+      +(dep.conditions?'<div class="dep-detail">ð¥ '+escHtml(dep.conditions)+'</div>':'')
       +(dep.bookletPhotos&&dep.bookletPhotos.length?'<div class="booklet-photos">'+dep.bookletPhotos.map(p=>'<img class="booklet-thumb" src="'+p+'" alt="Booklet">').join('')+'</div>':'')
       +'<div class="dep-actions" style="margin-top:8px;">'
-      +'<button class="dep-edit" ontouchstart="" onclick="openAddDependant(\''+dep.id+'\')">✏️ Edit</button>'
-      +'<button class="dep-del" ontouchstart="" onclick="deleteDependant(\''+dep.id+'\')">🗑️ Delete</button>'
+      +'<button class="dep-edit" ontouchstart="" onclick="openAddDependant(\''+dep.id+'\')">âï¸ Edit</button>'
+      +'<button class="dep-del" ontouchstart="" onclick="deleteDependant(\''+dep.id+'\')">ðï¸ Delete</button>'
       +'</div></div>';
   }).join('');
 }
@@ -1859,13 +1859,13 @@ function removeBookletPhoto(idx){
   renderBookletThumbs();
 }
 
-// ─── BMI Calculator ────────────────────────────────────────────────
+// âââ BMI Calculator ââââââââââââââââââââââââââââââââââââââââââââââââ
 function calculateBMI(){
   const h=parseFloat(document.getElementById('bmi-height').value);
   const w=parseFloat(document.getElementById('bmi-weight').value);
   const r=document.getElementById('bmi-result');
   if(!h||!w||h<50||h>250||w<10||w>300){
-    r.innerHTML='<div class="alert error" style="margin-top:12px;">⚠️ Please enter a valid height (50–250 cm) and weight (10–300 kg).</div>';return;
+    r.innerHTML='<div class="alert error" style="margin-top:12px;">â ï¸ Please enter a valid height (50â250 cm) and weight (10â300 kg).</div>';return;
   }
   const bmi=w/((h/100)**2);
   let cat,color,bg,tip;
@@ -1880,14 +1880,14 @@ function calculateBMI(){
     +'</div>';
 }
 
-// ─── Blood Pressure Log ────────────────────────────────────────────
+// âââ Blood Pressure Log ââââââââââââââââââââââââââââââââââââââââââââ
 function saveBP(){
   const sys=parseInt(document.getElementById('bp-systolic').value);
   const dia=parseInt(document.getElementById('bp-diastolic').value);
   const date=document.getElementById('bp-date').value;
   const alertEl=document.getElementById('bp-alert');
   if(!sys||!dia||sys<60||sys>250||dia<30||dia>150){
-    alertEl.innerHTML='<div class="alert error" style="margin-top:8px;">⚠️ Please enter valid blood pressure readings.</div>';
+    alertEl.innerHTML='<div class="alert error" style="margin-top:8px;">â ï¸ Please enter valid blood pressure readings.</div>';
     setTimeout(()=>alertEl.innerHTML='',3500);return;
   }
   const log=JSON.parse(Store.get('hos_bp_log')||'[]');
@@ -1896,7 +1896,7 @@ function saveBP(){
   document.getElementById('bp-systolic').value='';
   document.getElementById('bp-diastolic').value='';
   document.getElementById('bp-date').value='';
-  alertEl.innerHTML='<div class="alert" style="margin-top:8px;">✅ Reading saved!</div>';
+  alertEl.innerHTML='<div class="alert" style="margin-top:8px;">â Reading saved!</div>';
   setTimeout(()=>alertEl.innerHTML='',2500);
   renderBP();
 }
@@ -1904,7 +1904,7 @@ function renderBP(){
   const c=document.getElementById('bp-list');if(!c)return;
   const log=JSON.parse(Store.get('hos_bp_log')||'[]').slice(0,5);
   if(!log.length){c.innerHTML='<div class="no-data" style="padding:16px 0;">No readings saved yet.</div>';return;}
-  c.innerHTML='<div style="font-size:11px;color:#94a3b8;margin-bottom:6px;">Last 5 readings — green: normal · orange: elevated · red: high</div>'
+  c.innerHTML='<div style="font-size:11px;color:#94a3b8;margin-bottom:6px;">Last 5 readings â green: normal Â· orange: elevated Â· red: high</div>'
     +log.map((r,i)=>{
       let cls='bp-normal',label='Normal';
       if(r.sys>=140||r.dia>=90){cls='bp-high';label='High';}
@@ -1913,7 +1913,7 @@ function renderBP(){
         +'<div class="bp-val">'+r.sys+'/'+r.dia+' mmHg</div>'
         +'<div style="font-size:11px;font-weight:700;padding:2px 7px;border-radius:8px;background:rgba(0,0,0,0.07);flex-shrink:0;">'+label+'</div>'
         +'<div class="bp-date" style="flex-shrink:0;">'+r.date+'</div>'
-        +'<button onclick="deleteBP('+i+')" style="border:none;background:none;font-size:16px;cursor:pointer;color:#dc2626;padding:0 2px;touch-action:manipulation;flex-shrink:0;" title="Delete">🗑️</button>'
+        +'<button onclick="deleteBP('+i+')" style="border:none;background:none;font-size:16px;cursor:pointer;color:#dc2626;padding:0 2px;touch-action:manipulation;flex-shrink:0;" title="Delete">ðï¸</button>'
         +'</div>';
     }).join('');
 }
@@ -1924,14 +1924,14 @@ function deleteBP(i){
   renderBP();
 }
 
-// ─── Vaccination Record ────────────────────────────────────────────
+// âââ Vaccination Record ââââââââââââââââââââââââââââââââââââââââââââ
 function saveVaccine(){
   const name=document.getElementById('vacc-name').value.trim();
   const given=document.getElementById('vacc-date-given').value;
   const next=document.getElementById('vacc-next-due').value;
   const alertEl=document.getElementById('vacc-alert');
   if(!name){
-    alertEl.innerHTML='<div class="alert error" style="margin-top:8px;">⚠️ Please enter the vaccine name.</div>';
+    alertEl.innerHTML='<div class="alert error" style="margin-top:8px;">â ï¸ Please enter the vaccine name.</div>';
     setTimeout(()=>alertEl.innerHTML='',3000);return;
   }
   const list=JSON.parse(Store.get('hos_vaccines')||'[]');
@@ -1940,7 +1940,7 @@ function saveVaccine(){
   document.getElementById('vacc-name').value='';
   document.getElementById('vacc-date-given').value='';
   document.getElementById('vacc-next-due').value='';
-  alertEl.innerHTML='<div class="alert" style="margin-top:8px;">✅ Vaccine saved!</div>';
+  alertEl.innerHTML='<div class="alert" style="margin-top:8px;">â Vaccine saved!</div>';
   setTimeout(()=>alertEl.innerHTML='',2500);
   renderVaccines();
 }
@@ -1950,11 +1950,11 @@ function renderVaccines(){
   if(!list.length){c.innerHTML='<div class="no-data" style="padding:16px 0;">No vaccines recorded yet.</div>';return;}
   c.innerHTML=list.map((v,i)=>'<div class="vacc-row">'
     +'<div style="flex:1;">'
-    +'<div class="vacc-name">💉 '+escHtml(v.name)+'</div>'
+    +'<div class="vacc-name">ð '+escHtml(v.name)+'</div>'
     +(v.given?'<div class="vacc-date">Given: '+v.given+'</div>':'')
     +(v.next?'<div class="vacc-date" style="color:#92400e;">Next due: '+v.next+'</div>':'')
     +'</div>'
-    +'<button onclick="deleteVaccine('+i+')" style="border:none;background:none;font-size:16px;cursor:pointer;color:#dc2626;padding:0 4px;touch-action:manipulation;flex-shrink:0;" title="Delete">🗑️</button>'
+    +'<button onclick="deleteVaccine('+i+')" style="border:none;background:none;font-size:16px;cursor:pointer;color:#dc2626;padding:0 4px;touch-action:manipulation;flex-shrink:0;" title="Delete">ðï¸</button>'
     +'</div>').join('');
 }
 function deleteVaccine(i){
@@ -1964,32 +1964,32 @@ function deleteVaccine(i){
   renderVaccines();
 }
 
-// ─── Accordion ─────────────────────────────────────────────────────
+// âââ Accordion âââââââââââââââââââââââââââââââââââââââââââââââââââââ
 function toggleAccordion(header){
   const body=header.nextElementSibling;
   const arrow=header.querySelector('span:last-child');
   const isOpen=body.classList.contains('open');
   body.classList.toggle('open',!isOpen);
-  if(arrow)arrow.textContent=isOpen?'▼':'▲';
+  if(arrow)arrow.textContent=isOpen?'â¼';'â²';
 }
 
-// ─── Mental Health Check-in ────────────────────────────────────────
+// âââ Mental Health Check-in ââââââââââââââââââââââââââââââââââââââââ
 function mentalHealthCheck(){
   const scores=[1,2,3,4,5].map(n=>parseInt(document.getElementById('mh-'+n).value)||3);
   const total=scores.reduce((a,b)=>a+b,0);
   const r=document.getElementById('mh-result');
   let msg,bg,color;
-  if(total>=20){msg='🌟 You seem to be in a great place! Keep looking after yourself.';bg='#dcfce7';color='#166534';}
-  else if(total>=15){msg='😊 You\'re doing reasonably well. A little self-care goes a long way!';bg='#dbeafe';color='#1e40af';}
-  else if(total>=10){msg='😐 You seem a bit low. Try to get outside, move your body, and connect with someone you trust.';bg='#fef3c7';color='#92400e';}
-  else{msg='💛 It sounds like you\'re struggling. Please reach out — you don\'t have to do this alone. Call SADAG: 0800 567 567.';bg='#fee2e2';color='#991b1b';}
+  if(total>=20){msg='ð You seem to be in a great place! Keep looking after yourself.';bg='#dcfce7';color='#166534';}
+  else if(total>=15){msg='ð You\'re doing reasonably well. A little self-care goes a long way!';bg='#dbeafe';color='#1e40af';}
+  else if(total>=10){msg='ð You seem a bit low. Try to get outside, move your body, and connect with someone you trust.';bg='#fef3c7';color='#92400e';}
+  else{msg='ð It sounds like you\'re struggling. Please reach out â you don\'t have to do this alone. Call SADAG: 0800 567 567.';bg='#fee2e2';color='#991b1b';}
   r.innerHTML='<div class="mh-score-display" style="background:'+bg+';border:1.5px solid '+color+'40;">'
     +'<div style="font-size:28px;font-weight:700;color:'+color+';">'+total+'/25</div>'
     +'<div style="font-size:14px;color:'+color+';margin-top:6px;line-height:1.6;">'+msg+'</div>'
     +'</div>';
 }
 
-// ─── Lab Results ───────────────────────────────────────────────────
+// âââ Lab Results âââââââââââââââââââââââââââââââââââââââââââââââââââ
 function saveLabResult(){
   const date=document.getElementById('lab-date').value;
   const lab=document.getElementById('lab-provider').value;
@@ -2001,7 +2001,7 @@ function saveLabResult(){
     const list=JSON.parse(Store.get('hos_lab_results')||'[]');
     list.unshift({date:date||new Date().toISOString().split('T')[0],lab,test,notes,photo:photo||'',ts:Date.now()});
     try{Store.set('hos_lab_results',JSON.stringify(list));}
-    catch(e){alert('⚠️ Could not save — storage may be full. Try removing an older record.');return;}
+    catch(e){alert('â ï¸ Could not save â storage may be full. Try removing an older record.');return;}
     closeModal('modal-lab');
     document.getElementById('lab-date').value='';
     document.getElementById('lab-provider').value='PathCare';
@@ -2020,8 +2020,8 @@ function renderLabResults(){
   if(!list.length){c.innerHTML='<div class="no-data" style="padding:12px 0;">No lab results saved yet.</div>';return;}
   c.innerHTML=list.map((r,i)=>'<div class="record-entry">'
     +'<div class="record-entry-header" onclick="toggleRecord(this)">'
-    +'<div style="flex:1;"><div class="record-title">🧪 '+escHtml(r.test)+'</div><div class="record-date">'+escHtml(r.lab)+' · '+r.date+'</div></div>'
-    +'<button onclick="event.stopPropagation();deleteLabResult('+i+')" style="border:none;background:none;font-size:18px;cursor:pointer;color:#dc2626;padding:0 4px;touch-action:manipulation;flex-shrink:0;" title="Delete">🗑️</button>'
+    +'<div style="flex:1;"><div class="record-title">ð§ª '+escHtml(r.test)+'</div><div class="record-date">'+escHtml(r.lab)+' Â· '+r.date+'</div></div>'
+    +'<button onclick="event.stopPropagation();deleteLabResult('+i+')" style="border:none;background:none;font-size:18px;cursor:pointer;color:#dc2626;padding:0 4px;touch-action:manipulation;flex-shrink:0;" title="Delete">ðï¸</button>'
     +'</div>'
     +'<div class="record-body">'
     +(r.notes?'<p style="margin-bottom:8px;">'+escHtml(r.notes)+'</p>':'')
@@ -2036,7 +2036,7 @@ function deleteLabResult(i){
   renderLabResults();
 }
 
-// ─── Radiology Reports ─────────────────────────────────────────────
+// âââ Radiology Reports âââââââââââââââââââââââââââââââââââââââââââââ
 function saveRadiology(){
   const date=document.getElementById('radio-date').value;
   const provider=document.getElementById('radio-provider').value.trim();
@@ -2047,7 +2047,7 @@ function saveRadiology(){
     const list=JSON.parse(Store.get('hos_radiology')||'[]');
     list.unshift({date:date||new Date().toISOString().split('T')[0],provider,type,notes,photo:photo||'',ts:Date.now()});
     try{Store.set('hos_radiology',JSON.stringify(list));}
-    catch(e){alert('⚠️ Could not save — storage may be full. Try removing an older record.');return;}
+    catch(e){alert('â ï¸ Could not save â storage may be full. Try removing an older record.');return;}
     closeModal('modal-radio');
     document.getElementById('radio-date').value='';
     document.getElementById('radio-provider').value='';
@@ -2066,8 +2066,8 @@ function renderRadiology(){
   if(!list.length){c.innerHTML='<div class="no-data" style="padding:12px 0;">No radiology reports saved yet.</div>';return;}
   c.innerHTML=list.map((r,i)=>'<div class="record-entry">'
     +'<div class="record-entry-header" onclick="toggleRecord(this)">'
-    +'<div style="flex:1;"><div class="record-title">📡 '+escHtml(r.type||'Report')+(r.provider?' — '+escHtml(r.provider):'')+'</div><div class="record-date">'+r.date+'</div></div>'
-    +'<button onclick="event.stopPropagation();deleteRadiology('+i+')" style="border:none;background:none;font-size:18px;cursor:pointer;color:#dc2626;padding:0 4px;touch-action:manipulation;flex-shrink:0;" title="Delete">🗑️</button>'
+    +'<div style="flex:1;"><div class="record-title">ð¡ '+escHtml(r.type||'Report')+(r.provider?' â '+escHtml(r.provider):'')+'</div><div class="record-date">'+r.date+'</div></div>'
+    +'<button onclick="event.stopPropagation();deleteRadiology('+i+')" style="border:none;background:none;font-size:18px;cursor:pointer;color:#dc2626;padding:0 4px;touch-action:manipulation;flex-shrink:0;" title="Delete">ðï¸</button>'
     +'</div>'
     +'<div class="record-body">'
     +(r.notes?'<p style="margin-bottom:8px;">'+escHtml(r.notes)+'</p>':'')
@@ -2086,7 +2086,7 @@ function toggleRecord(header){
   body.classList.toggle('open');
 }
 
-// ─── Init ──────────────────────────────────────────────────────────
+// âââ Init ââââââââââââââââââââââââââââââââââââââââââââââââââââââââââ
 loadProfile();
 loadPhoto();
 renderDependants();
@@ -2101,9 +2101,9 @@ setTimeout(()=>{
   const raw=Store.get('hos_profile');
   const p=raw?JSON.parse(raw):null;
   if(p&&p.name){
-    addChatBubble('ai','👋 Welcome back, '+p.name.split(' ')[0]+'! How can I help you today?\n\nTap a topic above, type your question, or tap 📷 to scan your ID or medical aid card.');
+    addChatBubble('ai','ð Welcome back, '+p.name.split(' ')[0]+'! How can I help you today?\n\nTap a topic above, type your question, or tap ð· to scan your ID or medical aid card.');
   }else{
-    addChatBubble('ai','👋 Hello! I am your Health One Stop assistant.\n\nI can answer health questions, remember your medical profile, and help you find care near you.\n\nStart by filling in your Profile tab, then come back here to ask health questions.\n\nTip: tap 📷 to photograph your ID or medical aid card to fill your profile automatically!');
+    addChatBubble('ai','ð Hello! I am your Health One Stop assistant.\n\nI can answer health questions, remember your medical profile, and help you find care near you.\n\nStart by filling in your Profile tab, then come back here to ask health questions.\n\nTip: tap ð· to photograph your ID or medical aid card to fill your profile automatically!');
   }
 },300);
 
@@ -2112,12 +2112,12 @@ if(Store.isLocal()){
   setTimeout(()=>{
     const warn=document.createElement('div');
     warn.style.cssText='position:fixed;bottom:calc(72px + env(safe-area-inset-bottom,0px));left:16px;right:16px;background:#fef3c7;border:1.5px solid #f59e0b;border-radius:10px;padding:12px 14px;font-size:12px;color:#92400e;z-index:9998;';
-    warn.innerHTML='⚠️ <strong>Profile won\'t save permanently</strong> when opened as a local file on iPhone. To save your data, add to your Home Screen: tap Share → "Add to Home Screen". <span onclick="this.parentNode.remove()" style="float:right;cursor:pointer;font-size:18px;">✕</span>';
+    warn.innerHTML='â ï¸ <strong>Profile won\'t save permanently</strong> when opened as a local file on iPhone. To save your data, add to your Home Screen: tap Share â "Add to Home Screen". <span onclick="this.parentNode.remove()" style="float:right;cursor:pointer;font-size:18px;">â</span>';
     document.body.appendChild(warn);
   },1500);
 }
 </script>
-<!-- QRCode loaded async — does NOT block page startup -->
+<!-- QRCode loaded async â does NOT block page startup -->
 <script async src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 </body>
 </html>
