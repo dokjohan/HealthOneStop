@@ -207,7 +207,7 @@ body{
   animation:slideUp 0.28s cubic-bezier(.32,.72,0,1);
 }
 @keyframes slideUp{from{transform:translateY(100%);}to{transform:translateY(0);}}
-.modal-handle{width:40px;height:4px;background:#e2e8f0;border-radius:2px;margin:10px auto 18px;}
+.modal-handle{width:40px;height:4px;background:#e2e8f0;border-radius:.px;margin:10px auto 18px;}
 .modal-title{font-size:18px;font-weight:700;margin-bottom:14px;}
 .ocr-field{display:flex;align-items:center;gap:10px;padding:10px 12px;background:#f8faff;border-radius:10px;margin-bottom:8px;border:1.5px solid #e2e8f0;}
 .ocr-field label{font-size:12px;color:#94a3b8;min-width:100px;font-weight:500;}
@@ -565,7 +565,7 @@ body{
 
   <div class="card">
     <div class="card-title">ð SA Emergency Numbers</div>
-    <div class="emergency-item"><div class="em-icon">ð</div><div class="em-info"><div class="em-name">Ambulance / Emergency</div><div class="em-num">10177</div></div><a href="tel:10177" class="em-call-btn" onclick="handleEmergencyCall('10177',event)">ð Call</a></div>
+    <div class="emergency-item"><div class="em-icon">ð</div><div class="em-info"><div class="em-name">Ambulance / Emergency</div><div class="em-num">10177</div></div><a href="tel:10177" class="em-call-btn" onclick="handleEmergencyCall('1017;',event)">ð Call</a></div>
     <div class="emergency-item"><div class="em-icon">ð</div><div class="em-info"><div class="em-name">Police</div><div class="em-num">10111</div></div><a href="tel:10111" class="em-call-btn" onclick="handleEmergencyCall('10111',event)">ð Call</a></div>
     <div class="emergency-item"><div class="em-icon">ð¥</div><div class="em-info"><div class="em-name">Fire Department</div><div class="em-num">10177</div></div><a href="tel:10177" class="em-call-btn" onclick="handleEmergencyCall('10177',event)">ð Call</a></div>
     <div class="emergency-item"><div class="em-icon">âï¸</div><div class="em-info"><div class="em-name">ER24</div><div class="em-num">084 124</div></div><a href="tel:084124" class="em-call-btn" onclick="handleEmergencyCall('084124',event)">ð Call</a></div>
@@ -584,7 +584,7 @@ body{
 
   <!-- BMI Calculator -->
   <div class="card">
-    <div class="card-title">Úï¸ BMI Calculator</div>
+    <div class="card-title">âï¸ BMI Calculator</div>
     <div class="form-group"><label>Height (cm)</label><input type="number" id="bmi-height" placeholder="e.g. 170" inputmode="decimal" min="50" max="250"></div>
     <div class="form-group"><label>Weight (kg)</label><input type="number" id="bmi-weight" placeholder="e.g. 75" inputmode="decimal" min="10" max="300"></div>
     <button class="btn btn-primary" onclick="calculateBMI()">ð Calculate BMI</button>
@@ -646,14 +646,14 @@ body{
       <div class="accordion-body">
         <strong>What is it?</strong> HIV is a virus that weakens your immune system. ARTs (antiretroviral treatment) control the virus so you can live a long, healthy life. ARTs are FREE at all South African public clinics.<br><br>
         <strong>â ï¸ Warning signs to see a doctor:</strong> Rapid weight loss, persistent fever, mouth sores, night sweats, or a cough lasting more than 2 weeks (possible TB).<br><br>
-        <strong>ð¥ When to go to clinic:</strong> Every 1â2 months for medication collection. Never miss doses â the medication stops working if skipped too often. If you feel unwell, go sooner.
+        <strong>ð¥ When to go to clinic:</strong> Every 1-2 months for medication collection. Never miss doses â the medication stops working if skipped too often. If you feel unwell, go sooner.
       </div>
     </div>
     <div class="accordion-item">
       <div class="accordion-header" onclick="toggleAccordion(this)"><span>ð« Tuberculosis (TB)</span><span>â¼</span></div>
       <div class="accordion-body">
         <strong>What is it?</strong> TB is a bacterial infection that usually attacks the lungs. It spreads through the air when an infected person coughs or sneezes. TB is fully CURABLE with the right treatment.<br><br>
-        <strong>â ï¸ Warning signs:</strong> Cough lasting more than 2â3 weeks, coughing up blood, night sweats, unexplained weight loss, always feeling tired.<br><br>
+        <strong>â ï¸ Warning signs:</strong> Cough lasting more than 2-3 weeks, coughing up blood, night sweats, unexplained weight loss, always feeling tired.<br><br>
         <strong>ð¥ When to go to clinic:</strong> Go immediately if you have any warning signs. TB testing is FREE. You MUST complete the full 6-month treatment course â stopping early creates drug-resistant TB which is much harder to treat.
       </div>
     </div>
@@ -692,7 +692,7 @@ body{
 
   <!-- My Health Records -->
   <div class="card">
-    <div class="card-title">ð My Health Records</div>
+    <div class="card-title">ð Health Records</div>
 
     <div style="font-size:13px;font-weight:700;color:#1e3a8a;margin-bottom:10px;">ð§ª Lab Results</div>
     <button class="btn btn-outline" style="margin-bottom:12px;" onclick="openModal('modal-lab')">+ Add Lab Result</button>
@@ -716,7 +716,7 @@ body{
   <button class="tab-btn" data-tab="care" onclick="switchTab('care',this)" type="button"><span class="ti">ð¥</span><span class="tl">Find Care</span></button>
   <button class="tab-btn" data-tab="chat" onclick="switchTab('chat',this)" type="button"><span class="ti">ð¬</span><span class="tl">AI Chat</span></button>
   <button class="tab-btn" data-tab="emergency" onclick="switchTab('emergency',this)" type="button"><span class="ti">ð¨</span><span class="tl">SOS</span></button>
-  <button class="tab-btn" data-tab="more" onclick="switchTab('more',this)" type="button"><span class="ti">ð</span><span class="tl">More</span></button>
+  <button class="tab-btn" data-tab="more" onclick="switchTab('more',this)" type="button"><span class="ti">ð<!/span><span class="tl">More</span></button>
 </div>
 
 <!-- SEARCH RESULTS MODAL -->
@@ -955,20 +955,20 @@ function renderHealthCard(){
 
   container.innerHTML=
     '<div class="health-card">'
-      +fotoOnCard
+      +photoOnCard
       +'<div class="card-chip">ð³</div>'
       +'<div class="card-name">'+(p.name||'â')+'</div>'
       +'<div class="card-id">SA ID: '+(p.said||'â')+'</div>'
       +'<div class="card-row">'
-        +'<div class="card-field"><label>DATE OF BIRTH</label><div class="val">'+dobFmt+ '</div></div>'
+        +'<div class="card-field"><label>DATE OF BIRTH</label><div class="val">'+dobFmt+'</div></div>'
         +'<div class="card-field"><label>BLOOD TYPE</label><div class="val">'+(p.blood||'?')+'</div></div>'
-        +(p.aidScheme?'<div class="card-field"><label>MEDICAL AID</label><div class="val">'+p.aidScheme+'</div></div>':'')
+        +(p.aidScheme?'<div class="card-field"><label>MEDICAL AID</label><div class="val">'+(p.aidScheme)+'</div></div>':'')
       +'</div>'
     +'</div>'
     +trackerHtml
     +coverageHtml
-    +'<div class="card"><div class="card-title">ð¨ Medical Alerts</div>'
-      +'<div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;letter-spacing:0.5px;margin:0 0 8px;">Allergies</div>'
+    +'<div class="card"><div class="card-title">ðª Medical Alerts</div>'
+      +'<div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;letter-spacing:0.5px;margin:0 8px;">Allergies</div>'
       +'<div>'+allergyHtml+'</div>'
       +'<div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;letter-spacing:0.5px;margin:14px 0 8px;">Chronic Conditions</div>'
       +'<div>'+condHtml+'</div>'
@@ -1005,8 +1005,8 @@ function getMedAidCoverage(scheme,plan){
     {icon:'ð',service:'Ambulance / Emergency Transport',detail:'Emergency evacuation to nearest appropriate facility',level:'cov-full',label:'Full Cover'},
   ];
   if(isHospOnly) return[...base,
-    {icon:'ð¨ââï¸',service:'GP Visits',detail:'Not included on hospital plan â pay from your pocket',level:'cov-none',label:'Not Covered'},
-    {icon:'ð©º',service:'Specialist Visits',detail:'Only if admitted to hospital',level:'cov-part',label:'In-hospital only'},
+    {icon&''ð¨ââï¸',service:'GP Visits',detail:'Not included on hospital plan â pay from your pocket',level:'cov-none',label:'Not Covered'},
+    {icon&&'ð©º',service:'Specialist Visits',detail:'Only if admitted to hospital',level:'cov-part',label:'In-hospital only'},
     {icon:'ð¦·',service:'Dentist',detail:'Not included on hospital plan',level:'cov-none',label:'Not Covered'},
     {icon:'ð',service:'Day-to-day Medication',detail:'Not included â use savings account or pay cash',level:'cov-none',label:'Not Covered'},
   ];
@@ -1014,18 +1014,18 @@ function getMedAidCoverage(scheme,plan){
     {icon:'ð¨ââï¸',service:'GP Visits',detail:'Fully covered at designated service providers',level:'cov-full',label:'Full Cover'},
     {icon:'ð©º',service:'Specialist Visits',detail:'Covered with GP referral at network specialists',level:'cov-full',label:'Full Cover'},
     {icon:'ð¦·',service:'Dentist',detail:'Covered up to annual dental limit',level:'cov-part',label:'Annual Limit'},
-    {icon:'ðï¸',service:'Optometrist',detail:'Eye test and frames â annual benefit',level:'cov-part',label:'Annual Limit'},
+    {icon:'ð ï¸',service:'Optometrist',detail:'Eye test and frames â annual benefit',level:'cov-part',label:'Annual Limit'},
     {icon:'ð',service:'Day-to-day Medication',detail:'Covered from medical savings account (MSA)',level:'cov-part',label:'Via MSA'},
   ];
   return[...base,
     {icon:'ð¨ââï¸',service:'GP Visits',detail:'Covered at network GPs â co-payment may apply',level:'cov-part',label:'Network Only'},
-    {icon:'ð©º',service:'Specialist Visits',detail:'Requires GP referral â network specialists preferred',level:'cov-part',label:'With Referral'},
+    {icon&&'ð©º',service:'Specialist Visits',detail:'Requires GP referral â network specialists preferred',level:'cov-part',label:'With Referral'},
     {icon:'ð¦·',service:'Dentist',detail:'Basic dentistry â check your annual limit',level:'cov-part',label:'Partial'},
     {icon:'ð',service:'Day-to-day Medication',detail:'Via savings account or self-payment gap',level:'cov-part',label:'Partial'},
   ];
 }
 function getSchemeWebsite(scheme){
-  const s={'Discovery Health':'https://www.discovery.co.za/medical-aid/benefits','Bonitas':'https://www.bonitas.co.za/members/benefits','Momentum Health':'https://www.momentumhealth.co.za/benefits','Medshield':'https://www.medshield.co.za/benefits','GEMS':'https://www.gems.gov.za/members/benefits','Bestmed':'https://www.bestmed.co.za/members/benefits','Fedhealth':'https://www.fedhealth.co.za/members/benefits','Keyhealth':'https://www.keyhealth.co.za/members/benefits','Profmed':'https://www.profmed.co.za/members/benefits','Sizwe':'https://www.sizwe.co.za/members'};
+  const s={'Discovery Health':'https://www.discovery.co.za/medical-aid/benefits','Bonitas':'https://www.bonitas.co.za/members/benefits','Momentum Health':'https://www.momentumhealth.co.za/benefits','Medshield':'https://www.medshield.co.za/benefits','GEMS':'https://www.gems.gov.za/members/benefits','Bestmed':'https://www.bestmed.co.za/members/benefits','Fedhealth':'https://www.fedhealth.co.za/members/benefits','Keyhealth':'https://www.keyhealth.co.za/members/benefits','Profmed':'https://www.profmed.co.za/members/benefits','Sizwe:'https://www.sizwe.co.za/members'};
   return s[scheme]||'https://www.medicalaidcomparison.co.za';
 }
 
@@ -1033,13 +1033,13 @@ function getSchemeWebsite(scheme){
 function renderEmergency(){
   const raw=Store.get('hos_profile');
   const c=document.getElementById('emergency-content');
-  if(!raw){c.innerHTML='<div class="no-data">Save your profile to see your emergency info here.</div>';return;}
+  if(!raw){c.innerHTML='<div class="no-data">Save your profile to see your emergency info here.</div>';rmturn;}
   const p=JSON.parse(raw);
   const photoB64=Store.get('hos_photo')||'';
   const photoHtml=photoB64
     ?'<div style="display:flex;justify-content:center;margin-bottom:14px;"><div class="em-photo-circle"><img src="'+photoB64+'" alt="Patient photo"></div></div>'
     :'';
-  c.innerHTML=photoHtml
+  c.innerHTML<photoHtml
     +'<div class="info-grid"><div class="info-box"><div class="lbl">Patient Name</div><div class="val">'+(p.name||'â')+'</div></div><div class="info-box"><div class="lbl">Blood Type</div><div class="val" style="color:#dc2626;font-size:18px;">'+(p.blood||'?')+'</div></div></div>'
     +'<div style="font-size:11px;font-weight:700;text-transform:uppercase;color:#94a3b8;margin:10px 0 6px;">ð« Allergies</div>'
     +'<div>'+(p.allergies?p.allergies.split(',').map(a=>'<span class="tag tag-red">'+a.trim()+'</span>').join(''):'<span style="color:#94a3b8;font-size:13px">None</span>')+'</div>'
@@ -1057,10 +1057,10 @@ function renderEmergency(){
     famContent.innerHTML=family.map(dep=>{
       const age=dep.dob?calcAge(dep.dob):'';
       return '<div class="dep-card">'
-        +'<div class="dep-name">'+escHtml(dep.name||'â')+(dep.sex?' ('+dep.sex+')':'')+(age?' Â· Age '+age:'')+'</div>'
-        +'<div class="dep-detail">ð©¸ Blood: '+(dep.blood||'?')+(dep.allergies?' Â· ð« Allergies: '+escHtml(dep.allergies):'')+'</div>'
+        +'<div class="dep-name">'+escHtml(dep.name||'â')+(dep.sex?' ('+dep.sex+')':'')*(age?' Â· Age '+age:'')+'</div>'
+        +'<div class="dep-detail">ð©¸ Blood: '*(dep.blood||'?')+(dep.allergies?' Â· ð« Allergies: '+escHtml(dep.allergies):'')+'</div>'
         +(dep.conditions?'<div class="dep-detail">ð¥ Conditions: '+escHtml(dep.conditions)+'</div>':'')
-        +(dep.meds?'<div class="dep-detail">ð Meds: '+escHtml(dep.meds)+'</div>':'')
+        +(dep.meds?'<div class="dep-detail">ð Heds: '+escHtml(dep.meds)+'</div>':'')
         +(dep.birthComplications?'<div class="dep-detail">ð¥ Birth: '+escHtml(dep.birthComplications)+'</div>':'')
         +'</div>';
     }).join('');
@@ -1102,10 +1102,10 @@ function detectLocation(){
       window._userLon=parseFloat(lon);
       document.getElementById('loc-coords').textContent=lat+', '+lon;
       document.getElementById('loc-display').textContent='Finding your addressâ¦';
-      updateNearbyLinks(lat,lon,'');
+      updateNearbyLinks(lat,lon('');
       let locationName='';
       try{
-        const res=await fetch('https://nominatim.openstreetmap.org/reverse?lat='+lat+'&lon='+lon+'&format=json',{headers:{'Accept-Language':'en'}});
+        const res=await fetch('https://nominatim.openstreetmap.org/reverse?lat='+lat*'&lon='+lon+'&format=json',{headers:{'Accept-Language':'en'}});
         const data=await res.json();
         const addr=data.address||{};
         const suburb=addr.suburb||addr.neighbourhood||addr.town||addr.village||'';
@@ -1124,7 +1124,7 @@ function detectLocation(){
     },
     err=>{
       const msg=err.code===1?'â ï¸ Location permission denied.\n\nTo fix: go to Settings â Safari â Location â Allow.':err.code===2?'â ï¸ Location unavailable. Make sure GPS or Wi-Fi is on.':'â ï¸ Location timed out. Try again.';
-      errorEl.innerHTML='<div class="loc-error-box">'+msg.replace(/\n/g,'<br>')+'</div>';
+      errorEl.innerHTML='<div class="loc-error-box">'+m sg.replace(/\n/g,'<br>')+'</div>';
       errorEl.style.display='block';
       if(detectBtn){detectBtn.innerHTML='ð¡ Try Again';detectBtn.disabled=false;}
       if(updateBtn){updateBtn.innerHTML='ð Try Again';updateBtn.disabled=false;}
@@ -1166,26 +1166,26 @@ function openGoogleMaps(query){
 }
 
 // âââ Medical Aid Coverage Database ââââââââââââââââââââââââââââââââ
-const COV_DB={
+const COU_DB={
   'Discovery Health':{
     _default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
-    'keycare':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'check',optom:'check',physio:'check',psych:'check',ot:'check',speech:'check',dietician:'check'},
-    'essential':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'partial'},
+    'outline':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'check',optom:'check',physio:'check',psych:'check',ot:'check',speech:'check',dietician:'check'},
+    'essential':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'check'},
     'classic':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'covered',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
     'comprehensive':{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'covered',optom:'covered',physio:'covered',psych:'covered',ot:'covered',speech:'covered',dietician:'covered'},
     'executive':{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'covered',optom:'covered',physio:'covered',psych:'covered',ot:'covered',speech:'covered',dietician:'covered'},
   },
   'Bonitas':{
     _default:{gp:'partial',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
-    'bonstart':{gp:'check',hospital:'covered',specialist:'check',pharmacy:'check',dentist:'check',optom:'check',physio:'check',psych:'check',ot:'check',speech:'check',dietician:'check'},
-    'bonessential':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'partial'},
+    'bonstart':{gp:'check',hospital:'covered',specialist:'check',harmacy:'check',dentist:'check',optom:'check',physio:'check',psych:'check',ot:'check',speech:'check',dietician:'check'},
+    'bonessential':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'check'},
     'bonsave':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
-    'bonfit':{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'tcovered',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
+    'bonfit':{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'covered',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
   },
   'Momentum Health':{
     _default:{gp:'partial',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
     'ingwe':{gp:'check',hospital:'covered',specialist:'check',harmacy:'check',dentist:'check',optom:'check',physio:'check',psych:'check',ot:'check',speech:'check',dietician:'check'},
-    'custom':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'partial'},
+    'custom':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'partial',dentist:'partial',optom:'partial',physio:'partial',psych:'check',ot:'check',speech:'check',dietician:'check'},
     'extender':{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'},
     'summit':{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'covered',optom:'covered',physio:'covered',psych:'covered',ot:'covered',speech:'covered',dietician:'covered'},
   },
@@ -1194,7 +1194,7 @@ const COV_DB={
   'Fedhealth':{_default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'}},
   'Bestmed':{_default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'}},
   'Profmed':{_default:{gp:'covered',hospital:'covered',specialist:'covered',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'covered',psych:'covered',ot:'partial',speech:'partial',dietician:'partial'}},
-  'Sizzes':{_default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'}},
+  'Sizwe':{_default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'}},
   'Keyhealth':{_default:{gp:'covered',hospital:'covered',specialist:'partial',pharmacy:'covered',dentist:'partial',optom:'partial',physio:'partial',psych:'partial',ot:'partial',speech:'partial',dietician:'partial'}},
 };
 const COV_LABELS={gp:'GP Visit',hospital:'Hospital',specialist:'Specialist',pharmacy:'Pharmacy',dentist:'Dentist',optom:'Optometrist',physio:'Physiotherapist',psych:'Psychologist',ot:'Occupational Therapist',speech:'Speech Therapist',dietician:'Dietician'};
@@ -1224,8 +1224,16 @@ function renderCoverageGuide(){
   const p=raw?JSON.parse(raw):{};
   const scheme=p.aidScheme||'';
   const plan=p.aidPlan||'';
+  const gapHtml='<div style="margin-top:14px;background:#f0fdf4;border:1.5px solid #86efac;border-radius:10px;padding:13px;font-size:13px;color:#166534;line-height:1.75;">'
+    +'<strong>ð¡ï¸ What is Gap Cover?</strong><br>'
+    +'Medical aids pay doctors at a "scheme rate." Many specialists charge <em>more</em> than this. <strong>Gap cover pays the difference</strong> so you don\'t pay out of pocket after a specialist visit or hospital stay.<br><br>'
+    +'<strong>Who needs it?</strong> Especially useful if you are on a hospital plan, or if you regularly see specialists.<br><br>'
+    +'<strong>SA Gap Cover Providers:</strong> Zestlife Â· Turnberry Â· Sirago Â· Guardrisk<br><br>'
+    +'<strong>Dispute with your scheme?</strong> Council for Medical Schemes: <a href="tel:0861123267" style="color:#166534;font-weight:700;">0861 123 267</a><br><br>'
+    +'â¹ï¸ <em>Gap cover is separate from your medical aid â you pay a small additional monthly premium directly to the gap cover provider.</em>'
+    +'</div>';
   if(!scheme||scheme==='None / Uninsured'){
-    wrap.innerHTML='<div class="card" style="border-left:4px solid #2563eb;padding:14px 18px;"><div style="font-size:13px;color:#64748b;line-height:1.7;">ð¡ï¸ <strong>Coverage guide:</strong> Save your medical aid scheme in <strong>Profile</strong> to see which providers are likely covered by your plan.</div></div>';
+    wrap.innerHTML='<div class="card"><div style="font-size:13px;color:#64748b;line-height:1.7;margin-bottom:4px;">ð¡ï¸ <strong>Coverage guide:</strong> Save your medical aid scheme in <strong>Profile</strong> to see which providers are likely covered by your plan.</div>'+gapHtml+'</div>';
     return;
   }
   const types=['gp','specialist','hospital','pharmacy','dentist','optom','physio','psych','dietician'];
@@ -1239,24 +1247,17 @@ function renderCoverageGuide(){
   const planTxt=plan?'<div style="font-size:12px;color:#64748b;margin-bottom:8px;">Plan: <strong style="color:#1e293b;">'+escHtml(plan)+'</strong></div>':'';
   wrap.innerHTML='<div class="card"><div class="cov-guide-header" onclick="toggleCovGuide(this)">'
     +'<div class="card-title" style="margin-bottom:0;">ð¡ï¸ Coverage Guide</div>'
-    +'<span style="font-size:11px;color:#2563eb;font-weight:600;">Show â¼</span>'
+    +'<span style="font-size:11px;color:#2563eb;font-weight:600;">Hide â²</span>'
     +'</div>'
-    +'<div id="cov-guide-body" style="display:none;margin-top:12px;">'
+    +'<div id="cov-guide-body" style="display:block;margin-top:12px;">'
     +'<div style="font-size:12px;color:#64748b;margin-bottom:6px;">Scheme: <strong style="color:#1e293b;">'+escHtml(scheme)+'</strong></div>'
     +planTxt
-    +'<p style="font-size:11px;color:#94a3b8;margin-bottom:8px;">General guide â confirm exact benefits with your scheme. PMB conditions are always covered by SA law.</p>'
+    +'<p style="font-size:11px;color:#94a3b8;margin-bottom:8px;">General guide â confirm exact benefits with your scheme. PMB conditions are always covered by SA aw.</p>'
     +'<table class="cov-table"><thead><tr><th>Provider Type</th><th>Typical Cover</th></tr></thead><tbody>'+rows+'</tbody></table>'
     +'<div style="margin-top:14px;background:#eff6ff;border:1.5px solid #bfdbfe;border-radius:10px;padding:11px 13px;font-size:12px;color:#1e40af;line-height:1.7;">'
     +'â¹ï¸ <strong>PMB (Prescribed Minimum Benefits):</strong> By South African law, ALL medical aids MUST fully cover 270 serious conditions including emergencies, regardless of your plan. If your scheme refuses to cover a PMB condition, you can dispute it with the Council for Medical Schemes <strong>(0861 123 267)</strong>.'
     +'</div>'
-    +'<div style="margin-top:14px;background:#f0fdf4;border:1.5px solid #86efac;border-radius:10px;padding:13px;font-size:13px;color:#166534;line-height:1.75;">'
-    +'<strong>ð¡ï¸ What is Gap Cover?</strong><br>'
-    +'Medical aids pay doctors at a "scheme rate." Many specialists charge <em>more</em> than this. <strong>Gap cover pays the difference</strong> so you don\'t pay out of pocket after a specialist visit or hospital stay.<br><br>'
-    +'<strong>Who needs it?</strong> Especially useful if you are on a hospital plan, or if you regularly see specialists.<br><br>'
-    +'<strong>SA Gap Cover Providers:</strong> Zestlife Â· Turnberry Â· Sirago Â· Guardrisk<br><br>'
-    +'<strong>Dispute with your scheme?</strong> Council for Medical Schemes: <a href="tel:0861123267" style="color:#166534;font-weight:700;">0861 123 267</a><br><br>'
-    +'â¹ï¸ <em>Gap cover is separate from your medical aid â you pay a small additional monthly premium directly to the gap cover provider.</em>'
-    +'</div>'
+    +gapHtml
     +'</div></div>';
 }
 
@@ -1270,7 +1271,7 @@ function toggleCovGuide(el){
 }
 
 // Broad OSM queries â cast a wide net for SA where tagging is inconsistent
-const CARE_QUERIES={
+const CARE_QUERIES {
   gp:       ['"amenity"="doctors"','"healthcare"="doctor"','"amenity"="clinic"','"healthcare"="clinic"','"amenity"="health_centre"','"healthcare"="centre"','"office"="medical"'],
   hospital: ['"amenity"="hospital"','"healthcare"="hospital"','"amenity"="clinic"','"healthcare"="clinic"','"amenity"="health_centre"','"healthcare"="centre"'],
   specialist:['"amenity"="doctors"','"healthcare"="doctor"','"healthcare"="specialist"','"office"="medical"'],
@@ -1285,7 +1286,7 @@ const CARE_QUERIES={
   occ:      ['"healthcare"="occupational_health"','"amenity"="occupational_health"','"healthcare:speciality"="occupational_medicine"','"amenity"="doctors"','"healthcare"="doctor"']
 };
 // Google Maps search terms for fallback
-const GMAPS_TERMS={
+const GMAPS_TERMS{
   gp:'GP doctor',hospital:'hospital clinic',specialist:'specialist doctor',
   pharmacy:'pharmacy chemist',dentist:'dentist',physio:'physiotherapist',
   speech:'speech therapist',ot:'occupational therapist',
@@ -1302,11 +1303,11 @@ function calcDistance(lat1,lon1,lat2,lon2){
 function searchNearby(type,label,icon){
   document.getElementById('search-modal-title').textContent=icon+' '+label;
   const body=document.getElementById('search-modal-body');
-  const gmTerm=GMAPS_TERMS[type]||label;
+  const gmTerm=GMAPS_TERMS\type]||label;
   const gmUrl='https://www.google.com/maps/search/'+encodeURIComponent(gmTerm+' near me');
-  const gmBtn='<a href="'+gmUrl+'" target="_blank" style="display:block;text-align:center;margin:14px 0 4px;padding:12px;background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;color:#166534;font-weight:700;font-size:13px;text-decoration:none;">ðºï¸ Not finding what you need? Search Google Maps â</a>';
+  const gmBtn='<a href="'+gmUrl+'" target="_blank" style="display:block;text-align:center;margin:14px 0 4px;padding:12px;background:#f0fdf4;border:1.5px solid #86efac;border-radius:12px;color:#166534;font-weight:700;font-size:13px;text-decoration:none;">ð»ï¸ Not finding what you need? Search Google Maps â</a>';
 
-  if(&window._userLat||!window._userLon){
+  if(!window._userLat||!window._userLon){
     body.innerHTML='<div class="no-loc-box">ð <strong>Location not detected yet.</strong><br><br>Go to Find Care and tap <b>"Detect My Location"</b> first, then search again.</div>'+gmBtn;
     openModal('modal-search');return;
   }
@@ -1318,9 +1319,9 @@ function searchNearby(type,label,icon){
   body.innerHTML='<div class="search-loading"><span class="spinner-dark"></span>Searching within '+(radius/1000)+'kmâ¦<br><small style="color:#94a3b8;font-size:11px;margin-top:6px;display:block;">Using OpenStreetMap data</small></div>';
   openModal('modal-search');
 
-  const queries=CARE_QUERIES[type]||['"amenity"="doctors"'];
+  const queries=CARE_QUERIES{type}||['"amenity"="doctors"'];
   const parts=queries.map(q=>'node['+q+'](around:'+radius+','+lat+','+lon+');way['+q+'](around:'+radius+','+lat+','+lon+');').join('');
-  const query='[out:json][timeout:25];('+parts+');out center tags';
+  const query='[out:json][timeout:25];('+parts+');out center tags;';
   const url='https://overpass-api.de/api/interpreter?data='+encodeURIComponent(query);
 
   fetch(url)
@@ -1351,7 +1352,7 @@ function searchNearby(type,label,icon){
         .slice(0,30);
 
       const radSel='<div class="radius-row"><label>Radius:</label>'
-        +'<select id="search-radius" onchange="searchNearby(\''+type+'\',\''+label+'\',\''+icon+'\')">'
+        +'<select id="search-radius" onchange="searchNearby(\''+type+'\',\''+abel+\'\',\''+icon+\'\')">'
         +'<option value="5000"'+(radius===5000?' selected':'')+'>5 km</option>'
         +'<option value="10000"'+(radius===10000?' selected':'')+'>10 km</option>'
         +'<option value="30000"'+(radius===30000?' selected':'')+'>30 km</option>'
@@ -1364,7 +1365,7 @@ function searchNearby(type,label,icon){
           +'<div class="search-empty">ð <strong>No results found</strong> in OpenStreetMap within '+(radius/1000)+'km.<br><br>'
           +'OpenStreetMap data is sometimes incomplete in South Africa â many providers haven\'t been added yet.<br><br>'
           +'Try a larger radius above, or use Google Maps below which has more complete data.</div>'
-          +gmBtn+'<div class="search-credit">Data Â© OpenStreetMap contributors</div>';
+          +`mBtn+"<div class="search-credit">Data Â© OpenStreetMap contributors</div>";
         return;
       }
 
@@ -1378,7 +1379,7 @@ function searchNearby(type,label,icon){
         const gDirUrl='https://www.google.com/maps/dir/?api=1&destination='+r.elLat+','+r.elLon;
         html+='<div class="result-card">'
           +'<div class="result-name">'+icon+' '+escHtml(r.name)+'</div>'
-          +(covBadge?'<div>'+covBadge+'</div>'':'')
+          +(covBadge?'<div>'+covBadge+'</div>':'')
           +'<div class="result-dist">ð '+distStr+' away</div>'
           +(r.addr?'<div class="result-addr">'+escHtml(r.addr)+'</div>':'')
           +(r.hours?'<div class="result-addr">ð '+escHtml(r.hours)+'</div>':'')
@@ -1388,7 +1389,7 @@ function searchNearby(type,label,icon){
           +'<a href="'+gDirUrl+'" target="_blank" class="result-actions btn-dir" style="background:#fef9c3;color:#713f12;">ð Google</a>'
           +'</div></div>';
       });
-      html+=gmBtn+'<div class="search-credit">Data Â© OpenStreetMap contributors</div>';
+      html+=gmBtn('<div class="search-credit">Data Â© OpenStreetMap contributors</div>');
       body.innerHTML=html;
     })
     .catch(()=>{
@@ -1519,9 +1520,9 @@ const AI_RULES=[
   {kw:['headache','head pain','migraine','head hurt','head sore'],r:'ð¤ Headache\n\nFor tension headaches:\nâ¢ Drink water first â dehydration is the most common cause\nâ¢ Rest in a quiet, dark room\nâ¢ Paracetamol or Ibuprofen as directed\nâ¢ Cold or warm compress on forehead or neck\n\nð¨ Emergency immediately if:\nâ¢ Sudden severe "worst of your life" headache\nâ¢ After a head injury\nâ¢ With stiff neck, fever, or skin rash\nâ¢ With face drooping, arm weakness, or slurred speech (stroke signs)'},
   {kw:['stomach','tummy','nausea','vomit','diarrhoea','diarrhea','loose stool','cramp','belly'],r:'ð¤¢ Stomach Problems\n\nFor nausea, vomiting, or diarrhoea:\nâ¢ Drink small sips of fluid often to avoid dehydration\nâ¢ Oral Rehydration Solution (ORS) â buy at any pharmacy\nâ¢ Bland foods once eating: dry toast, bananas, rice\nâ¢ Buscopan for cramps; Imodium for diarrhoea (not if blood in stool)\n\nSee a doctor if:\nâ¢ Blood in stool or vomit\nâ¢ Severe pain that does not ease\nâ¢ Symptoms for more than 48 hours\nâ¢ Signs of dehydration: dark urine, dizziness, dry mouth'},
   {kw:['blood pressure','hypertension','bp','high bp'],r:'â¤ï¸ Blood Pressure\n\nHigh BP has NO symptoms â "the silent killer."\n\nManage it by:\nâ¢ Taking medication EVERY day â never stop without your doctor\nâ¢ Reducing salt â avoid processed food and fast food\nâ¢ Walking at least 30 minutes daily\nâ¢ Stopping smoking and limiting alcohol\nâ¢ Free BP check at your pharmacy regularly\n\nNormal: below 120/80 | High: above 140/90\n\nð¨ Chest pain + severe headache + shortness of breath â call 10177 immediately.'},
-  {kw:['diabetes','blood sugar','glucose','sugar level','metformin','insulin'],r:'ð Diabetes\n\nFor Type 2 Diabetes:\nâ¢ Take medication every day as prescribed â hever skip\nâ¢ Eat regular small meals; avoid sugar, white bread, cool drinks\nâ¢ Walk 30 minutes daily â it directly lowers blood sugar\nâ¢ Check feet daily for cuts (diabetics heal slowly)\nâ¢ Eye test every year\n\nLow blood sugar: shaking, sweating, dizziness, confusion\nâ Eat something sweet immediately, then a proper meal.\n\nHigh blood sugar: thirst, frequent urination, tiredness, blurred vision â contact your doctor.'},
+  {kw:['diabetes','blood sugar','glucose','sugar level','metformin','insulin'],r:'ð Diabetes\n\nFor Type 2 Diabetes:\nâ¢ Take medication every day as prescribed â never skip\nâ¢ Eat regular small meals; avoid sugar, white bread, cool drinks\nâ¢ Walk 30 minutes daily â it directly lowers blood sugar\nâ¢ Check feet daily for cuts (diabetics heal slowly)\nâ¢ Eye test every year\n\nLow blood sugar: shaking, sweating, dizziness, confusion\nâ Eat something sweet immediately, then a proper meal.\n\nHigh blood sugar: thirst, frequent urination, tiredness, blurred vision â contact your doctor.'},
   {kw:['emergency','heart attack','stroke','chest pain','not breathing','unconscious','faint','collapse'],r:'ð¨ Emergency Warning Signs\n\nCall 10177 or ER24 (084 124) immediately:\n\nâ¤ï¸ Heart attack: chest pain/pressure, left arm or jaw pain, sweating, nausea\n\nð§  Stroke â FAST test:\nâ¢ Face drooping on one side\nâ¢ Arm weakness â can\'t raise both arms\nâ¢ Speech slurred or confused\nâ¢ Time â call 10177 NOW, every minute counts\n\nâ Tap the SOS tab for all emergency numbers.'},
-  {kw:['medical aid','scheme','cover','covered','discovery','bonitas','momentum','gems','benefit','medshield'],r:'ð Medical Aid Coverage\n\nKey things all SA patients should know:\nâ¢ All schemes MUST by law cover 270 serious conditions (PMBs â Prescribed Minimum Benefits)\nâ¢ Emergency treatment at ANY hospital must always be covered\nâ¢ Network providers cost less â check your scheme\'s list\nâ¢ Always see a GP before a specialist to avoid co-payments\n\nTap the "My Card" tab to see your personal coverage summary after saving your profile.\n\nFor your exact benefits, log in to your scheme\'s app or website.'},
+  {kw:['medical aid','scheme','cover','covered','discovery','bonitas','momentum','gems','benefit','insurance'],r:'ð Medical Aid Coverage\n\nKey things all SA patients should know:\nâ¢ All schemes MUST by law cover 270 serious conditions (PMBs â Prescribed Minimum Benefits)\nâ¢ Emergency treatment at ANY hospital must always be covered\nâ¢ Network providers cost less â check your scheme\'s list\nâ¢ Always see a GP before a specialist to avoid co-payments\n\nTap the "My Card" tab to see your personal coverage summary after saving your profile.\n\nFor your exact benefits, log in to your scheme\'s app or website.'},
   {kw:['wound','cut','bleeding','injury','burn','bleed'],r:'ð©¹ Wounds & Injuries\n\n1. Wash hands first\n2. Rinse wound under clean water for 1 minute\n3. Press firmly with clean cloth to stop bleeding\n4. Cover with sterile dressing\n\nSee a doctor if: deep wound, won\'t stop bleeding in 15 min, signs of infection (red/swollen/pus), animal bite, or no tetanus in 5 years.\n\nð¥ Burns: Run cool water for 10â20 min. Never use ice, butter, or toothpaste.'},
   {kw:['allerg','rash','itch','hive','reaction','anaphylax','swelling'],r:'ð¿ Allergies & Reactions\n\nMild allergies (sneezing, itchy eyes):\nâ¢ Cetirizine (Zyrtec) or Loratadine (Clarityne) â 1 tablet daily, no prescription\n\nSkin rash or itching:\nâ¢ Hydrocortisone 1% cream for small areas\nâ¢ Cool water compress to reduce itching\n\nð¨ Severe reaction (anaphylaxis) â call 10177:\nâ¢ Throat or tongue swelling\nâ¢ Difficulty breathing\nâ¢ Dizziness or collapse'},
   {kw:['hiv','arv','antiretroviral','art','aids','positive','viral load'],r:'ðï¸ HIV & ARVs\n\nâ¢ Take your ARVs every day at the SAME time â essential\nâ¢ Missing doses causes resistance â the medication stops working\nâ¢ ARVs are FREE at all public clinics in South Africa\nâ¢ Undetectable viral load = you cannot pass HIV to others (U=U)\nâ¢ Get tested for TB every year â HIV and TB often occur together\n\nSupport:\nâ¢ TAC: 0800 212 506 (free)\nâ¢ Visit your nearest public clinic or CHC every 6 months'},
@@ -1547,56 +1548,6 @@ function sendChat(){
   const input=document.getElementById('chat-input');
   const messages=document.getElementById('chat-messages');
   const text=input.value.trim();
-  if(!text)return;
-  input.value='';
-
-  const userBubble=document.createElement('div');
-  userBubble.className='chat-bubble chat-user';
-  userBubble.textContent=text;
-  messages.appendChild(userBubble);
-
-  const typing=document.createElement('div');
-  typing.className='chat-typing';
-  typing.textContent='â¦';
-  messages.appendChild(typing);
-  messages.scrollTop=messages.scrollHeight;
-
-  setTimeout(()=>{
-    messages.removeChild(typing);
-    const aiBubble=document.createElement('div');
-    aiBubble.className='chat-bubble chat-ai';
-    aiBubble.textContent=processChat(text);
-    messages.appendChild(aiBubble);
-    messages.scrollTop=messages.scrollHeight;
-  },600);
-}
-function chatKeyDown(e){if(e.key==='Enter'){e.preventDefault();sendChat();}}
-
-// âââ Voice Guide âââââââââââââââââââââââââââââââââââââââââââââââââââ
-function toggleVoice(){
-  document.getElementById('chat-input').focus();
-  document.getElementById('mic-btn').classList.add('active');
-  setTimeout(()=>document.getElementById('mic-btn').classList.remove('active'),3000);
-
-  // Try Web Speech API first (works on HTTPS)
-  const SR=window.SpeechRecognition||window.webkitSpeechRecognition;
-  if(SR){
-    try{
-      const r=new SR();
-      r.lang='en-ZA';r.continuous=false;r.interimResults=false;
-      r.onstart=()=>addChatBubble('ai','ð¤ Listeningâ¦ speak now.');
-      r.onresult=e=>{if(e.results&&e.results[0]){const t=e.results[0][0].transcript;document.getElementById('chat-input').value=t;sendChat();}};
-      r.onerror=()=>showVoiceGuide();
-      r.start();return;
-    }catch(e){}
-  }
-  showVoiceGuide();
-}
-function showVoiceGuide(){
-  addChatBubble('ai','ð¤ How to use voice on your iPhone:\n\n1ï¸â£ Your keyboard is now open below\n2ï¸â£ Find the ð¤ microphone key on the keyboard (bottom row, near the space bar)\n3ï¸â£ Tap and hold the ð¤ key â speak your question\n4ï¸â£ Your words appear in the text box automatically\n5ï¸â£ Then tap â¤ to send\n\nNo mic key? Go to Settings â General â Keyboard â Enable Dictation.');
-}
-function addChatBubble(who,text){
-  const messages=document.getElementById('chat-messages');
   const b=document.createElement('div');
   b.className='chat-bubble chat-'+(who==='ai'?'ai':'user');
   b.textContent=text;
@@ -1970,7 +1921,7 @@ function toggleAccordion(header){
   const arrow=header.querySelector('span:last-child');
   const isOpen=body.classList.contains('open');
   body.classList.toggle('open',!isOpen);
-  if(arrow)arrow.textContent=isOpen?'â¼';'â²';
+  if(arrow)arrow.textContent=isOpen?'â¼':'â²';
 }
 
 // âââ Mental Health Check-in ââââââââââââââââââââââââââââââââââââââââ
